@@ -1,0 +1,6 @@
+Firefox: 	blocks with alert bar									(WORKS)
+IE: 		blocks with alert bar									(WORKS)	(WINDOWS)
+Safari: 	doesn't block											(WORKS)	(WINDOWS)
+Safari iOS: blocks normally											(WORKS)
+Chrome: 	blocks loading first page, with no mention of block 	(BUG)
+Opera: 		blocks loading first page, with toaster of second page	(BUG)
