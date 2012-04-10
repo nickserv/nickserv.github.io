@@ -8,18 +8,6 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="styles.css">
-	<style type="text/css">
-		body
-		{
-			background-color: #000;
-			color: #fff;
-			font-family: Arial, sans-serif;
-			text-align: center;
-		}
-		div {font-size: 24px;}
-		a, a:visited {color: yellow;}
-		a:active {color: red;}
-	</style>
 	<!-- icons -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="mobile_icon.png">
@@ -29,22 +17,38 @@
 
 <div class="container">
 
-	<div>
-		<b>404 ERROR</b><br>
-		<b>PAGE NOT FOUND</b><br><br>
+	<!-- navigation buttons -->
+	<div class="navbar"><div class="navbar-inner"><div class="container">
+		<a class="brand" href="index.html">Nicolas McCurdy</a>
+		<ul class="nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="apps.html">Apps</a></li>
+		</ul>
+	</div></div></div>
+
+	<!-- error page -->
+	<div class="hero-unit">
+		<h1>404 - Page not found</h1>
+		<p>
+			The page you are trying to visit cannot be found.<br>
+			You may be visiting a page that doesn't exist, mistyping the URL of the page, or visiting a broken link.
+		</p>
+		<p>
+			<a class="btn btn-large" href="home.html">
+				Home
+			</a>
+			<a class="btn btn-large" href="javascript:history.go(-1)">
+				Back
+			</a>
+			<script type="text/javascript">
+				var part1 = "thenickperson";
+				var part2 = "gmail.com?subject=Website: Broken Link Report";
+				var part3 = "Report";
+				document.write('<a class="btn btn-primary btn-large" href="mai' + 'lto:' + part1 + '@' + part2 + '">');
+				document.write(part3 + '</a>');
+			</script>
+		</p>
 	</div>
-	<a href="index.html"><img src="images/ffffuuuu04.png" height="350" alt=""></a><br><br>
-	The page your are trying to visit cannot be found.<br>
-	You may be visiting a page that doesn't exist, mistyping the URL of the page, or visiting a broken link.<br><br>
-	Please try and see if you can get to the page you want to visit from the <a href="index.html">home page</a>.<br>
-	You can also <a href="javascript:history.go(-1)">go back</a> to where you came from.<br><br>
-	If you have found a broken link on my website, please <script type="text/javascript">
-	var part1 = "thenickperson";
-	var part2 = "gmail.com?subject=Website: Broken Link Report";
-	var part3 = "report it";
-	document.write('<a href="mai' + 'lto:' + part1 + '@' + part2 + '">');
-	document.write(part3 + '</a>');
-	</script>.
 
 	<!-- footer -->
 	<footer>
