@@ -1,3 +1,6 @@
 body {
 	background-color: #eee9e9;
 }
+.row a.well {
+	display: block;
+}
