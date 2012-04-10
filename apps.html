@@ -1,25 +1,30 @@
-<!DOCTYPE html><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+	<!-- basic info -->
 	<title>Nicolas McCurdy - Apps</title>
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- css -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="mobile.css" media="only screen and (max-device-width: 480px)">
-	<script src="scripts.js"></script>
-	<script>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-22970573-1"]);_gaq.push(["_trackPageview"]);(function(){var ga=document.createElement("script");ga.type="text/javascript";ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})();</script>
-	<meta name="viewport" content="width=320">
+	<!-- icons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="mobile_icon.png">
 </head>
 
-<!-- PAGE START -->
-<body><div id="page">
+<body>
 
-<!-- NAVIGATION BUTTONS -->
-<span id="title">NICOLAS MCCURDY</span>
-<div id="top_spacer">
-	<span class="nav_button"><a href="index.html">HOME</a></span>
-	<span class="nav_button current"><a href="apps.html">APPS</a></span>
-</div>
+<div class="container">
 
-<!-- PAGE CONTENT -->
-<div id="content">
+<!-- navigation buttons -->
+<div class="navbar"><div class="navbar-inner"><div class="container">
+	<a class="brand" href="index.html">Nicolas McCurdy</a>
+	<ul class="nav">
+		<li><a href="index.html">Home</a></li>
+		<li class="active"><a href="apps.html">Apps</a></li>
+	</ul>
+</div></div></div>
 
 	<div class="app_list">
 		<h1>Web Apps</h1>
@@ -91,14 +96,26 @@
 	</div>
 	-->
 
-	<a href="http://creativecommons.org/licenses/by-nc/3.0/" id="license" rel="license" target="_blank">
-		<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png">
-	</a>	
+	<!-- footer -->
+	<footer>
+		<a href="http://creativecommons.org/licenses/by-nc/3.0/" id="license" rel="license" target="_blank">
+			<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png">
+		</a>	
+		<br><div id="copyright">&copy; 2012 Nicolas McCurdy</div>
+	</footer>
+
 </div>
 
-<!-- PAGE END -->
-<br><div id="copyright">&copy; 2012 Nicolas McCurdy</div>
-</div><div id="bottom_spacer"><br></div>
-<webengage license="~99199076"><script type="text/javascript">(function(){var _we = document.createElement('script');_we.type = 'text/javascript';_we.async = true;_we.src = "//widgets.webklipper.com/js/widget/webengage-min-v-2.0.js";var _b = document.getElementsByTagName('body')[0];_b.appendChild(_we);})();</script></webengage></body>
+<!-- javascript -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+<!-- google analytics -->
+<script>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-22970573-1"]);_gaq.push(["_trackPageview"]);(function(){var ga=document.createElement("script");ga.type="text/javascript";ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})();</script>
+<!-- webengage -->
+<webengage license="~99199076"><script type="text/javascript">(function(){var _we = document.createElement('script');_we.type = 'text/javascript';_we.async = true;_we.src = "//widgets.webklipper.com/js/widget/webengage-min-v-2.0.js";var _b = document.getElementsByTagName('body')[0];_b.appendChild(_we);})();</script></webengage>
+<!-- html5 shiv for internet explorer -->
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-<!-- The water placeholder image is provided (for free) by freeimageslive.co.uk. -->
+</body>
+</html>
