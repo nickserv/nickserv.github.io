@@ -1,4 +1,4 @@
-#[thenickperson.com](http://thenickperson.com)
+#[Nicolas McCurdy's Website](http://thenickperson.github.com/thenickperson-dot-com/)
 
 ##Notes
 - remember to re-enable Google Analytics when the site goes live
