@@ -1,5 +1,8 @@
 #[thenickperson.com](http://thenickperson.com)
 
+##Notes
+- remember to re-enable Google Analytics when the site goes live
+
 ##User Feedback
 - [WebEngage](http://webklipper.com/publisher/dashboard)
 
