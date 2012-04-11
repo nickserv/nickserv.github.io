@@ -2,19 +2,19 @@ body {
 	background-color: #eee9e9;
 	margin-top: 20px;
 }
-.apps-page a.well {
+.projects-page a.well {
 	display: block;
 	text-decoration: none;
 }
-.apps-page a.well:hover {
+.projects-page a.well:hover {
 	background-color: #eee;
 }
-.apps-page a.well .version {
+.projects-page a.well .version {
 	color: #666;
 }
-.apps-page a.well:hover .version {
+.projects-page a.well:hover .version {
 	color: #333;
 }
-.apps-page a.well .desc {
+.projects-page a.well .desc {
 	color: #333;
 }
