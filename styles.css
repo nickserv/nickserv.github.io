@@ -1,13 +1,38 @@
 /* page */
+html {
+	height: 100%;
+}
 body {
-	background-color: #eee9e9;
-	margin-top: 20px;
+	height: 100%;
+	background-color: #666;
+}
+
+/* navbar */
+.navbar {
+	margin: 0;
+	font-weight: bold;
 }
 .navbar-inner {
-	border-radius: 0 !important;
+	border-radius: 0;
 }
+
+/* major blocks */
+.vertical-stripe {
+	background-color: #444;
+	height: 100%;
+}
+.content {
+	background-color: #333;
+	color: #ddd;
+	/*padding: 10px;*/
+}
+
+/* misc */
 footer {
 	text-align: center;
+	color: #aaa;
+	font-size: 12px;
+	margin-top: 20px;
 }
 
 /* projects */
