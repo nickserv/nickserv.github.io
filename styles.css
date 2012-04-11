@@ -1,3 +1,4 @@
+/* page */
 body {
 	background-color: #eee9e9;
 	margin-top: 20px;
@@ -8,6 +9,8 @@ body {
 footer {
 	text-align: center;
 }
+
+/* projects */
 .projects-page a.well {
 	display: block;
 	text-decoration: none;
