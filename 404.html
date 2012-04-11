@@ -15,9 +15,10 @@
 
 <body>
 
-<div class="container">
+<!-- main column -->
+<div class="container main-column">
 
-	<!-- navigation buttons -->
+	<!-- navbar -->
 	<div class="navbar"><div class="navbar-inner"><div class="container">
 		<a class="brand" href="index.html">Nicolas McCurdy</a>
 		<ul class="nav">
@@ -30,36 +31,48 @@
 		</ul>
 	</div></div></div>
 
-	<!-- error page -->
-	<div class="hero-unit">
-		<h1>404 - Page not found</h1>
-		<p>
-			The page you are trying to visit could not be found.<br>
-			You may be going to a page that doesn't exist, mistyping the URL of the page, or visiting a broken link.
-		</p>
-		<p>
-			<a class="btn btn-large" href="index.html">
-				<i class="icon-home"></i> Home
-			</a>
-			<a class="btn btn-large" href="projects.html">
-				<i class="icon-th"></i> Projects
-			</a>
-			<a class="btn btn-large btn-danger" href="javascript:history.go(-1)">
-				<i class="icon-arrow-left icon-white"></i> Back
-			</a>
-			<script type="text/javascript">
-				var part1 = "thenickperson";
-				var part2 = "gmail.com?subject=Website: Broken Link Report";
-				var part3 = "Report";
-				document.write('<a class="btn btn-large btn-primary" href="mai' + 'lto:' + part1 + '@' + part2 + '">');
-				document.write('<i class="icon-envelope icon-white"></i> ' + part3 + '</a>');
-			</script>
-		</p>
+	<!-- page content -->
+	<div class="content">
+
+		<!-- error message -->
+		<div class="hero-unit">
+
+			<!-- title-->
+			<h1>404 - Page not found</h1>
+
+			<!-- description -->
+			<p>
+				The page you are trying to visit could not be found.<br>
+				You may be going to a page that doesn't exist, mistyping the URL of the page, or visiting a broken link.
+			</p>
+
+			<!-- buttons -->
+			<p>
+				<a class="btn btn-large" href="index.html">
+					<i class="icon-home"></i> Home
+				</a>
+				<a class="btn btn-large" href="projects.html">
+					<i class="icon-th"></i> Projects
+				</a>
+				<a class="btn btn-large btn-danger" href="javascript:history.go(-1)">
+					<i class="icon-arrow-left icon-white"></i> Back
+				</a>
+				<script type="text/javascript">
+					var part1 = "thenickperson";
+					var part2 = "gmail.com?subject=Website: Broken Link Report";
+					var part3 = "Report";
+					document.write('<a class="btn btn-large btn-primary" href="mai' + 'lto:' + part1 + '@' + part2 + '">');
+					document.write('<i class="icon-envelope icon-white"></i> ' + part3 + '</a>');
+				</script>
+			</p>
+
+		</div>
+
 	</div>
 
 	<!-- footer -->
 	<footer>
-		<div id="copyright">&copy; 2012 Nicolas McCurdy</div>
+		&copy; 2012 Nicolas McCurdy
 	</footer>
 
 </div>
