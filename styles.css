@@ -11,20 +11,22 @@ body {
 .navbar {
 	margin: 0;
 	font-weight: bold;
+	margin-top: 30px;
 }
 .navbar-inner {
 	border-radius: 0;
 }
 
 /* major blocks */
-.vertical-stripe {
+.main-column {
 	background-color: #444;
 	height: 100%;
+	/*max-width: 800px;*/
 }
 .content {
 	background-color: #333;
 	color: #ddd;
-	/*padding: 10px;*/
+	padding: 20px;
 }
 
 /* misc */
