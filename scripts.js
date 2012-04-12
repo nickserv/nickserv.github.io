@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('#apps-nav').scrollspy();
+	$('#projects-nav').scrollspy();
 });
