@@ -1,0 +1,33 @@
+<head>
+<title>Selection Test</title>
+<script type="text/javascript">
+var select_start
+var select_end
+var captured_text
+onload = function()
+{
+	document.getElementById("txt").onmouseup = function()
+	{
+		var element = document.getElementById("my_textarea")
+		if(document.selection) // gets IE to behave like any decent browser would (script from http://goo.gl/VhHs3)
+			{var range = document.selection.createRange(); var stored_range = range.duplicate(); stored_range.moveToElementText(element); stored_range.setEndPoint("EndToEnd",range); element.selectionStart = stored_range.text.length - range.text.length; element.selectionEnd = element.selectionStart + range.text.length;}
+		select_start = this.selectionStart
+		select_end = this.selectionEnd
+		captured_text = document.getElementById("txt").value
+	}
+}
+function limiter()
+{
+	var text_before = captured_text.substring(0,select_start)
+	var text_after = captured_text.substring(select_end)
+	var text = captured_text.substring(select_start,select_end)
+	text = text.toUpperCase()
+	document.getElementById("txt").value = text_before+text+text_after
+}
+</script>
+</head>
+
+<body>
+<textarea id="txt" rows="10" cols="50">hello! please select me</textarea>
+<a href="javascript:limiter()">Selection To Uppercase</a>
+</body>

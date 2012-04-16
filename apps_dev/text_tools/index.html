@@ -1,0 +1,124 @@
+<!DOCTYPE html><head><meta charset="utf-8">
+	<title>Text Tools 2.0 dev</title>
+	<link rel="shortcut icon" href="icons/logo.ico">
+	<link rel="apple-touch-icon" href="icons/logo.png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="cookies.js"></script>
+	<script src="scripts.js"></script>
+	<meta name="viewport" content="width=device-width; initial-scale=0.95; maximum-scale=2; user-scalable=1;">
+</head>
+
+<body><table id="ui">
+<!--title bar-->
+<tr id="titlebar">
+	<th title="Enter text to be edited here.">Input</th>
+	<th title="Change the effect, which changes how your input will be edited.">Effects</th>
+	<th title="The outcome of your input in the current effect will be displayed here.">Output</th>
+<!--tool bar-->
+</tr><tr id="toolbar">
+	<th colspan="3">
+		Limiter:&nbsp;<a onclick="">All</a>&nbsp;<span class="separator">|</span>
+		Sections:&nbsp;<a onclick="panel('collapse','all')">Collapse</a>&nbsp;<a onclick="panel('expand','all')">Expand</a>&nbsp;<span class="separator">|</span>
+		Top&nbsp;Bar:&nbsp;<a onclick="toggle('titlebar')">Toggle</a>&nbsp;<span class="separator">|</span>
+		Spell&nbsp;Check:&nbsp;<a onclick="">Toggle</a>&nbsp;<span class="separator">|</span>
+		Autocomplete:&nbsp;<a onclick="">Toggle</a>&nbsp;<span class="separator">|</span>
+		<a onclick="toggle('toolbar'); toggle('toolbar_button');" style="position:absolute;right:0;">X</a>
+	</th>
+<!--main ui space-->
+</tr><tr>
+	<!--text before-->
+	<td class="text_field"><textarea id="text_before"></textarea></td>
+	<!--effects panels-->
+	<td>
+		<table class="effects">
+		<tr><td>
+			<a id="normal" class="effect" title="Outputs the original, unedited text.">
+				<img src="icons/text.png">&nbsp;Normal</a>
+			<a id="outputToInput" href="javascript:outputToInput()" title="Sets the input text to whatever the output is currently displaying. Useful for using multiple effects on text.">
+				<img src="icons/switch.png">&nbsp;Save&nbsp;Effect</a>
+			<a id="clear" href="javascript:clear()" title="Clears all the input text and sets all effects to their defaults." onfocus="$('#text_before').focus()">
+				<img src="icons/clear.png" height="14">&nbsp;Clear</a>
+			<div id="toolbar_button"><a id="toolbar" href="javascript:toggle('toolbar'); toggle('toolbar_button');" title="Toggles the advanced toolbar.">
+				<img src="icons/cog.png" height="14">&nbsp;Toolbar</a></div>
+		</td></tr><tr><td>
+			<div class="panel">Case</div>
+			<div id="case_panel">
+			<a id="lowercase" class="effect" title="Lowers the case of all the text.">
+				<img src="icons/text_lowercase.png">&nbsp;Lowercase</a>
+			<a id="uppercase" class="effect" title="Raises the case of all the text.">
+				<img src="icons/text_uppercase.png">&nbsp;Uppercase</a>
+			<a id="titlecase" class="effect" title="Title cases text, which capitalizes the first letter of most words.">
+				<img src="icons/text_uppercase.png">&nbsp;Title&nbsp;Case</a>
+			<a id="htmllower" class="effect" title="Lowers the case of HTML tags.">
+				<img src="icons/html.png">&nbsp;HTML&nbsp;Lower</a>
+			<a id="htmlupper" class="effect" title="Raises the case of HTML tags.">
+				<img src="icons/html.png">&nbsp;HTML&nbsp;Upper</a>
+			</div>
+		</td></tr><tr><td>
+			<div class="panel">Find&nbsp;&&nbsp;Replace</div>
+			<div id="find_panel">
+			<span style="display:inline"><a id="find" class="effect" title="Type text in the find box to highlight it with capital letters." onclick="$('#find_text').focus();">
+				<img src="icons/magnifier.png">&nbsp;Find</a><span id="find_counter" style="color:black; font-weight:normal;"></span></span>
+				<textarea id="find_text" rows="2" style="width:100%" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}"></textarea><br>
+			<a id="replace" class="effect" title="Type text in the find box to replace it with the text you type in the replace box." onclick="$('#replace_text').focus();">
+				<img src="icons/text_replace.png">&nbsp;Replace</a>
+				<textarea id="replace_text" rows="2" style="width:100%" onfocus="toEffect('replace'); clicked(replace);"></textarea><br>
+				<input type="checkbox" id="regexp_toggle" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs()" title="Toggles regular expression search."><div style="font-weight:normal;display:inline;color:#DCDCDC;" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs();toggleCheck($('#regexp_toggle'));" title="Toggles regular expression search.">RegExp</div>
+				<!-- selectAll($("#list_start")) -->
+			</div>
+		</td></tr><tr><td>
+		<div class="panel">Sort</div>
+		<div id="sort_panel">
+		<a id="sortaz" class="effect" title="Sorts a list in alphabetical order.">
+			<img src="icons/text_order_av.png">&nbsp;Sort&nbsp;A-Z</a>
+		<a id="sortza" class="effect" title="Sorts a list in reverse alphabetical order.">
+			<img src="icons/text_order_va.png">&nbsp;Sort&nbsp;Z-A</a>
+		<a id="sortreverse" class="effect" title="Sorts a list in reverse order.">
+			<img src="icons/text_order_reverse.png">&nbsp;Sort&nbsp;Reverse</a>
+		<a id="sortrandom" class="effect" title="Sorts a list in a random order. Click again to reorder the list.">
+			<img src="icons/text_order_reverse.png">&nbsp;Sort&nbsp;Random</a>
+		</div>
+	</td></tr><tr><td>
+		<div class="panel">Lists</div>
+			<div id="list_panel">
+			<a id="list" class="effect" title="Turns the input into a list." onfocus="selectAll($('#list_start'))" style="display:inline;">
+				<img src="icons/text_list_bullets.png">&nbsp;List&nbsp;</a><input type="checkbox" id="number_list" onfocus="toEffect('list'); clicked(list);" onclick="watchInputs(); selectAll($('#list_start'));"><div style="font-weight:normal;display:inline;color:black;" onclick="toggleCheck($('#number_list')); toEffect('list'); clicked(list); selectAll($('#list_start'));watchInputs();" title="Toggles numbered lists.">#</div>
+				<input type="text" id="list_start" style="width:100%" value="- " onfocus="toEffect('list'); clicked(list); selectAll($('#list_start'));"><br>
+			<a id="remove_list" class="effect" title="Removes characters at the beginning of items in a list." onfocus="selectAll($('#cutoff'))">
+				<img src="icons/text_list_bullets.png">&nbsp;List&nbsp;Remover</a>
+				<input type="text" id="cutoff" style="width:43%" value="3" onfocus="toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" onblur="if($('#cutoff').val()=='') {$('#cutoff').val(3)}" onKeyUp="numbersOnly(this)"> <input type="button" onclick="valueUp($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="+"><input type="button" onclick="valueDown($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="-">
+			</div>
+		</td></tr><tr><td>
+			<div class="panel">Other</div>
+			<div id="other_panel">
+			<a id="repeat" class="effect" title="Enter a number to repeat all the text that many times." onfocus="selectAll($('#repetitions'))">
+				<img src="icons/repeater.png">&nbsp;Repeat</a>
+				<input type="text" id="repetitions" style="width:43%" value="1" onfocus="toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" onblur="if($('#repetitions').val()=='') {$('#repetitions').val(1)}" onKeyUp="numbersOnly(this)"> <span style="color:black"><input type="button" onclick="valueUp($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="+"><input type="button" onclick="valueDown($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="-"></span><br>
+			<a id="wordcount" class="effect" title="Counts the number of characters, words, and lines in the text.">
+				<img src="icons/word_count.png">&nbsp;Word&nbsp;Count</a>
+			</div>
+		</td></tr><tr><td>
+			<div class="panel">Misc</div>
+			<div id="misc_panel">
+			<a id="rot13" class="effect" title="Uses ROT13 encryption on the text by shifting every letter 13 letters forward in the alphabet.">
+				<img src="icons/rot13.png">&nbsp;ROT13</a>
+			<a id="backwards" class="effect" title="Displays all the input backwards.">
+				<img src="icons/arrow_left.png">&nbsp;Backwards</a>
+			</div>
+		</td></tr><tr><td>
+			<div class="panel">Help</div>
+			<div id="help_panel">
+			<a id="about" href="about.html" title="Read some information about Text Tools and grab a handy bookmarklet." target="_blank" class="info">
+				<img src="icons/information.png">&nbsp;About</a>
+			<a id="help" href="help.html" title="Read some helpful FAQs to get acquainted with Text Tools." target="_blank" class="info">
+				<img src="icons/help.png">&nbsp;Help</a>
+			<a id="email" href="http://scr.im/nicolasm" target="_blank" title="Email me any questions, comments, suggestions, or bug reports about this tool, with &quot;Text Tools&quot; in the subject of the email." class="info">
+				<img src="icons/email.png">&nbsp;Feedback</a>
+			</div>
+		</table>
+	</td>
+	<!--text after-->
+	<td class="text_field"><textarea id="text_after" readonly="readonly"></textarea></td>
+<!--end-->
+</tr></table></body>

@@ -1,0 +1,72 @@
+/*major ui*/
+html {height: 100%;}
+body
+{
+	font-family: Arial;
+	font-size: 12px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+#ui
+{
+	background: #696969; /* LOL */
+	border-spacing: 0;
+	height: 100%;
+	width: 100%;
+}
+#ui td {vertical-align: top;}
+
+/*title bar*/
+#titlebar
+{
+	background: black;
+	color: white;
+	font-size: 18px;
+	height: 30px;
+}
+
+/*text input*/
+textarea, input[type=text]
+	{font-family: Arial; font-size: 12px;}
+.text_field
+	{width: 50%; height:100%;}
+.text_field textarea
+	{resize: none; font-size: 14px; height: 100%; width: 100%; margin: 0px; border: 0; background-color: #dcdcdc;}
+
+/*effects*/
+.effects
+{
+	font-size: 14px;
+	font-weight: bold;
+	border-spacing: 0;
+	padding-left: 0px; padding-right: 0px;
+	width: 100%;
+}
+.effects tr {padding-left: 0px; padding-right: 0px;}
+.effects td {padding-left: 0px; padding-right: 0px; text-align: center;}
+.effects .panel {background-color: #404040; cursor: pointer;}
+.effects .panel:hover {background-color: gray;}
+.effects .panel:active {background-color: black;}
+.panel {display: block; color: #fff;}
+a {color: #dcdcdc; text-decoration: none; display: block; cursor: pointer;}
+.active,a:active {color: #ff0;}
+img {border: 0px;}
+.info
+	{color: #dcdcdc;}
+
+/*toolbar*/
+#toolbar
+	{background-color: #404040; color: white; font-size: 16px; height: 30px;}
+#toolbar a
+{
+	color: white;
+	font-weight: normal;
+	display: inline;
+	text-decoration: underline;
+}
+#toolbar th
+	{text-align: left;}
+.separator
+	{font-weight: normal; color: #bbb}

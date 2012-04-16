@@ -1,0 +1,17 @@
+2.0
+ -vastly improved theme
+ -name change (from Multi-Tab Bookmarks to Link Tools)
+ -awesome new features, has more uses than just creating bookmarklets
+
+1.2
+ -link auto-updates, no need to click the generate button any more
+
+1.1
+ -interface now has built in instructions, and looks more organized
+
+1.0
+ -first public release of Multi-Tab Bookmarks
+ -feature complete
+ -basic interface with almost no instructions
+ -issues with popup blocker turned off in Chrome and Opera
+ -clumsy interface on mobile

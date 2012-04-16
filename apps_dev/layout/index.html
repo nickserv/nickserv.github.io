@@ -1,0 +1,29 @@
+<!DOCTYPE html><head><meta charset="utf-8">
+	<title>Layout</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.hotkeys.js"></script>
+	<script type="text/javascript" src="cookies.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+<!--tool bar-->
+<div>
+	<span id="title">LAYOUT</span>
+	<span id="clock"></span>
+	<!--<a href="" id="log_mode">LOG</a><a href="" id="plan_mode">PLAN</a>-->
+	<span id="tools">&nbsp;<a onclick="saveList()">save</a> <a onclick="clearAll()">reset</a> <a onclick="importer()">import</a> <a onclick="exporter()">export</a>&nbsp;</span>
+</div>
+<!--hidden ui-->
+<div id="importer"><input type="text"> <a onclick="importerLoad()">load</a></div>
+<div id="exporter"><input type="text" readonly="readonly"> <a onclick="exporterClose()">close</a></div>
+<br>
+<!--task list-->
+<div>
+	<div id="tasks"></div>
+	<a id="add">new task</a>
+</div>
+</body>

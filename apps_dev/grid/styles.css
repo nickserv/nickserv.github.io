@@ -1,0 +1,72 @@
+body
+{
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","Helvetica","Arial","Lucida Grande",sans-serif;
+	background-color: black;
+	color: #ddd;
+}
+#grid
+{
+	margin-left: auto; margin-right: auto;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+#grid td
+{
+	border: 1px solid gray;
+	border-radius: 30px;
+	cursor: pointer;
+}
+#top_line td
+{
+	border: 1px solid black;
+	border-bottom: 1px solid gray;
+}
+
+/* javascript */
+.blue {background-color: #00F; cursor: default !important;}
+.red {background-color: #F00; cursor: default !important;}
+
+#settings
+{
+	text-align: right;
+	margin-left: auto; margin-right: auto;
+}
+#settings input[type=text], #settings input[type=number]
+{
+	width: 15px;
+	text-align: right;
+	background-color: #ddd;
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+#settings th
+{
+	text-align: center;
+}
+#settings,#settings td
+{
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+#settings td,#settings th
+{
+	padding: 2px;
+}
+#title
+{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+#title #block
+{
+	border: 1px solid gray;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+button
+{
+	cursor: pointer;
+}

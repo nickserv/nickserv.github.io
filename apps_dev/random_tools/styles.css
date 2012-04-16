@@ -1,0 +1,30 @@
+ul,li {margin: 0; padding: 0; border: 0;}
+ul {list-style-type: decimal; list-style-position: inside;}
+
+body {font-family: Arial,sans-serif; font-size: 16px; background-color: #444; color: white;}
+body>table {background-color: black; color: white; width: 200px; margin: 25px auto;}
+body>table, body>table tr, body>table th, body>table td {text-align: center; border-spacing: 1px; padding: 2px;}
+body>table #title, body>table th {color: black; background-color: white; cursor: default;}
+.buttons td {width: 50%; margin: 0px; padding: 0px;}
+.buttons td a {color: white; display: block; text-decoration: none; background-color: #555;}
+.buttons td a:hover {background-color: #888;}
+.buttons td .active {background-color: #777;}
+#options {padding: 0;}
+#options a {font-size: 18px; text-decoration: none; color: white; background-color: #555;}
+#options a:hover {background-color: #888;}
+#options, #results {display: none;}
+#welcome {font-size: 14px;}
+
+#results #number {font-size: 36px;}
+#results #text {font-size: 20px;}
+#results #list {font-size: 16px;}
+#results {cursor: pointer;}
+#options #list_options textarea {font-size: 12px; width: 100%; height: 100px; padding: 1px;}
+#options #list_options {font-size: 12px;}
+#options input {width: 40px;}
+textarea, input {background-color: black; border: 1px solid #888; color: white;}
+
+#number_options #right {text-align: right;}
+#number_options #left {text-align: left;}
+#number_options {width: 100%;}
+#info {font-size: 12px; color: #888;}

@@ -1,0 +1,106 @@
+<mockup version="1.0" skin="sketch" measuredW="679" measuredH="636" mockupW="509" mockupH="509">
+  <controls>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Title" x="304" y="127" w="-1" h="-1" measuredW="253" measuredH="50" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Link%20Tools%202.0</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::TextArea" x="170" y="209" w="250" h="427" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>google.com%20is%20a%20very%20useful%20search%20engine.%20You%20can%20also%20use%20facebook.com%20to%20share%20things%20with%20your%20friends%2C%20and%20youtube.com%20to%20watch%20videos%20for%20free.</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Canvas" x="429" y="236" w="250" h="92" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Canvas" x="429" y="475" w="250" h="161" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Canvas" x="429" y="355" w="250" h="93" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::TextInput" x="429" y="209" w="250" h="-1" measuredW="68" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%09Links</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::TextInput" x="429" y="328" w="250" h="-1" measuredW="121" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%09Links%20and%20Text</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::TextInput" x="429" y="448" w="250" h="-1" measuredW="175" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%09Bookmarklet%20Generator</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::HSplitter" x="419" y="187" w="-1" h="449" measuredW="12" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::TextInput" x="483" y="482" w="185" h="-1" measuredW="132" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Untitled%20Bookmarklet</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Paragraph" x="444" y="531" w="224" h="69" measuredW="200" measuredH="140" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>You%20may%20drag%20the%20following%20link%20to%20your%20bookmarks%20bar%20or%20right%20click%20it%20to%20bookmark%20it.%20All%20links%20will%20be%20opened%20in%20multiple%20tabs/windows%20in%20your%20browser.</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Label" x="437" y="484" w="55" h="21" measuredW="44" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Link" x="477" y="600" w="-1" h="-1" measuredW="124" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Untitled%20Bookmarklet</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::CheckBox" x="437" y="509" w="237" h="15" measuredW="233" measuredH="22" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Start%20opening%20links%20in%20new%20tab/window</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Paragraph" x="437" y="362" w="231" h="78" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5Bgoogle.com%5D%20is%20a%20very%20useful%20search%20engine.%20You%20can%20also%20use%20%5Bfacebook.com%5D%20to%20share%20things%20with%20your%20friends%2C%20and%20%5Byoutube.com%5D%20to%20watch%20videos%20for%20free.</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Paragraph" x="437" y="244" w="231" h="76" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>%5Bgoogle.com%5D%0A%5Bfacebook.com%5D%0A%5Byoutube.com%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::TextInput" x="170" y="181" w="250" h="-1" measuredW="72" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Your%20Links</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::TextInput" x="429" y="182" w="250" h="-1" measuredW="149" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <text>%09%09Links%20Found%3A%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Icon" x="437" y="214" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>RightFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Icon" x="437" y="333" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>RightFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Icon" x="437" y="453" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>RightFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Button" x="601" y="187" w="71" h="19" measuredW="71" measuredH="28" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Open%20All</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

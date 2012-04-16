@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title>Link Tools 2.0</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="iphone_icon.png">
+<meta name="viewport" content="width=device-width;">
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+
+<body>
+	<h1>Link Tools 2.0</h1>
+	<div class="column">
+		<div class="column_header">Links</div>
+		Type or paste text containing links below. They do not have to be in any certain format.
+		<textarea id="urls"></textarea>
+		Note that tabs will be loaded in order going down the list, and your last<br>URL will be the one displayed when your tabs are done loading.
+	</div>
+	<div class="column">
+		<div class="column_header">Links Found</div>
+		<h3>Links</h3>
+		<div id="preview"></div>
+		<h3>Bookmarklet Generator</h3>
+		Name: <input type="text" id="title">
+			<div id="link_ui">Drag this link to your bookmarks bar or right click it to bookmark or copy it.<br><a href="index.html" id="link">Untitled Bookmark</a></div>
+	</div>
+	<a href="changelog.txt" target="_blank" id="changelog">Changelog</a>
+</body>

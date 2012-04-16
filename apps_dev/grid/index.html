@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title>Grid</title>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="cookies.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<table id="grid"></table>
+<div id="title"><span id="block">G</span><span id="block">R</span><span id="block">I</span><span id="block">D</span></div>
+<br><table id="settings">
+	<tr><th>RULES</th><td>players <input type="number" id="players" value="2" disabled></td></tr>
+	<tr><td>height <input type="number" id="rows" value="6"></td><td>width <input type="number" id="cols" value="7"></td></tr>
+	<tr><td>gravity <input type="checkbox" id="gravity" checked></td><td>to win <input type="number" id="line" value="4"></td></tr>
+	<tr><th colspan="2"><button onClick="submitSettings()">start game</button></th></tr>
+</table>
+</body>

@@ -1,0 +1,52 @@
+body
+{
+	font-family: arial, helvetica, clean, sans-serif;
+	background-color: #513127;
+}
+#ui
+{
+	background-color: #F36E21;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 10px;
+}
+#title
+{
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	margin: 15px;
+}
+#form
+{
+	text-align: left;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+#links
+{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+#links a
+{
+	color: #fff;
+}
+#disclaimer
+{
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+#disclaimer a
+{
+	color: #fff;
+}
