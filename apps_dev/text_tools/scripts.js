@@ -233,7 +233,7 @@ function watcher(variable,element,watcherName) {
 		variable = element; convert(); /*console.log(watcherName+"watcher activated");*/
 	}
 }
-function watchInputs() //input watcher {
+function watchInputs() { //input watcher
 	if(watched_input != $("#text_before")) {
 		convert();
 		/*console.log("main watcher activated");*/
@@ -251,10 +251,12 @@ function update(change) {
 	$("#text_after").val(change)
 }
 function toEffect(change) {
-	effect = change; convert();
+	effect = change;
+	convert();
 }
 function selectAll(field) {
-	field.focus(); field.select();
+	field.focus();
+	field.select();
 }
 function clear() {
 	$("#text_before,#find_text,#replace_text").val("")
