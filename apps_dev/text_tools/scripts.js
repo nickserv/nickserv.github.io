@@ -349,18 +349,25 @@ function listNumbers() {
 	update(working_input.slice(0,working_input.length-1))
 }
 
-//to title case 1.1.1 by david gouch <http://individed.com> license: http://individed.com/code/to-title-case/license.txt
-String.prototype.toTitleCase = function() {
-	return this.replace(/([\w&`'‘’"“.@:\/\{\(\[<>_]+-? *)/g, function(match, p1, index, title) {
-		if (index > 0 && title.charAt(index - 2) !== ":" && match.search(/^(a(nd?|s|t)?|b(ut|y)|en|for|i[fn]|o[fnr]|t(he|o)|vs?\.?|via)[ \-]/i) > -1) {
-			return match.toLowerCase()
+/* 
+ * To Title Case 2.0.1 – http://individed.com/code/to-title-case/
+ * Copyright © 2008–2012 David Gouch. Licensed under the MIT License. 
+ */
+
+String.prototype.toTitleCase = function () {
+	var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|vs?\.?|via)$/i;
+
+	return this.replace(/([^\W_]+[^\s-]*) */g, function (match, p1, index, title) {
+		if (index > 0 && index + p1.length !== title.length &&
+			p1.search(smallWords) > -1 && title.charAt(index - 2) !== ":" && 
+			title.charAt(index - 1).search(/[^\s-]/) < 0) {
+			return match.toLowerCase();
 		}
-		if (title.substring(index - 1, index + 1).search(/['"_{(\[]/) > -1) {
-			return match.charAt(0) + match.charAt(1).toUpperCase() + match.substr(2)
+
+		if (p1.substr(1).search(/[A-Z]|\../) > -1) {
+			return match;
 		}
-		if (match.substr(1).search(/[A-Z]+|&|[\w]+[._][\w]+/) > -1 || title.substring(index - 1, index + 1).search(/[\])}]/) > -1) {
-			return match
-		}
-		return match.charAt(0).toUpperCase() + match.substr(1)
-	})
-}
+
+		return match.charAt(0).toUpperCase() + match.substr(1);
+	});
+};
