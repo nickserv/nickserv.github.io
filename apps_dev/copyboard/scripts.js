@@ -23,4 +23,7 @@ function bindBox(box,cont)
 $(document).ready(function(){
 	ZeroClipboard.setMoviePath('zeroclipboard/ZeroClipboard.swf')
 	bindAll()
+	$(".alert").alert()
+	$(".alert").alert('close')
+	$(".alert").alert()
 })
