@@ -23,11 +23,11 @@
 </tr><tr id="toolbar">
 	<th colspan="3">
 		Limiter:&nbsp;<a>All</a>&nbsp;<span class="separator">|</span>
-		Sections:&nbsp;<a onclick="panel('collapse','all')">Collapse</a>&nbsp;<a onclick="panel('expand','all')">Expand</a>&nbsp;<span class="separator">|</span>
-		Top&nbsp;Bar:&nbsp;<a onclick="$('titlebar').toggle()">Toggle</a>&nbsp;<span class="separator">|</span>
+		Sections:&nbsp;<a id="toolbar_collapse_button">Collapse</a>&nbsp;<a id="toolbar_expand_button">Expand</a>&nbsp;<span class="separator">|</span>
+		Top&nbsp;Bar:&nbsp;<a id="toolbar_titlebar_toggle">Toggle</a>&nbsp;<span class="separator">|</span>
 		Spell&nbsp;Check:&nbsp;<a>Toggle</a>&nbsp;<span class="separator">|</span>
 		Autocomplete:&nbsp;<a>Toggle</a>&nbsp;<span class="separator">|</span>
-		<a onclick="$('toolbar').toggle(); $('toolbar_button').toggle();" style="position:absolute;right:0;">X</a>
+		<a id="toolbar_close" style="position:absolute;right:0;">X</a>
 	</th>
 <!--main ui space-->
 </tr><tr>
@@ -40,13 +40,13 @@
 			<a id="normal" class="effect">
 				<img src="icons/text.png">&nbsp;Normal
 			</a>
-			<a id="outputToInput" href="javascript:outputToInput()" title="Sets the input text to whatever the output is currently displaying. Useful for using multiple effects on text.">
+			<a id="outputToInput" title="Sets the input text to whatever the output is currently displaying. Useful for using multiple effects on text.">
 				<img src="icons/switch.png">&nbsp;Save&nbsp;Effect
 			</a>
-			<a id="clear" href="javascript:clear()" title="Clears all the input text and sets all effects to their defaults." onfocus="$('#text_before').focus()">
+			<a id="clear" title="Clears all the input text and sets all effects to their defaults.">
 				<img src="icons/clear.png" height="14">&nbsp;Clear
 			</a>
-			<div id="toolbar_button"><a id="toolbar" href="javascript:$('toolbar').toggle(); $('toolbar_button').toggle();" title="Toggles the advanced toolbar.">
+			<a id="toolbar_button" title="Toggles the advanced toolbar.">
 				<img src="icons/cog.png" height="14">&nbsp;Toolbar
 			</a></div>
 		</td></tr><tr><td>
@@ -71,14 +71,14 @@
 		</td></tr><tr><td>
 			<div class="panel">Find&nbsp;&nbsp;Replace</div>
 			<div id="find_panel">
-			<span style="display:inline"><a id="find" class="effect" onclick="$('#find_text').focus();">
+			<span style="display:inline"><a id="find" class="effect">
 				<img src="icons/magnifier.png">&nbsp;Find</a><span id="find_counter" style="color:black; font-weight:normal;"></span></span>
 				<textarea id="find_text" rows="2" style="width:100%" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}"></textarea><br>
-			<a id="replace" class="effect" onclick="$('#replace_text').focus();">
+			<a id="replace" class="effect">
 				<img src="icons/text_replace.png">&nbsp;Replace
 			</a>
 				<textarea id="replace_text" rows="2" style="width:100%" onfocus="toEffect('replace'); clicked(replace);"></textarea><br>
-				<input type="checkbox" id="regexp_toggle" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs()" title="Toggles regular expression search."><div style="font-weight:normal;display:inline;color:#DCDCDC;" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs();toggleCheck($('#regexp_toggle'));" title="Toggles regular expression search.">RegExp</div>
+				<input type="checkbox" id="regexp_toggle" title="Toggles regular expression search."><div style="font-weight:normal;display:inline;color:#DCDCDC;" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs();toggleCheck($('#regexp_toggle'));" title="Toggles regular expression search.">RegExp</div>
 				<!-- selectAll($("#list_start")) -->
 			</div>
 		</td></tr><tr><td>
@@ -146,7 +146,7 @@
 	<td class="text_field_container"><textarea id="text_after" readonly="readonly"></textarea></td>
 </tr></table>
 
-<div class="modal" id="about_modal">
+<div class="modal hide" id="about_modal">
 	<div class="modal-header">
 		<h3><a href="index.html">Text Tools</a></h3>
 		<a class="close" data-dismiss="modal">×</a>

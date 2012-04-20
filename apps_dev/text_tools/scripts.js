@@ -22,6 +22,7 @@ $(function(){
 	regainFocus();
 	clicked($("#normal"));
 	panel("init");
+
 //start daemon scripts
 	$("body").keypress(watchInputs());
 	$("a").focus(regainFocus());
@@ -39,6 +40,48 @@ $(function(){
 		selectAll($("#text_after"));
 	});
 	$("img:not([alt])").attr("alt","");
+
+//click events
+	$("#outputToInput").click(function() {
+		outputToInput();
+	});
+	$("#clear").click(function() {
+		clear();
+	});
+	$("#clear").focus(function() {
+		$('#text_before').focus();
+	});
+	$("#toolbar_button").click(function() {
+		$('toolbar').toggle(); $('toolbar_button').toggle();
+	});
+	$("#toolbar_collapse_button").click(function() {
+		panel("collapse","all");
+	});
+	$("#toolbar_expand_button").click(function() {
+		panel("expand","all");
+	});
+	$("#toolbar_titlebar_toggle").click(function() {
+		$("titlebar").toggle();
+	});
+	$("#toolbar_close").click(function() {
+		$("#toobar").toggle();
+		$("#toolbar_button").toggle();
+	});
+	$(".effect#find").click(function() {
+		$("#find_text").focus();
+	});
+	$(".effect#replace").click(function() {
+		$("#replace_text").focus();
+	});
+	$("#regexp_toggle").click(function() {
+		watchInputs();
+	});
+	$("#regexp_toggle").focus(function() {
+		if(effect!='replace') {
+			toEffect('find');
+			clicked(find);
+		}
+	});
 });
 
 function getHidden() {
