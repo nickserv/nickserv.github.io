@@ -24,15 +24,15 @@
 	<th colspan="3">
 		Limiter:&nbsp;<a onclick="">All</a>&nbsp;<span class="separator">|</span>
 		Sections:&nbsp;<a onclick="panel('collapse','all')">Collapse</a>&nbsp;<a onclick="panel('expand','all')">Expand</a>&nbsp;<span class="separator">|</span>
-		Top&nbsp;Bar:&nbsp;<a onclick="toggle('titlebar')">Toggle</a>&nbsp;<span class="separator">|</span>
+		Top&nbsp;Bar:&nbsp;<a onclick="$('titlebar').toggle()">Toggle</a>&nbsp;<span class="separator">|</span>
 		Spell&nbsp;Check:&nbsp;<a onclick="">Toggle</a>&nbsp;<span class="separator">|</span>
 		Autocomplete:&nbsp;<a onclick="">Toggle</a>&nbsp;<span class="separator">|</span>
-		<a onclick="toggle('toolbar'); toggle('toolbar_button');" style="position:absolute;right:0;">X</a>
+		<a onclick="$('toolbar').toggle(); $('toolbar_button').toggle();" style="position:absolute;right:0;">X</a>
 	</th>
 <!--main ui space-->
 </tr><tr>
 	<!--text before-->
-	<td class="text_field"><textarea id="text_before"></textarea></td>
+	<td class="text_field_container"><textarea id="text_before"></textarea></td>
 	<!--effects panels-->
 	<td>
 		<table class="effects">
@@ -43,7 +43,7 @@
 				<img src="icons/switch.png">&nbsp;Save&nbsp;Effect</a>
 			<a id="clear" href="javascript:clear()" title="Clears all the input text and sets all effects to their defaults." onfocus="$('#text_before').focus()">
 				<img src="icons/clear.png" height="14">&nbsp;Clear</a>
-			<div id="toolbar_button"><a id="toolbar" href="javascript:toggle('toolbar'); toggle('toolbar_button');" title="Toggles the advanced toolbar.">
+			<div id="toolbar_button"><a id="toolbar" href="javascript:$('toolbar').toggle(); $('toolbar_button').toggle();" title="Toggles the advanced toolbar.">
 				<img src="icons/cog.png" height="14">&nbsp;Toolbar</a></div>
 		</td></tr><tr><td>
 			<div class="panel">Case</div>
@@ -123,7 +123,7 @@
 		</table>
 	</td>
 	<!--text after-->
-	<td class="text_field"><textarea id="text_after" readonly="readonly"></textarea></td>
+	<td class="text_field_container"><textarea id="text_after" readonly="readonly"></textarea></td>
 </tr></table>
 
 <!-- scripts -->
