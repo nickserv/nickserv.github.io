@@ -1,0 +1,37 @@
+{
+	"data": {
+		"tooltips": {
+			"effects": {
+				"normal": "Outputs the original, unedited text.",
+
+				"lowercase": "Lowers the case of all the text.",
+				"uppercase": "Raises the case of all the text.",
+				"titlecase": "Title cases text, which capitalizes the first letter of most words.",
+				"htmllower": "Loweres the case of HTML tags.",
+				"htmlupper": "Raises the case of HTML tags.",
+
+				"find": "Type text in the find box to highlight it with capital letters.",
+				"replace": "Type text in the find box to replace it with the text you type in the replace box.",
+
+				"sortaz": "Sorts a list in alphabetical order.",
+				"sortza": "Sorts a list in reverse alphabetical order.",
+				"sortreverse": "Sorts a list in reverse order.",
+				"sortrandom": "Sorts a list in a random order. Click again to reorder the list.",
+
+				"list": "Turns the input into a list.",
+				"remove_list": "Removes characters at the beginning of items in a list.",
+
+				"repeat": "Enter a number to repeat all the text that many times.",
+				"wordcount": "Counts the number of characters, words, and liens int he text.",
+
+				"rot13": "Uses ROT13 encryption on the text by shifting every letter 13 letters forward in the alphabet.",
+				"backwards": "Displays all the input backwards."
+			},
+			"help": {
+				"about": "Read some information about Text Tools and grab a handy bookmarklet.",
+				"help": "Read some helpful FAQs to get acquainted with Text Tools.",
+				"email": "Email me any questions, comments, suggestions, or bug reports about this tool, with &quot;Text Tools&quot; in the subject of the email."
+			}
+		}
+	}
+}
