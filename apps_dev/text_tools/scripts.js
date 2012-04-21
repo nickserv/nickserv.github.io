@@ -12,7 +12,7 @@ var all_elements = ["titlebar", "toolbar", "case_panel", "find_panel", "sort_pan
 var hidden_elements = ["toolbar", "case_panel", "find_panel", "sort_panel", "list_panel", "other_panel", "misc_panel", "help_panel"];
 
 $(function(){
-//initialization
+	//initialization
 	$(".effects a:not(#help_panel)").click(function() {
 		clicked(this);
 	});
@@ -23,7 +23,7 @@ $(function(){
 	clicked($("#normal"));
 	panel("init");
 
-//start daemon scripts
+	//start daemon scripts
 	$("body").keypress(watchInputs());
 	$("a").focus(regainFocus());
 	$(".effect").click(function() {
@@ -38,7 +38,7 @@ $(function(){
 	});
 	$("img:not([alt])").attr("alt","");
 
-//click events
+	//click events
 	$("#outputToInput").click(function() {
 		outputToInput();
 	});
@@ -80,17 +80,25 @@ $(function(){
 		}
 	});
 
-//effect switching
+	//effect switching
 	$(".effect").click(function() {
 		console.log("effect switcher activated");
 		var new_effect = $(this).attr("data-effect");
 		toEffect(new_effect);
 	});
 
-//panel toggling
+	//panel toggling
 	$(".panel_toggle").mousedown(function() {
 		var to_toggle = $(this).attr("data-toggle");
 		$("#"+to_toggle).toggle();
+	});
+
+	//toolbar toggling
+	$("#toolbar_button").click(function() {
+		$("#toolbar").toggle();
+	});
+	$("#toolbar_close").click(function() {
+		$("#toolbar").hide();
 	});
 });
 
