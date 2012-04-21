@@ -13,28 +13,32 @@
 	<link rel="apple-touch-icon" href="icons/logo.png">
 </head>
 
-<body><table id="ui">
+<body>
 <!--title bar-->
-<tr id="titlebar">
-	<th title="Enter text to be edited here.">Input</th>
-	<th title="Change the effect, which changes how your input will be edited.">Effects</th>
-	<th title="The outcome of your input in the current effect will be displayed here.">Output</th>
+<div class="row-fluid" id="titlebar">
+	<div class="span5" title="Enter text to be edited here.">Input</div>
+	<div class="span2" title="Change the effect, which changes how your input will be edited.">Effects</div>
+	<div class="span5" title="The outcome of your input in the current effect will be displayed here.">Output</div>
+</div>
 <!--tool bar-->
-</tr><tr id="toolbar">
-	<th colspan="3">
+<div class="row-fluid" id="toolbar">
+	<div class="span12">
 		Limiter: <a>All</a> <span class="separator">|</span>
 		Sections: <a id="toolbar_collapse_button">Collapse</a> <a id="toolbar_expand_button">Expand</a> <span class="separator">|</span>
 		Top Bar: <a id="toolbar_titlebar_toggle">Toggle</a> <span class="separator">|</span>
 		Spell Check: <a>Toggle</a> <span class="separator">|</span>
 		Autocomplete: <a>Toggle</a> <span class="separator">|</span>
 		<a id="toolbar_close" style="position:absolute;right:0;">X</a>
-	</th>
+	</div>
+</div>
 <!--main ui space-->
-</tr><tr>
+<div class="row-fluid" id="mainui">
 	<!--text before-->
-	<td class="text_field_container"><textarea id="text_before"></textarea></td>
+	<div class="span5">
+		<textarea id="text_before"></textarea>
+	</div>
 	<!--effects panels-->
-	<td>
+	<div class="span2" id="effects">
 		<p>
 			<a id="normal" class="effect">
 				<img src="icons/text.png"> Normal
@@ -47,7 +51,7 @@
 			</a>
 			<a id="toolbar_button" title="Toggles the advanced toolbar.">
 				<img src="icons/cog.png" height="14"> Toolbar
-			</a></div>
+			</a>
 		</p><p>
 			<div class="panel">Case</div>
 			<div id="case_panel">
@@ -140,10 +144,11 @@
 			</a>
 			</div>
 	</div>
-	</td>
 	<!--text after-->
-	<td class="text_field_container"><textarea id="text_after" readonly="readonly"></textarea></td>
-</tr></table>
+	<div class="span5">
+		<textarea id="text_after" readonly="readonly"></textarea>
+	</div>
+</div>
 
 <div class="modal hide" id="about_modal">
 	<div class="modal-header">
@@ -163,7 +168,6 @@
 		<a href="#" class="btn">Close</a>
 	</div>
 </div>
-
 
 <!-- scripts -->
 <script src="../../js/jquery-1.7.2.min.js"></script>
