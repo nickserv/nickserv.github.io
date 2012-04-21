@@ -1,6 +1,11 @@
 {
 	"data": {
 		"tooltips": {
+			"titlebar": {
+				"input": "Enter text to be edited here."
+				"effects": "Change the effect, which changes how your input will be edited."
+				"output": "The outcome of your input in the current effect will be displayed here."
+			},
 			"effects": {
 				"normal": "Outputs the original, unedited text.",
 

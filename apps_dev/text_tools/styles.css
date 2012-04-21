@@ -7,7 +7,8 @@ body
 #mainui {
 	height: 100%;
 }
-#mainui div {
+#mainui>div {
+	height:100% !important;
 }
 
 /*title bar*/
@@ -17,14 +18,18 @@ body
 	color: #fff;
 	font-size: 18px;
 	padding: 10px;
+	font-weight: bold;
 }
 
 /*text input*/
 #text_before, #text_after {
+	margin: 0;
+	padding: 0;
 	resize: none;
 	height: 100%;
 	width: 100%;
 	background-color: #dcdcdc;
+	height:100% !important;
 }
 
 /*effects*/
@@ -33,28 +38,35 @@ body
 	font-weight: bold;
 	text-align: center;
 }
-.panel {
-	color: #fff;
-}
-.panel {
-	background-color: #404040;
-	cursor: pointer;
-}
-.panel:hover {
-	background-color: #888;
-}
-.panel:active {
-	background-color: #000;
-}
-a {
+#effects a {
 	color: #dcdcdc;
 	cursor: pointer;
+	text-decoration: none;
+	font-size: 16px;
+}
+#effects a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 #effects a {
 	display: block;
 }
-a:active,.active {
-	color: #ff0;
+#effects a:active, #effects .active {
+	color: #00f;
+}
+.panel_toggle {
+	background-color: #404040;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.panel_toggle:hover {
+	background-color: #888;
+}
+.panel_toggle:active {
+	background-color: #000;
 }
 
 /*toolbar*/
@@ -70,11 +82,10 @@ a:active,.active {
 #toolbar th {
 	text-align: left;
 }
-.separator {
+#toolbar .separator {
 	font-weight: normal;
 	color: #bbb;
 }
-
 #titlebar div {
 	text-align: center;
 }

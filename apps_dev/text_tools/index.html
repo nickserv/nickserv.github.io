@@ -16,9 +16,9 @@
 <body>
 <!--title bar-->
 <div class="row-fluid" id="titlebar">
-	<div class="span5" title="Enter text to be edited here.">Input</div>
-	<div class="span2" title="Change the effect, which changes how your input will be edited.">Effects</div>
-	<div class="span5" title="The outcome of your input in the current effect will be displayed here.">Output</div>
+	<div class="span5">Input</div>
+	<div class="span2">Effects</div>
+	<div class="span5">Output</div>
 </div>
 <!--tool bar-->
 <div class="row-fluid" id="toolbar">
@@ -40,7 +40,7 @@
 	<!--effects panels-->
 	<div class="span2" id="effects">
 		<p>
-			<a id="normal" class="effect">
+			<a class="effect" data-effect="normal">
 				<img src="icons/text.png"> Normal
 			</a>
 			<a id="outputToInput" title="Sets the input text to whatever the output is currently displaying. Useful for using multiple effects on text.">
@@ -53,31 +53,31 @@
 				<img src="icons/cog.png" height="14"> Toolbar
 			</a>
 		</p><p>
-			<div class="panel">Case</div>
+			<div class="panel_toggle" data-toggle="case_panel">Case</div>
 			<div id="case_panel">
-			<a id="lowercase" class="effect">
+			<a class="effect" data-effect="lowercase">
 				<img src="icons/text_lowercase.png"> Lowercase
 			</a>
-			<a id="uppercase" class="effect">
+			<a class="effect" data-effect="uppercase">
 				<img src="icons/text_uppercase.png"> Uppercase
 			</a>
-			<a id="titlecase" class="effect">
+			<a class="effect" data-effect="titlecase">
 				<img src="icons/text_uppercase.png"> Title Case
 			</a>
-			<a id="htmllower" class="effect">
+			<a class="effect" data-effect="htmllower">
 				<img src="icons/html.png"> HTML Lower
 			</a>
-			<a id="htmlupper" class="effect">
+			<a class="effect" data-effect="htmlupper">
 				<img src="icons/html.png"> HTML Upper
 			</a>
 			</div>
 		</p><p>
-			<div class="panel">Find and Replace</div>
+			<div class="panel_toggle" data-toggle="find_panel">Find & Replace</div>
 			<div id="find_panel">
-			<span style="display:inline"><a id="find" class="effect">
+			<span style="display:inline"><a class="effect" data-effect="find">
 				<img src="icons/magnifier.png"> Find</a><span id="find_counter" style="color:black; font-weight:normal;"></span></span>
 				<textarea id="find_text" rows="2" style="width:100%" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}"></textarea><br>
-			<a id="replace" class="effect">
+			<a class="effect" data-effect="replace">
 				<img src="icons/text_replace.png"> Replace
 			</a>
 				<textarea id="replace_text" rows="2" style="width:100%" onfocus="toEffect('replace'); clicked(replace);"></textarea><br>
@@ -85,53 +85,53 @@
 				<!-- selectAll($("#list_start")) -->
 			</div>
 		</p><p>
-		<div class="panel">Sort</div>
+		<div class="panel_toggle" data-toggle="sort_panel">Sort</div>
 		<div id="sort_panel">
-		<a id="sortaz" class="effect">
+		<a class="effect" data-effect="sortaz">
 			<img src="icons/text_order_av.png"> Sort A-Z
 		</a>
-		<a id="sortza" class="effect">
+		<a class="effect" data-effect="sortza">
 			<img src="icons/text_order_va.png"> Sort Z-A
 		</a>
-		<a id="sortreverse" class="effect">
+		<a class="effect" data-effect="sortreverse">
 			<img src="icons/text_order_reverse.png"> Sort Reverse
 		</a>
-		<a id="sortrandom" class="effect">
+		<a class="effect" data-effect="sortrandom">
 			<img src="icons/text_order_reverse.png"> Sort Random
 		</a>
 		</div>
 	</p><p>
-		<div class="panel">Lists</div>
+		<div class="panel_toggle" data-toggle="list_panel">Lists</div>
 			<div id="list_panel">
-			<a id="list" class="effect" onfocus="selectAll($('#list_start'))" style="display:inline;">
+			<a class="effect" data-effect="list" onfocus="selectAll($('#list_start'))" style="display:inline;">
 				<img src="icons/text_list_bullets.png"> List </a><input type="checkbox" id="number_list" onfocus="toEffect('list'); clicked(list);" onclick="watchInputs(); selectAll($('#list_start'));"><div style="font-weight:normal;display:inline;color:black;" onclick="toggleCheck($('#number_list')); toEffect('list'); clicked(list); selectAll($('#list_start'));watchInputs();" title="Toggles numbered lists.">#</div>
 				<input type="text" id="list_start" style="width:100%" value="- " onfocus="toEffect('list'); clicked(list); selectAll($('#list_start'));"><br>
-			<a id="remove_list" class="effect" onfocus="selectAll($('#cutoff'))">
+			<a class="effect" data-effect="remove_list" onfocus="selectAll($('#cutoff'))">
 				<img src="icons/text_list_bullets.png"> List Remover</a>
 				<input type="text" id="cutoff" style="width:43%" value="3" onfocus="toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" onblur="if($('#cutoff').val()=='') {$('#cutoff').val(3)}" onKeyUp="numbersOnly(this)"> <input type="button" onclick="valueUp($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="+"><input type="button" onclick="valueDown($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="-">
 			</div>
 		</p><p>
-			<div class="panel">Other</div>
+			<div class="panel_toggle" data-toggle="other_panel">Other</div>
 			<div id="other_panel">
-			<a id="repeat" class="effect" onfocus="selectAll($('#repetitions'))">
+			<a class="effect" data-effect="repeat" onfocus="selectAll($('#repetitions'))">
 				<img src="icons/repeater.png"> Repeat</a>
 				<input type="text" id="repetitions" style="width:43%" value="1" onfocus="toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" onblur="if($('#repetitions').val()=='') {$('#repetitions').val(1)}" onKeyUp="numbersOnly(this)"> <span style="color:black"><input type="button" onclick="valueUp($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="+"><input type="button" onclick="valueDown($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="-"></span><br>
-			<a id="wordcount" class="effect">
+			<a class="effect" data-effect="wordcount">
 				<img src="icons/word_count.png"> Word Count
 			</a>
 			</div>
 		</p><p>
-			<div class="panel">Misc</div>
+			<div class="panel_toggle" data-toggle="misc_panel">Misc</div>
 			<div id="misc_panel">
-			<a id="rot13" class="effect">
+			<a class="effect" data-effect="rot13">
 				<img src="icons/rot13.png"> ROT13
 			</a>
-			<a id="backwards" class="effect">
+			<a class="effect" data-effect="backwards">
 				<img src="icons/arrow_left.png"> Backwards
 			</a>
 			</div>
 		</p><p>
-			<div class="panel">Help</div>
+			<div class="panel_toggle" data-toggle="help_panel">Help</div>
 			<div id="help_panel">
 			<a id="about" href="about.html" target="_blank">
 				<img src="icons/information.png"> About

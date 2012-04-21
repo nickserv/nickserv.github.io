@@ -30,9 +30,6 @@ $(function(){
 		clicked($(this));
 		toEffect($(this).attr("id"));
 	});
-	$(".panel").mousedown(function() {
-		$(".case_panel").toggle();
-	});
 	$("#text_before").focus(updateFocus($("#text_before")));
 	$("#text_before").ready($("#text_before").focus());
 	$("#text_after").focus(updateFocus($("#text_after")));
@@ -81,6 +78,19 @@ $(function(){
 			toEffect('find');
 			clicked(find);
 		}
+	});
+
+//effect switching
+	$(".effect").click(function() {
+		console.log("effect switcher activated");
+		var new_effect = $(this).attr("data-effect");
+		toEffect(new_effect);
+	});
+
+//panel toggling
+	$(".panel_toggle").mousedown(function() {
+		var to_toggle = $(this).attr("data-toggle");
+		$("#"+to_toggle).toggle();
 	});
 });
 
