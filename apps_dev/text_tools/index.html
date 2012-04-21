@@ -76,12 +76,12 @@
 			<div id="find_panel">
 			<span style="display:inline"><a class="effect" data-effect="find">
 				<img src="icons/magnifier.png"> Find</a><span id="find_counter" style="color:black; font-weight:normal;"></span></span>
-				<textarea id="find_text" rows="2" style="width:100%" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}"></textarea><br>
+				<textarea id="find_text" rows="2" style="width:100%"></textarea><br>
 			<a class="effect" data-effect="replace">
 				<img src="icons/text_replace.png"> Replace
 			</a>
-				<textarea id="replace_text" rows="2" style="width:100%" onfocus="toEffect('replace'); clicked(replace);"></textarea><br>
-				<input type="checkbox" id="regexp_toggle" title="Toggles regular expression search."><div style="font-weight:normal;display:inline;color:#DCDCDC;" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs();toggleCheck($('#regexp_toggle'));" title="Toggles regular expression search.">RegExp</div>
+				<textarea id="replace_text" rows="2" style="width:100%"></textarea><br>
+				<input type="checkbox" id="regexp_toggle" title="Toggles regular expression search."><span id="regexp_toggle_label" style="font-weight:normal;color:#DCDCDC;" title="Toggles regular expression search.">RegExp</span>
 				<!-- selectAll($("#list_start")) -->
 			</div>
 		</p><p>
@@ -103,19 +103,19 @@
 	</p><p>
 		<div class="panel_toggle" data-toggle="list_panel">Lists</div>
 			<div id="list_panel">
-			<a class="effect" data-effect="list" onfocus="selectAll($('#list_start'))" style="display:inline;">
-				<img src="icons/text_list_bullets.png"> List </a><input type="checkbox" id="number_list" onfocus="toEffect('list'); clicked(list);" onclick="watchInputs(); selectAll($('#list_start'));"><div style="font-weight:normal;display:inline;color:black;" onclick="toggleCheck($('#number_list')); toEffect('list'); clicked(list); selectAll($('#list_start'));watchInputs();" title="Toggles numbered lists.">#</div>
-				<input type="text" id="list_start" style="width:100%" value="- " onfocus="toEffect('list'); clicked(list); selectAll($('#list_start'));"><br>
-			<a class="effect" data-effect="remove_list" onfocus="selectAll($('#cutoff'))">
+			<a class="effect" data-effect="list" style="display:inline;">
+				<img src="icons/text_list_bullets.png"> List </a><input type="checkbox" id="number_list"><div id="number_list_label" style="font-weight:normal;display:inline;color:black;" title="Toggles numbered lists.">#</div>
+				<input type="text" id="list_start" style="width:100%" value="- "><br>
+			<a class="effect" data-effect="remove_list">
 				<img src="icons/text_list_bullets.png"> List Remover</a>
-				<input type="text" id="cutoff" style="width:43%" value="3" onfocus="toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" onblur="if($('#cutoff').val()=='') {$('#cutoff').val(3)}" onKeyUp="numbersOnly(this)"> <input type="button" onclick="valueUp($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="+"><input type="button" onclick="valueDown($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="-">
+				<input type="text" id="cutoff" style="width:43%" value="3"> <input type="button" id="cutoff_up" value="+"><input type="button" id="cutoff_down" value="-">
 			</div>
 		</p><p>
 			<div class="panel_toggle" data-toggle="other_panel">Other</div>
 			<div id="other_panel">
-			<a class="effect" data-effect="repeat" onfocus="selectAll($('#repetitions'))">
+			<a class="effect" data-effect="repeat">
 				<img src="icons/repeater.png"> Repeat</a>
-				<input type="text" id="repetitions" style="width:43%" value="1" onfocus="toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" onblur="if($('#repetitions').val()=='') {$('#repetitions').val(1)}" onKeyUp="numbersOnly(this)"> <span style="color:black"><input type="button" onclick="valueUp($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="+"><input type="button" onclick="valueDown($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="-"></span><br>
+				<input type="text" id="repetitions" style="width:43%" value="1"> <span style="color:black"><input type="button" value="+"><input type="button" value="-"></span><br>
 			<a class="effect" data-effect="wordcount">
 				<img src="icons/word_count.png"> Word Count
 			</a>

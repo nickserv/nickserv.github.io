@@ -79,6 +79,103 @@ $(function(){
 			clicked(find);
 		}
 	});
+	$("#regexp_toggle_label").click(function() {
+		watchInputs();toggleCheck($('#regexp_toggle'));
+	});
+	$("#regexp_toggle_label").focus(function() {
+		if(effect!='replace') {
+			toEffect('find');
+		};
+		clicked(find);
+	});
+	$("#number_list").click(function() {
+		watchInputs();
+		selectAll($('#list_start'));
+	});
+	$("#number_list").focus(function() {
+		toggleEffect('list');
+		clicked(list);
+	});
+	$("#number_list_label").click(function() {
+		toggleCheck($('#number_list'));
+		toEffect('list');
+		clicked(list);
+		selectAll($('#list_start'));
+		watchInputs();
+	});
+	$("#cutoff").focus(function() {
+		toEffect('remove_list');
+		clicked(remove_list);
+		selectAll($('#cutoff'));
+	});
+	$("#cutoff").blur(function() {
+		if($('#cutoff').val()=='') {
+			$('#cutoff').val(3);
+		};
+	});
+	$("#cutoff").keyup(function() {
+		numbersOnly(this);
+	});
+	$("#cutoff_up").click(function() {
+		valueUp($('#cutoff'));
+		toEffect('remove_list');
+		clicked(remove_list);
+		selectAll($('#cutoff'));
+	});
+	$("#cutoff_down").click(function() {
+		valueDown($('#cutoff'));
+		toEffect('remove_list');
+		clicked(remove_list);
+		selectAll($('#cutoff'));
+	});
+	$("#repetitions").focus(function() {
+		toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));
+	});
+	$("#repetitions").blur(function() {
+		if($('#repetitions').val()=='') {
+			$('#repetitions').val(1);
+		};
+	});
+	$("#repetitions").keyup(function() {
+		numbersOnly(this);
+	});
+	$("#repetitions_up").click(function() {
+		valueUp($('#repetitions'));
+		toEffect('repeat');
+		clicked(repeat);
+		selectAll($('#repetitions'));
+	});
+	$("#repetitions_down").click(function() {
+		valueDown($('#repetitions'));
+		toEffect('repeat');
+		clicked(repeat);
+		selectAll($('#repetitions'));
+	});
+
+	$("#find_text").focus(function() {
+		if(effect!='replace') {
+			toEffect('find');
+			clicked(find);
+		}
+	});
+	$("#replace_text").focus(function() {
+		toEffect('replace');
+		clicked(replace);
+	});
+	$(".effect[data-effect='list']").focus(function() {
+		selectAll($('#list_start'));
+	});
+	$("#list_start").focus(function() {
+		toEffect('list');
+		clicked(list);
+		selectAll($('#list_start'));
+	});
+	$(".effect[data-effect='remove_list']").focus(function() {
+		selectAll($('#cutoff'));
+	});
+	$(".effect[data-effect='repeat']").focus(function() {
+		selectAll($('#repetitions'));
+	});
 
 	//effect switching
 	$(".effect").click(function() {
