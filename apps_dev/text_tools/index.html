@@ -22,11 +22,11 @@
 <!--tool bar-->
 </tr><tr id="toolbar">
 	<th colspan="3">
-		Limiter:&nbsp;<a>All</a>&nbsp;<span class="separator">|</span>
-		Sections:&nbsp;<a id="toolbar_collapse_button">Collapse</a>&nbsp;<a id="toolbar_expand_button">Expand</a>&nbsp;<span class="separator">|</span>
-		Top&nbsp;Bar:&nbsp;<a id="toolbar_titlebar_toggle">Toggle</a>&nbsp;<span class="separator">|</span>
-		Spell&nbsp;Check:&nbsp;<a>Toggle</a>&nbsp;<span class="separator">|</span>
-		Autocomplete:&nbsp;<a>Toggle</a>&nbsp;<span class="separator">|</span>
+		Limiter: <a>All</a> <span class="separator">|</span>
+		Sections: <a id="toolbar_collapse_button">Collapse</a> <a id="toolbar_expand_button">Expand</a> <span class="separator">|</span>
+		Top Bar: <a id="toolbar_titlebar_toggle">Toggle</a> <span class="separator">|</span>
+		Spell Check: <a>Toggle</a> <span class="separator">|</span>
+		Autocomplete: <a>Toggle</a> <span class="separator">|</span>
 		<a id="toolbar_close" style="position:absolute;right:0;">X</a>
 	</th>
 <!--main ui space-->
@@ -35,112 +35,111 @@
 	<td class="text_field_container"><textarea id="text_before"></textarea></td>
 	<!--effects panels-->
 	<td>
-		<table class="effects">
-		<tr><td>
+		<p>
 			<a id="normal" class="effect">
-				<img src="icons/text.png">&nbsp;Normal
+				<img src="icons/text.png"> Normal
 			</a>
 			<a id="outputToInput" title="Sets the input text to whatever the output is currently displaying. Useful for using multiple effects on text.">
-				<img src="icons/switch.png">&nbsp;Save&nbsp;Effect
+				<img src="icons/switch.png"> Save Effect
 			</a>
 			<a id="clear" title="Clears all the input text and sets all effects to their defaults.">
-				<img src="icons/clear.png" height="14">&nbsp;Clear
+				<img src="icons/clear.png" height="14"> Clear
 			</a>
 			<a id="toolbar_button" title="Toggles the advanced toolbar.">
-				<img src="icons/cog.png" height="14">&nbsp;Toolbar
+				<img src="icons/cog.png" height="14"> Toolbar
 			</a></div>
-		</td></tr><tr><td>
+		</p><p>
 			<div class="panel">Case</div>
 			<div id="case_panel">
 			<a id="lowercase" class="effect">
-				<img src="icons/text_lowercase.png">&nbsp;Lowercase
+				<img src="icons/text_lowercase.png"> Lowercase
 			</a>
 			<a id="uppercase" class="effect">
-				<img src="icons/text_uppercase.png">&nbsp;Uppercase
+				<img src="icons/text_uppercase.png"> Uppercase
 			</a>
 			<a id="titlecase" class="effect">
-				<img src="icons/text_uppercase.png">&nbsp;Title&nbsp;Case
+				<img src="icons/text_uppercase.png"> Title Case
 			</a>
 			<a id="htmllower" class="effect">
-				<img src="icons/html.png">&nbsp;HTML&nbsp;Lower
+				<img src="icons/html.png"> HTML Lower
 			</a>
 			<a id="htmlupper" class="effect">
-				<img src="icons/html.png">&nbsp;HTML&nbsp;Upper
+				<img src="icons/html.png"> HTML Upper
 			</a>
 			</div>
-		</td></tr><tr><td>
-			<div class="panel">Find&nbsp;&nbsp;Replace</div>
+		</p><p>
+			<div class="panel">Find and Replace</div>
 			<div id="find_panel">
 			<span style="display:inline"><a id="find" class="effect">
-				<img src="icons/magnifier.png">&nbsp;Find</a><span id="find_counter" style="color:black; font-weight:normal;"></span></span>
+				<img src="icons/magnifier.png"> Find</a><span id="find_counter" style="color:black; font-weight:normal;"></span></span>
 				<textarea id="find_text" rows="2" style="width:100%" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}"></textarea><br>
 			<a id="replace" class="effect">
-				<img src="icons/text_replace.png">&nbsp;Replace
+				<img src="icons/text_replace.png"> Replace
 			</a>
 				<textarea id="replace_text" rows="2" style="width:100%" onfocus="toEffect('replace'); clicked(replace);"></textarea><br>
 				<input type="checkbox" id="regexp_toggle" title="Toggles regular expression search."><div style="font-weight:normal;display:inline;color:#DCDCDC;" onfocus="if(effect!='replace') {toEffect('find'); clicked(find);}" onclick="watchInputs();toggleCheck($('#regexp_toggle'));" title="Toggles regular expression search.">RegExp</div>
 				<!-- selectAll($("#list_start")) -->
 			</div>
-		</td></tr><tr><td>
+		</p><p>
 		<div class="panel">Sort</div>
 		<div id="sort_panel">
 		<a id="sortaz" class="effect">
-			<img src="icons/text_order_av.png">&nbsp;Sort&nbsp;A-Z
+			<img src="icons/text_order_av.png"> Sort A-Z
 		</a>
 		<a id="sortza" class="effect">
-			<img src="icons/text_order_va.png">&nbsp;Sort&nbsp;Z-A
+			<img src="icons/text_order_va.png"> Sort Z-A
 		</a>
 		<a id="sortreverse" class="effect">
-			<img src="icons/text_order_reverse.png">&nbsp;Sort&nbsp;Reverse
+			<img src="icons/text_order_reverse.png"> Sort Reverse
 		</a>
 		<a id="sortrandom" class="effect">
-			<img src="icons/text_order_reverse.png">&nbsp;Sort&nbsp;Random
+			<img src="icons/text_order_reverse.png"> Sort Random
 		</a>
 		</div>
-	</td></tr><tr><td>
+	</p><p>
 		<div class="panel">Lists</div>
 			<div id="list_panel">
 			<a id="list" class="effect" onfocus="selectAll($('#list_start'))" style="display:inline;">
-				<img src="icons/text_list_bullets.png">&nbsp;List&nbsp;</a><input type="checkbox" id="number_list" onfocus="toEffect('list'); clicked(list);" onclick="watchInputs(); selectAll($('#list_start'));"><div style="font-weight:normal;display:inline;color:black;" onclick="toggleCheck($('#number_list')); toEffect('list'); clicked(list); selectAll($('#list_start'));watchInputs();" title="Toggles numbered lists.">#</div>
+				<img src="icons/text_list_bullets.png"> List </a><input type="checkbox" id="number_list" onfocus="toEffect('list'); clicked(list);" onclick="watchInputs(); selectAll($('#list_start'));"><div style="font-weight:normal;display:inline;color:black;" onclick="toggleCheck($('#number_list')); toEffect('list'); clicked(list); selectAll($('#list_start'));watchInputs();" title="Toggles numbered lists.">#</div>
 				<input type="text" id="list_start" style="width:100%" value="- " onfocus="toEffect('list'); clicked(list); selectAll($('#list_start'));"><br>
 			<a id="remove_list" class="effect" onfocus="selectAll($('#cutoff'))">
-				<img src="icons/text_list_bullets.png">&nbsp;List&nbsp;Remover</a>
+				<img src="icons/text_list_bullets.png"> List Remover</a>
 				<input type="text" id="cutoff" style="width:43%" value="3" onfocus="toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" onblur="if($('#cutoff').val()=='') {$('#cutoff').val(3)}" onKeyUp="numbersOnly(this)"> <input type="button" onclick="valueUp($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="+"><input type="button" onclick="valueDown($('#cutoff')); toEffect('remove_list'); clicked(remove_list); selectAll($('#cutoff'));" value="-">
 			</div>
-		</td></tr><tr><td>
+		</p><p>
 			<div class="panel">Other</div>
 			<div id="other_panel">
 			<a id="repeat" class="effect" onfocus="selectAll($('#repetitions'))">
-				<img src="icons/repeater.png">&nbsp;Repeat</a>
+				<img src="icons/repeater.png"> Repeat</a>
 				<input type="text" id="repetitions" style="width:43%" value="1" onfocus="toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" onblur="if($('#repetitions').val()=='') {$('#repetitions').val(1)}" onKeyUp="numbersOnly(this)"> <span style="color:black"><input type="button" onclick="valueUp($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="+"><input type="button" onclick="valueDown($('#repetitions')); toEffect('repeat'); clicked(repeat); selectAll($('#repetitions'));" value="-"></span><br>
 			<a id="wordcount" class="effect">
-				<img src="icons/word_count.png">&nbsp;Word&nbsp;Count
+				<img src="icons/word_count.png"> Word Count
 			</a>
 			</div>
-		</td></tr><tr><td>
+		</p><p>
 			<div class="panel">Misc</div>
 			<div id="misc_panel">
 			<a id="rot13" class="effect">
-				<img src="icons/rot13.png">&nbsp;ROT13
+				<img src="icons/rot13.png"> ROT13
 			</a>
 			<a id="backwards" class="effect">
-				<img src="icons/arrow_left.png">&nbsp;Backwards
+				<img src="icons/arrow_left.png"> Backwards
 			</a>
 			</div>
-		</td></tr><tr><td>
+		</p><p>
 			<div class="panel">Help</div>
 			<div id="help_panel">
 			<a id="about" href="about.html" target="_blank">
-				<img src="icons/information.png">&nbsp;About
+				<img src="icons/information.png"> About
 			</a>
 			<a id="help" href="help.html" target="_blank">
-				<img src="icons/help.png">&nbsp;Help
+				<img src="icons/help.png"> Help
 			</a>
 			<a id="email" href="http://scr.im/nicolasm" target="_blank" class="info">
-				<img src="icons/email.png">&nbsp;Feedback
+				<img src="icons/email.png"> Feedback
 			</a>
 			</div>
-		</table>
+	</div>
 	</td>
 	<!--text after-->
 	<td class="text_field_container"><textarea id="text_after" readonly="readonly"></textarea></td>
@@ -156,7 +155,7 @@
 		The free text manipulation tool.<br>
 		<a href="changelog.txt" target="_blank">Changelog</a><br><br>
 
-		Programmed and Designed by <a href="http://thenickperson.zxq.net" target="_blank">Nicolas&nbsp;McCurdy</a><br>
+		Programmed and Designed by <a href="http://thenickperson.zxq.net" target="_blank">Nicolas McCurdy</a><br>
 		Icons by <a href="http://famfamfam.com/lab/icons/silk/" target="_blank">famfamfam</a><br>
 		(extra script credits in source code)<br><br>
 	</div>
