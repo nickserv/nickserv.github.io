@@ -36,7 +36,6 @@ body
 #effects
 {
 	font-weight: bold;
-	text-align: center;
 }
 #effects a {
 	color: #dcdcdc;
@@ -54,18 +53,19 @@ body
 #effects a:active, #effects .active {
 	color: #00f;
 }
-.panel_toggle {
+.panel_title {
 	background-color: #404040;
 	color: #fff;
 	cursor: pointer;
 	padding: 5px;
 	font-size: 16px;
 	font-weight: bold;
+	text-align: center;
 }
-.panel_toggle:hover {
+.panel_title:hover {
 	background-color: #888;
 }
-.panel_toggle:active {
+.panel_title:active {
 	background-color: #000;
 }
 

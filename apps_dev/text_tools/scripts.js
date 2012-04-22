@@ -185,7 +185,7 @@ $(function(){
 	});
 
 	//panel toggling
-	$(".panel_toggle").mousedown(function() {
+	$(".panel_title").mousedown(function() {
 		var to_toggle = $(this).attr("data-toggle");
 		$("#"+to_toggle).toggle();
 	});
