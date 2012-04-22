@@ -29,7 +29,7 @@ body
 	height: 100%;
 	width: 100%;
 	background-color: #dcdcdc;
-	height:100% !important;
+	height: 500px;
 }
 
 /*effects*/
@@ -67,6 +67,12 @@ body
 }
 .panel_title:active {
 	background-color: #000;
+}
+.panel_title .left {
+	float: left;
+}
+.panel_title .right {
+	float: right;
 }
 
 /*toolbar*/

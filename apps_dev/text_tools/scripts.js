@@ -187,15 +187,15 @@ $(function(){
 	//panel toggling
 	$(".panel_title").mousedown(function() {
 		var to_toggle = $(this).attr("data-toggle");
-		$("#"+to_toggle).toggle();
+		$("#"+to_toggle).slideToggle();
 	});
 
 	//toolbar toggling
 	$("#toolbar_button").click(function() {
-		$("#toolbar").toggle();
+		$("#toolbar").slideToggle();
 	});
 	$("#toolbar_close").click(function() {
-		$("#toolbar").hide();
+		$("#toolbar").slideUp();
 	});
 });
 
@@ -259,11 +259,11 @@ function convert() {
 	
 	if($("find_text").val() != "") {
 		if($("#regexp_toggle").attr("checked", false)) {
-			find_count = (watched_input.split($("#find_text").val()).length-1);
+			find_count = watched_input.split($("#find_text").val()).length-1;
 			$("#find_counter").html(" ("+find_count+")");
 		}
 		else {
-			find_count = (watched_input.split(new RegExp($("#find_text").val(), "gi")).length-1);
+			find_count = watched_input.split(new RegExp($("#find_text").val(), "gi")).length-1;
 			$("#find_counter").html(" ("+find_count+")");
 		}
 	}
