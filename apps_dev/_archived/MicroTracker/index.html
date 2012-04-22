@@ -1,0 +1,47 @@
+<head>
+<title>MicroTracker</title>
+<link rel="shortcut icon" href="favicon.ico">
+<style type="text/css">
+body {background-color: black;}
+.tracker_pad {width: 500px; height: 500px; background-color: #666666;}
+.tracker_pad td {background-color: black;}
+.track_bar {height: 50px;}
+.color_bar {height: 50px;}
+.color_bar, td {font-size: 12px; height: 40px; width: 40px; text-align: center;}
+</style>
+<script type="text/javascript">
+var tracker_1 = ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"]
+function toggle_color(el)
+{
+	if(tracker_1[el.substring(1)-1]==0)
+	{
+		tracker_1[el.substring(1)-1]=1
+		document.getElementById(el).style.backgroundColor = "white"
+	}
+	else
+	{
+		tracker_1[el.substring(1)-1]=0
+		document.getElementById(el).style.backgroundColor = "black"
+	}
+}
+</script>
+</head>
+
+<body><div align="center">
+<!--<audio autoplay> 
+  <source src="alarm.mp3">
+  <source src="alarm.ogg">
+</audio>-->
+<div id="track_bar">
+
+</div>
+<table class="tracker_pad" border="1">
+	<tr><td id="a1" onclick="toggle_color(this.id)"></td><td id="a2" onclick="toggle_color(this.id)"></td><td id="a3" onclick="toggle_color(this.id)"></td><td id="a4" onclick="toggle_color(this.id)"></td></tr>
+	<tr><td id="a5" onclick="toggle_color(this.id)"></td><td id="a6" onclick="toggle_color(this.id)"></td><td id="a7" onclick="toggle_color(this.id)"></td><td id="a8" onclick="toggle_color(this.id)"></td></tr>
+	<tr><td id="a9" onclick="toggle_color(this.id)"></td><td id="a10" onclick="toggle_color(this.id)"></td><td id="a11" onclick="toggle_color(this.id)"></td><td id="a12" onclick="toggle_color(this.id)"></td></tr>
+	<tr><td id="a13" onclick="toggle_color(this.id)"></td><td id="a14" onclick="toggle_color(this.id)"></td><td id="a15" onclick="toggle_color(this.id)"></td><td id="a16" onclick="toggle_color(this.id)"></td></tr>
+</table><br>
+<table id="color_bar"><tr>
+	<td style="background-color:#ff0000;">1</td><td style="background-color:#fbff00;">2</td><td style="background-color:#3400FF;">3</td><td style="background-color:#00ff00;">4</td><td style="background-color:#ff00ff;">5</td><td style="background-color:#00ffff;">6</td><td style="background-color:#ff9600;">7</td><td style="background-color:#999999;">8</td><td style="background-color:#ffffff;">9</td>
+</tr></table>
+<div align="center"></body>

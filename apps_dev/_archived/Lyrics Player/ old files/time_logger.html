@@ -1,0 +1,88 @@
+<head>
+<title>Time Logger</title>
+<link rel="shortcut icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/iphone_icon.png">
+<script type="text/javascript">
+// REMEMBER TO CLEAR ARRAYS
+var count = 0
+var counting = false
+var timer
+var timeArray = new Array
+
+function startScripts()
+{
+	document.input.timerbox.value = count
+	clearLog()
+}
+function startTimer()
+{
+	if(counting==false)
+	{
+		counting = true
+		timer = setInterval("updateTimer()",100)
+	}
+}
+function updateTimer()
+{
+	count = ++count
+	document.input.timerbox.value = count/10
+}
+function pauseTimer()
+{
+	if(counting==true)
+	{
+		counting = false
+		clearInterval(timer)
+	}
+}
+function resetTimer()
+{
+	count = 0
+	document.input.timerbox.value = 0
+}
+
+function addLog()
+{
+	document.input.log.value = document.input.log.value+count/10+"\n"
+}
+function clearLog()
+{
+	document.input.log.value = ""
+}
+function playLog()
+{
+	writeArray()
+	document.input.playback.value = 0
+	setTimeout("document.input.playback.value = 1", timeArray[0])
+}
+function writeArray()
+{
+	timeArray = document.input.log.value.split(" ")
+}
+</script>
+</head>
+
+<body onload="startScripts()"><div align="center"><form name="input">
+<table>
+	<tr><td align="center">
+		<input type="text" name="timerbox">
+	</td></tr>
+	<tr><td align="center">
+		<table border="1"><tr>
+			<td><a href="javascript:startTimer()">Start</a> <a href="javascript:pauseTimer()">Pause</a> <a href="javascript:resetTimer()">Reset</a></td>
+			<td><a href="javascript:addLog()">Log</a> <a href="javascript:clearLog()">Clear</a></td>
+		</table>
+	</td></tr>
+	<tr><td align="center">
+		<textarea name="log" rows="30" cols="100" readonly="readonly"></textarea>
+	</td></tr>
+	<tr><td align="center">
+		<input type="text" name="playback">
+	</td></tr>
+	<tr><td align="center">
+		<table border="1"><tr>
+			<td><a href="javascript:playLog()">Start</a></td>
+		</tr></table>
+	</td></tr>
+</table>
+</form></div></body>

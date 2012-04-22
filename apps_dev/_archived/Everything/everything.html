@@ -1,0 +1,62 @@
+<head>
+<title>Everything</title>
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript">
+function search()
+{
+	if(document.search.list.value == "Web")
+		{}
+	if(document.search.list.value == "In-Site")
+		{}
+	if(document.search.list.value == "Information")
+		{}
+	if(document.search.list.value == "People")
+		{}
+	if(document.search.list.value == "Places")
+		{}
+	if(document.search.list.value == "Music")
+		{}
+}
+/*
+function Google(query,target)
+	{target.location = "http://www.google.com/#&q="+query}
+function WikipediaArticle(query,target)
+	{target.location = "http://en.wikipedia.org/wiki/"+query}
+function WikipediaSearch(query,target)
+	{target.location = "http://en.wikipedia.org/w/index.php?title=Special%3ASearch&search="+query+"&fulltext=Search"}
+function Facebook(query,target)
+	{target.location = "http://www.facebook.com/"+query}
+function Myspace(query,target)
+	{target.location = "http://www.myspace.com/"+query}
+function Twitter(query,target)
+	{target.location = "http://twitter.com/"+query}
+function Formspring(query,target)
+	{target.location = "http://www.formspring.me/"+query}
+function Grooveshark(query,target)
+	{target.location = "http://listen.grooveshark.com/#/search/songs/?query="+query}
+*/
+</script>
+</head>
+
+<body onload="document.search.query.focus()">
+<div align="center"><form name="search" method="post" action="javascript:search()">
+	
+	<h1 style="font-family:Arial;">Everything</h1>
+	
+	<input type="text" name="query" size="50">
+	
+	<select name="list">
+	  <option>Web</option>
+	  <option>In-Site</option>
+	  <option>Information</option>
+	  <option>People</option>
+	  <option>Places</option>
+	  <option>Music</option>
+	</select>
+	
+	<input type="submit" value="Search!">
+	
+	<br><br>Everything is under construction.
+	
+</form></div>
+</body>

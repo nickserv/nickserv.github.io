@@ -1,0 +1,46 @@
+<head>
+<title>Lyrics Formatter</title>
+<link rel="shortcut icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/iphone_icon.png">
+<script type="text/javascript">
+// REMEMBER TO CLEAR ARRAYS
+var lyrics
+var new_lyrics
+var lyricsArray = new Array()
+var mode = 'normal'
+
+function convert()
+{
+	lyrics = document.input.lyrics_before.value
+	new_lyrics = lyrics
+	new_lyrics = new_lyrics.replace(new RegExp(" ", "gi"),"\n")
+	new_lyrics = new_lyrics.replace(new RegExp("\n\n", "gi"),"\n")
+	new_lyrics = new_lyrics.replace(new RegExp("\n\n", "gi"),"\n")
+	document.input.lyrics_after.value = new_lyrics
+}
+
+function detectChange()
+{
+	new_lyrics = document.input.lyrics_before.value
+	if(new_lyrics != lyrics)
+	{
+		convert()
+	}
+}
+
+function writeArray()
+{
+	lyricsArray = document.input.lyrics_after.value.split(" ")
+}
+</script>
+</head>
+
+<body onload="setInterval('detectChange()',10)">
+<div align="center"><form name="input">
+<table border="1">
+<tr>
+	<td><textarea name="lyrics_before" rows="40" cols="50"></textarea></td>
+	<td><textarea name="lyrics_after"  rows="40" cols="50" readonly="readonly"></textarea></td>
+</tr>
+</table>
+</form></div></body>

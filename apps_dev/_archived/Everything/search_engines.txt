@@ -1,0 +1,8 @@
+Google: http://www.google.com/#&q=QUERY
+Wikipedia article: http://en.wikipedia.org/wiki/QUERY
+Wikipedia search: http://en.wikipedia.org/w/index.php?title=Special%3ASearch&search=QUERY&fulltext=Search
+Facebook username: http://www.facebook.com/QUERY
+Myspace username: http://www.myspace.com/QUERY
+Twitter username: http://twitter.com/QUERY
+Formspring username: http://www.formspring.me/QUERY
+Grooveshark: http://listen.grooveshark.com/#/search/songs/?query=QUERY

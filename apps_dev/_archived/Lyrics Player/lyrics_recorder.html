@@ -1,0 +1,37 @@
+<head>
+<title>Lyrics Recorder 0.1</title>
+<link rel="shortcut icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/iphone_icon.png">
+<script type="text/javascript" src="lyrics_recorder.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="startScripts();document.input.lyrics_before.focus();"><div align="center"><form name="input">
+<table border="1" height="99%">
+<tr>
+	<th colspan="2" style="font-size:30px;">Lyrics Recorder 0.1</th>
+</tr>
+<tr>
+	<th><a href="javascript:convert()">Convert</a></th>
+	<th>Record</th>
+</tr>
+<tr height="100%">
+	<td>
+		<textarea name="lyrics_before" cols="30" style="height:100%;"></textarea>
+		<textarea name="lyrics_after" cols="15" style="height:100%;" readonly="readonly" onclick="document.input.lyrics_after.focus();document.input.lyrics_after.select()"></textarea>
+	</td>
+	<td align="center">
+		<input type="text" name="timerbox" size="23" readonly="readonly" onclick="document.input.timerbox.focus();document.input.timerbox.select()">
+		<table width="100%"><tr>
+			<td align="left"><b>Timer</b></td><td align="right"><a href="javascript:startTimer()">Start</a> <a href="javascript:resetTimer()">Stop</a> <!--<a href="javascript:pauseTimer()">Pause</a>--></td>
+		</tr><tr>
+			<td align="left"><b>Recorder</b></td><td align="right"><a href="javascript:addLog()">Log</a> <a href="javascript:clearLog()">Clear</a></td>
+		</table>
+		<textarea name="log" rows="35" cols="20" style="height:88%;" readonly="readonly" onclick="document.input.log.focus();document.input.log.select()"></textarea>
+	</td>
+</tr>
+<tr>
+	<th colspan="2"><a href="index.html">Back to Home</a></th>
+</tr>
+</table>
+</form></div></body>

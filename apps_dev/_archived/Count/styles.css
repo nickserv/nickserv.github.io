@@ -1,0 +1,26 @@
+body
+{
+	font-family: Arial;
+	color: #DDDDDD;
+	background-color: #222222;
+}
+a {color: #FF0;}
+
+#title
+{
+	font-size: 36px;
+	font-weight: bold;
+}
+#time
+{
+	font-size: 36px;
+}
+#tools
+{
+	font-size: 18px;
+}
+
+#counter_table {border-collapse: collapse; width:600px; text-align: center;}
+#counter_table th {font-size: 18px; width: 200px;}
+#counter_table table, tr, td, th {border: 1px solid white;}
+#counters td {vertical-align: top;}

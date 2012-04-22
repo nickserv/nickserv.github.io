@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<title>Webedit</title>
+<!-- CODEMIRROR -->
+<!-- core -->
+	<script src="cm/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="cm/lib/codemirror.css">
+<!-- modes -->
+	<script src="cm/mode/clike/clike.js"></script>
+	<script src="cm/mode/css/css.js"></script>
+	<script src="cm/mode/diff/diff.js"></script>
+	<script src="cm/mode/haskell/haskell.js"></script>
+	<script src="cm/mode/htmlmixed/htmlmixed.js"></script>
+	<script src="cm/mode/javascript/javascript.js"></script>
+	<script src="cm/mode/lua/lua.js"></script>
+	<script src="cm/mode/php/php.js"></script>
+	<script src="cm/mode/plsql/plsql.js"></script>
+	<script src="cm/mode/python/python.js"></script>
+	<script src="cm/mode/rst/rst.js"></script>
+	<script src="cm/mode/scheme/scheme.js"></script>
+	<script src="cm/mode/smalltalk/smalltalk.js"></script>
+	<script src="cm/mode/stex/stex.js"></script>
+	<script src="cm/mode/xml/xml.js"></script>
+	<script src="cm/mode/yaml/yaml.js"></script>
+<!-- themes -->
+	<link rel="stylesheet" href="cm/theme/default.css">
+	<link rel="stylesheet" href="cm/theme/elegant.css">
+	<link rel="stylesheet" href="cm/theme/neat.css">
+	<link rel="stylesheet" href="cm/theme/night.css">
+<!-- WEBEDIT -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+<div id="toolbar">
+	<span id="title">&nbsp;WebEdit</span>
+	<select onchange="selectTheme(this)" id="choose_theme">
+    <option selected>Default</option>
+    <option>Elegant</option>
+    <option>Neat</option>
+    <option>Night</option>
+  </select>
+	<select onchange="selectMode(this)" id="choose_mode">
+    <option>CLike</option>
+    <option>CSS</option>
+    <option>Diff</option>
+    <option>Haskell</option>
+    <option selected>HTML Mixed</option>
+    <option>JavaScript</option>
+    <option>Lau</option>
+    <option>PHP</option>
+    <option>PlSql</option>
+    <option>Python</option>
+    <option>RST</option>
+    <option>Scheme</option>
+    <option>Smalltalk</option>
+    <option>sTeX</option>
+    <option>XML</option>
+    <option>YAML</option>
+  </select>
+  <button>Save</button>
+  <button>Load</button>
+</div>
+<textarea id="editor"></textarea>
+</body>

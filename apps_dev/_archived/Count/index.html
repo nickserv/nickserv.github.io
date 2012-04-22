@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<title>Count</title>
+<link rel="shortcut icon" href="icons/favicon.ico">
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!--<script type="text/javascript" src="qtip.js"></script>
+<link rel="stylesheet" type="text/css" href="qtip.css">-->
+</head>
+
+<body><div style="text-align:center;">
+<div id="title">Count</div>
+<div id="time"></div>
+<div id="tools"><a href="javascript:options()">Options</a> <a href="javascript:about()">About</a> <a href="javascript:calc()">Calc</a></div><br>
+
+<table id="counter_table" align="center">
+<tr>
+	<th>&uarr; Stopwatches</th>
+	<th>&darr; Countdowns</th>
+	<th>! Alarms</th>
+    </tr>
+<tr id="counters">
+	<td>
+		<!--
+		<form name="stopwatch">
+		<table border="0" width="100%">
+		<tr>
+			<td align="center" colspan="2"><input type="text" name="title" size="12" value="Stopwatch 1"></td>
+		</tr><tr>
+			<td align="left"><input type="text" name="counter" size="12" readonly="readonly" onclick="document.stopwatch.counter.focus();document.stopwatch.counter.select();"></td>
+			<td align="right"><a href="javascript:swToggle()"><img src="icons/play_long.png" title="Start/Pause" height="18" border="0" id="toggle_icon" onclick="togglePlayIcon()"></a> <a href="javascript:swReset()"><img src="icons/stop.png" title="Stop" height="18" border="0"></a> <a href="javascript:toggleLog()" title="Toggle Time Log"><img src="icons/log.png" height="18" border="0"></a> </td>
+		</tr><div id="log_panel"><tr id="log_row_1">
+			<td align="left"><b>Log</b></td>
+			<td align="right"><a href="javascript:swLogAdd()" title="Add to Log"><img src="icons/add.png" height="18" border="0"></a> <a href="javascript:swLogClear()"><img src="icons/delete.png" title="Clear Log" height="18" border="0"></a></td>
+		</tr></div><tr id="log_row_2">
+			<td colspan="2"><textarea name="log" rows="5" cols="19" readonly="readonly" onclick="document.stopwatch.log.focus();document.stopwatch.log.select()"></textarea></td>
+		</tr>
+		</table>
+		</form>
+		-->
+	</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+
+<script type="text/javascript">
+//document.stopwatch.counter.value='0.000'
+//swDisplay()
+//toggleLog()
+showTime()
+</script>
+</div></body>

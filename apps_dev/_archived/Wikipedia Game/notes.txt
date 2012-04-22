@@ -1,0 +1,4 @@
+English main: http://en.wikipedia.org
+English (simple) main: http://simple.wikipedia.org
+English random: http://en.wikipedia.org/wiki/special:random
+English (simple) random: http://simple.wikipedia.org/wiki/special:random
