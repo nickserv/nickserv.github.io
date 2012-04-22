@@ -174,14 +174,32 @@ $(function(){
 	$(".panel_title").click(function() {
 		var to_toggle = $(this).attr("data-toggle");
 		$("#"+to_toggle).slideToggle();
+
+		if($(this).find(".right").hasClass("icon-plus-sign")) {
+			$(this).find(".right").removeClass("icon-plus-sign");
+			$(this).find(".right").addClass("icon-minus-sign");
+		}
+		else if($(this).find(".right").hasClass("icon-minus-sign")) {
+			$(this).find(".right").removeClass("icon-minus-sign");
+			$(this).find(".right").addClass("icon-plus-sign");
+		}
 	});
 
-	//toolbar toggling
+	//toolbar
 	$("#toolbar_button").click(function() {
 		$("#toolbar").slideToggle();
 	});
 	$("#toolbar_close").click(function() {
 		$("#toolbar").slideUp();
+	});
+	$("#toolbar_collapse_button").click(function() {
+		panel("collapse","all");
+	});
+	$("#toolbar_expand_button").click(function() {
+		panel("expand","all");
+	});
+	$("#toolbar_titlebar_toggle").click(function() {
+		$("titlebar").toggle();
 	});
 
 	//more click events
@@ -193,22 +211,6 @@ $(function(){
 	});
 	$("#clear").focus(function() {
 		$('#text_before').focus();
-	});
-	$("#toolbar_button").click(function() {
-		$('toolbar').toggle(); $('toolbar_button').toggle();
-	});
-	$("#toolbar_collapse_button").click(function() {
-		panel("collapse","all");
-	});
-	$("#toolbar_expand_button").click(function() {
-		panel("expand","all");
-	});
-	$("#toolbar_titlebar_toggle").click(function() {
-		$("titlebar").toggle();
-	});
-	$("#toolbar_close").click(function() {
-		$("#toobar").toggle();
-		$("#toolbar_button").toggle();
 	});
 	$(".effect#find").click(function() {
 		$("#find_text").focus();
