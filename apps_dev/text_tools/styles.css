@@ -42,6 +42,12 @@ body
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 16px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 #effects a:hover {
 	color: #fff;
@@ -50,8 +56,14 @@ body
 #effects a {
 	display: block;
 }
-#effects a:active, #effects .active {
+#effects a:active {
 	color: #00f;
+}
+#effects .active {
+	background-color: #222;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -border-radius: 5px;
 }
 .panel_title {
 	background-color: #404040;
@@ -61,6 +73,12 @@ body
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .panel_title:hover {
 	background-color: #888;
@@ -92,6 +110,24 @@ body
 	font-weight: normal;
 	color: #bbb;
 }
+
+/*titlebar*/
 #titlebar div {
 	text-align: center;
+}
+#titlebar {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.input-append input[type='text'] {
+	margin: 0;
+}
+#text_before_container, #text_after_container {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }

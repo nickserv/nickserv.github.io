@@ -148,14 +148,14 @@ $(function(){
 	setInterval(function() {getHidden();}, 1000);
 	updateFocus($("#text_before"));
 	regainFocus();
-	$("#normal").click();
+	$(".effect[data-effect='normal']").click();
 	panel("init");
+	$("#text_before").focus();
 
 	//start daemon scripts
 	$("body").keypress(watchInputs());
 	$("a").focus(regainFocus());
 	$("#text_before").focus(updateFocus($("#text_before")));
-	$("#text_before").ready($("#text_before").focus());
 	$("#text_after").focus(updateFocus($("#text_after")));
 	$("#text_after").click(function() {
 		selectAll($("#text_after"));

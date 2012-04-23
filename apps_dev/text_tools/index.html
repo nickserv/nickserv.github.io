@@ -34,7 +34,7 @@
 <!--main ui space-->
 <div class="row-fluid" id="mainui">
 	<!--text before-->
-	<div class="span5">
+	<div class="span5" id="text_before_container">
 		<textarea id="text_before"></textarea>
 	</div>
 	<!--effects panels-->
@@ -124,7 +124,9 @@
 				<input type="text" id="list_start" style="width:100%" value="- "><br>
 			<a class="effect" data-effect="remove_list">
 				<i class="icon-minus-sign icon-white"></i> List Remover</a>
-				<input type="text" id="cutoff" style="width:43%" value="3"> <input type="button" id="cutoff_up" value="+"><input type="button" id="cutoff_down" value="-">
+				<div class="input-append">
+					<input type="text" id="cutoff" style="width:43%" value="3"><input type="button" class="btn" id="cutoff_up" value="+"><input type="button" class="btn" id="cutoff_down" value="-">
+				</div>
 			</div>
 		</p><p>
 			<div class="panel_title" data-toggle="other_panel">
@@ -135,7 +137,9 @@
 			<div id="other_panel">
 			<a class="effect" data-effect="repeat">
 				<i class="icon-repeat icon-white"></i> Repeat</a>
-				<input type="text" id="repetitions" style="width:43%" value="1"> <span style="color:black"><input type="button" value="+"><input type="button" value="-"></span><br>
+				<div class="input-append">
+					<input type="text" id="repetitions" style="width:43%" value="1"><input type="button" class="btn" value="+"><input type="button" class="btn" value="-"><br>
+				</div>
 			<a class="effect" data-effect="wordcount">
 				<i class="icon-check icon-white"></i> Word Count
 			</a>
@@ -161,7 +165,7 @@
 			<i class="icon-plus-sign icon-white right"></i>
 		</div>
 			<div id="help_panel">
-			<a id="about" href="about.html" target="_blank">
+			<a id="about" href="#about_modal" data-toggle="modal">
 				<i class="icon-info-sign icon-white"></i> About
 			</a>
 			<a id="help" href="help.html" target="_blank">
@@ -173,27 +177,22 @@
 			</div>
 	</div>
 	<!--text after-->
-	<div class="span5">
+	<div class="span5" id="text_after_container">
 		<textarea id="text_after" readonly="readonly"></textarea>
 	</div>
 </div>
 
-<div class="modal hide" id="about_modal">
+<div class="modal fade hide" id="about_modal">
 	<div class="modal-header">
-		<h3><a href="index.html">Text Tools</a></h3>
-		<a class="close" data-dismiss="modal">×</a>
+		<h3>Text Tools<a class="close" data-dismiss="modal">×</a></h3>
 	</div>
 	<div class="modal-body">
 		Version 2.0 dev<br>
 		The free text manipulation tool.<br>
 		<a href="changelog.txt" target="_blank">Changelog</a><br><br>
 
-		Programmed and Designed by <a href="http://thenickperson.zxq.net" target="_blank">Nicolas McCurdy</a><br>
-		Icons by <a href="http://famfamfam.com/lab/icons/silk/" target="_blank">famfamfam</a><br>
+		Programmed and Designed by <a href="http://thenickperson.com" target="_blank">Nicolas McCurdy</a><br>
 		(extra script credits in source code)<br><br>
-	</div>
-	<div class="modal-footer">
-		<a href="#" class="btn">Close</a>
 	</div>
 </div>
 
