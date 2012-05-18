@@ -1,10 +1,24 @@
 //main variables
 var effect = "normal"; //change this to a different effect to bug test it on startup
-var focused, last_panel, content_array = [];
-var char_count = "", word_count = "", line_count = "", find_count = "";
-
-//watchers
-var watched_input, watched_find, watched_replace, watched_list_start, watched_repetitions, watched_cutoff, working_input;
+var last = {
+	focused: [],
+	panel: [],
+	input: []
+};
+var counts = {
+	char: "",
+	word: "",
+	line: "",
+	find: ""
+};
+var watched = {
+	input: undefined,
+	find: undefined,
+	replace: undefined,
+	list_start: undefined,
+	repetitions: undefined,
+	cutoff: undefined
+};
 
 //panel hiding settings
 var all_panels = ["case_panel", "find_panel", "sort_panel", "list_panel", "other_panel", "misc_panel", "help_panel"];
@@ -47,8 +61,7 @@ function panel() {
 				}
 			}
 		}
-		else
-		{
+		else {
 			for(var i=1; i<panels.length; i++) {
 				if(panels[0] == "expand") {
 					$("#"+panels[i]).show();
@@ -62,7 +75,15 @@ function panel() {
 	}
 }
 
-//function openPanel(panel_name) {if(last_panel) {toggle(last_panel)}; toggle(panel_name); last_panel = panel_name;}
+/*
+function openPanel(panel_name) {
+	if(last.panel) {
+		toggle(last.panel)
+	};
+	toggle(panel_name);
+	last.panel = panel_name;
+}
+*/
 
 // ---SYSTEM FUNCTIONS---
 
@@ -74,15 +95,15 @@ function watcher(variable,element,watcherName) {
 	}
 }
 function watchInputs() { //input watcher
-	if(watched_input != $("#text_before")) {
+	if(watched.input != $("#text_before")) {
 		convert();
 		//console.log("main watcher activated");
 	}
-	watcher(watched_find,$("#find_text"),"find"); //buggy
-	watcher(watched_replace,$("#replace_text"),"replace"); //buggy
-	watcher(watched_list_start,$("#list_start"),"list_start"); //buggy
-	watcher(watched_repetitions,$("#repetitions"),"repetitions"); //buggy
-	watcher(watched_cutoff,$("#cutoff"),"cutoff"); //buggy
+	watcher(watched.find,$("#find_text"),"find"); //buggy
+	watcher(watched.replace,$("#replace_text"),"replace"); //buggy
+	watcher(watched.list_start,$("#list_start"),"list_start"); //buggy
+	watcher(watched.repetitions,$("#repetitions"),"repetitions"); //buggy
+	watcher(watched.cutoff,$("#cutoff"),"cutoff"); //buggy
 }
 function outputToInput() {
 	$("#text_before").val($("#text_after").val());
@@ -106,17 +127,17 @@ function clear() {
 	$("#number_list").attr("checked", false);
 }
 function updateFocus(newFocus) {
-	focused = newFocus;
+	last.focused = newFocus;
 }
 function regainFocus() {
-	focused.focus();
+	last.focused.focus();
 }
 function toggleCheck(element) {
 	if(element.checked == true) {
 		element.checked = false;
 	}
 	else {
-		element.checked=true;
+		element.checked = true;
 	}
 }
 
@@ -124,10 +145,10 @@ function toggleCheck(element) {
 
 //plus and minus buttons
 function valueUp(variable) {
-	variable.value = parseInt(variable.value)+1;
+	variable.value = parseInt(variable.value) + 1;
 }
 function valueDown(variable) {
-	variable.value = parseInt(variable.value)-1;
+	variable.value = parseInt(variable.value) - 1;
 	if(parseInt(variable.value)<0) {
 		variable.value = "0";
 	}
@@ -228,7 +249,8 @@ $(function(){
 		}
 	});
 	$("#regexp_toggle_label").click(function() {
-		watchInputs();toggleCheck($('#regexp_toggle'));
+		watchInputs();
+		toggleCheck($('#regexp_toggle'));
 	});
 	$("#regexp_toggle_label").focus(function() {
 		if(effect!='replace') {

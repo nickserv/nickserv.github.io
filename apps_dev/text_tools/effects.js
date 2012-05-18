@@ -3,16 +3,16 @@ function convert() {
 	
 	if($("find_text").val() != "") {
 		if($("#regexp_toggle").attr("checked", false)) {
-			find_count = watched_input.split($("#find_text").val()).length-1;
-			$("#find_counter").html(" ("+find_count+")");
+			counts.find = watched_input.split($("#find_text").val()).length-1;
+			$("#counts.find").html(" ("+counts.find+")");
 		}
 		else {
-			find_count = watched_input.split(new RegExp($("#find_text").val(), "gi")).length-1;
-			$("#find_counter").html(" ("+find_count+")");
+			counts.find = watched_input.split(new RegExp($("#find_text").val(), "gi")).length-1;
+			$("#counts.find").html(" ("+counts.find+")");
 		}
 	}
 	else {
-		$("#find_counter").html("");
+		$("#counts.find").html("");
 	}
 	
 	switch(effect) {
@@ -69,15 +69,15 @@ function convert() {
 			update(watched_input.repeat(parseInt($("#repetitions").text())));
 			break;
 		case "wordcount":
-			char_count = watched_input.length;
-			line_count = watched_input.split("\n");
-			line_count = line_count.length;
-			word_count = watched_input.split(" ");
-			word_count = word_count.length + line_count - 1;
+			counts.char = watched_input.length;
+			counts.line = watched_input.split("\n");
+			counts.line = counts.line.length;
+			counts.word = watched_input.split(" ");
+			counts.word = counts.word.length + counts.line - 1;
 			if(watched_input == "") {
-				word_count=0;
+				counts.word=0;
 			}
-			update("Characters: "+char_count+"\nWords: "+word_count+"\nLines: "+line_count);
+			update("Characters: "+counts.char+"\nWords: "+counts.word+"\nLines: "+counts.line);
 			break;
 		case "sortaz":
 			var text_array = watched_input.split("\n");
@@ -117,7 +117,7 @@ function convert() {
 	}
 	
 	//output autoselect exclusion
-	if(focused == $("#text_after") &&
+	if(last.focused == $("#text_after") &&
 		effect != "find" &&
 		effect != "replace" &&
 		effect != "list" &&
@@ -129,32 +129,32 @@ function convert() {
 
 //numbered lists
 function listNumbers() {
-	working_input = "";
+	last.input = "";
 	content_array = [];
 	content_array = watched_input.split(new RegExp("\n", "gi"));
 	var list_length = content_array.length;
 	var num = 0;
 	for (i=0; i<list_length; i++) { //act sequentially on all array items
-		working_input = working_input + ++num + $("#list_start").val() + content_array.shift() + "\n";
+		last.input = last.input + ++num + $("#list_start").val() + content_array.shift() + "\n";
 	}
-	update(working_input.slice(0,working_input.length-1));
+	update(last.input.slice(0,last.input.length-1));
 }
 
 //html upper/lower
 function htmlCaseChanger(html_case_mode) {
-	working_input = watched_input;
+	last.input = watched_input;
 	content_array = [];
 	for (i = 1; i<watched_input.split(new RegExp("<", "gi")).length; i++) { //set the input into an array
-		if(working_input.indexOf("<") != -1) {
-			content_array.push(working_input.substring(0,working_input.indexOf("<"))+"<");
-			working_input = working_input.substring(working_input.indexOf("<")+1);
+		if(last.input.indexOf("<") != -1) {
+			content_array.push(last.input.substring(0,last.input.indexOf("<"))+"<");
+			last.input = last.input.substring(last.input.indexOf("<")+1);
 		}
-		if(working_input.indexOf(">") != -1) {
-			content_array.push(working_input.substring(0,working_input.indexOf(">"))+">");
-			working_input = working_input.substring(working_input.indexOf(">")+1);
+		if(last.input.indexOf(">") != -1) {
+			content_array.push(last.input.substring(0,last.input.indexOf(">"))+">");
+			last.input = last.input.substring(last.input.indexOf(">")+1);
 		}
 	}
-	content_array.push(working_input);
+	content_array.push(last.input);
 	for (i = 1; i<content_array.length; i = i+2) { //change the case of html
 		if(html_case_mode == "lower") {
 			content_array[i] = content_array[i].toLowerCase();
