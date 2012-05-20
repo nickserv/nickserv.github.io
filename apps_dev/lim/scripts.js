@@ -1,3 +1,8 @@
+var users = []
+users.push("Dave");
+users.push("HAL");
+var current_user = 0;
+
 $(document).bind("keyup keydown", function(e) {
 	shifted = e.shiftKey;
 });
@@ -5,7 +10,7 @@ $(document).bind("keyup keydown", function(e) {
 function newMessage() {
 	var message = $("#input-box").val();
 	message = message.replace(/\n/g, "<br>");
-	$("#chat").append("<div>"+message+"</div>");
+	$("#chat").append("<div><div class='user'>butts</div><div class='message'>"+message+"</div></div>");
 	$("#input-box").val("");
 }
 
