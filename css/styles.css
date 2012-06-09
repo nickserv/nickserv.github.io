@@ -55,6 +55,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* misc */
+.table tbody tr:hover td, .table tbody tr:hover th {
+	background-color: inherit;
+}
+.tooltip-link {
+	color: inherit;
+	border-bottom: 1px dotted #ddd;
+}
+.tooltip-link:hover {
+	color: inherit;
+	border-bottom: 1px solid #ddd;
+	text-decoration: none;
+}
 .brand {
 	font-weight: bold !important;
 	color: #66f !important;

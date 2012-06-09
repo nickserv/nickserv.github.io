@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".tooltip-link").tooltip();
 	$('#projects-nav').scrollspy();
 });
 
