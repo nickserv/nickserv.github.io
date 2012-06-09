@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".tooltip-link").tooltip();
+	$(".tooltip-link").tooltip( {placement: "right"} );
 	$("#projects-nav").scrollspy();
 });
 
