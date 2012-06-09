@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(".tooltip-link").tooltip();
-	$('#projects-nav').scrollspy();
+	$("#projects-nav").scrollspy();
 });
 
 if($(".email").length){
@@ -10,7 +10,7 @@ if($(".email").length){
 
 	// function, which replaces pre-made class
 	$(".email a").each(function () {
-		var address = "mailto:" + $(this).data("email").replace(at, '@').replace(dot, '.');
+		var address = "mailto:" + $(this).data("email").replace(at, "@").replace(dot, ".");
 		$(this).attr("href",address);
 	});
 	$(".email").show();
