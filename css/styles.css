@@ -10,6 +10,7 @@ body {
 	background-color: #444;
 	min-height: 100%;
 	position: relative;
+	max-width: 800px !important;
 }
 
 /* navbar */
