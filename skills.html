@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta charset="utf-8">
 	<!-- basic info -->
-	<title>Nicolas McCurdy - 404 Error</title>
+	<title>Nicolas McCurdy - Skills</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -25,7 +25,7 @@
 			<li><a href="index.html">
 				<i class="icon-home icon-white"></i> Home
 			</a></li>
-			<li><a href="skills.html">
+			<li class="active"><a href="skills.html">
 				<i class="icon-folder-open icon-white"></i> Skills
 			</a></li>
 			<li><a href="projects.html">
@@ -37,35 +37,45 @@
 	<!-- page content -->
 	<div class="content">
 
-		<!-- error message -->
-		<div class="hero-unit">
-
-			<!-- title-->
-			<h1>404 - Page not found</h1>
-
-			<!-- description -->
-			<p>
-				The page you were trying to visit could not be found.<br>
-				You may be going to a page that doesn't exist, mistyping the URL of the page, or visiting a broken link.
-			</p>
-
-			<!-- buttons -->
-			<p>
-				<a class="btn btn-large" href="index.html">
-					<i class="icon-home"></i> Home
-				</a>
-				<a class="btn btn-large btn-danger" href="javascript:history.go(-1)">
-					<i class="icon-arrow-left icon-white"></i> Back
-				</a>
-				<span class="email">
-					<a class="btn btn-large btn-primary" data-email="thenickperson AT gmail DOT com" href="#">
-						<i class="icon-envelope icon-white"></i> Report
-					</a>
-				</span>
-				</li>
-			</p>
-
-		</div>
+		<!-- skills -->
+		<h2>Skills</h2>
+		<table class="table table-bordered table-condensed">
+			<tr>
+				<th>Programming Languages</th>
+				<th>Web Languages</th>
+				<th>Robotics Languages</th>
+				<th>Command Line Shells</th>
+				<th>Version Control Systems</th>
+			</tr>
+			<tr>
+				<td>Python</td>
+				<td>HTML 4</td>
+				<td><a class="tooltip-link" rel="tooltip" title="C-like, for Lego Mindstorms Robotics">NXC</a></td>
+				<td><a class="tooltip-link" rel="tooltip" title="usually the default on Linux/Unix">Bash</a></td>
+				<td>Git</td>
+			</tr>
+			<tr>
+				<td>Java</td>
+				<td>HTML 5</td>
+				<td><a class="tooltip-link" rel="tooltip" title="C-based, for Lego Mindstorms Robotics">RobotC</a></td>
+				<td><a class="tooltip-link" rel="tooltip" title="based off of Bash">Zsh</a></td>
+				<td>Mercurial</td>
+			</tr>
+			<tr>
+				<td>Ruby</td>
+				<td>CSS</td>
+				<td></td>
+				<td></td>
+				<td><a class="tooltip-link" rel="tooltip" title="with TortoiseSVN">Subversion</a></td>
+			</tr>
+			<tr>
+				<td>Lua</td>
+				<td><a class="tooltip-link" rel="tooltip" title="and jQuery">JavaScript</a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
 
 	</div>
 
