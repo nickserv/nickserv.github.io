@@ -84,8 +84,9 @@ footer {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
-.links li {
-	font-size: 18px;
+#links {
+	font-weight: bold;
+	font-size: 16px;
 }
 .email {
 	display: none;
@@ -96,7 +97,7 @@ footer {
 	background-color: #666;
 	display: block;
 	text-decoration: none;
-	margin: 5;
+	margin: 5px;
 	padding: 10px;
 }
 #projects-page a.well:hover {
