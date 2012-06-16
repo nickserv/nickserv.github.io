@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	$(".tooltip-link").tooltip( {placement: "right"} );
-	$("#projects-nav").scrollspy();
 });
 
 if($(".email").length){

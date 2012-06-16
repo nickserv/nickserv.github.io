@@ -92,30 +92,30 @@ footer {
 }
 
 /* projects */
-.projects-page a.well {
+#projects-page a.well {
 	background-color: #666;
 	display: block;
 	text-decoration: none;
 	margin: 5;
 	padding: 10px;
 }
-.projects-page a.well:hover {
+#projects-page a.well:hover {
 	background-color: #888;
 }
-.projects-page a.well h3 {
+#projects-page a.well h3 {
 	color: #0bf;
 }
-.projects-page a.well:hover h3 {
+#projects-page a.well:hover h3 {
 	color: #0ff;
 }
-.projects-page a.well .version {
+#projects-page a.well .version {
 	color: #bbb;
 	float: right;
 }
-.projects-page a.well:hover .version {
+#projects-page a.well:hover .version {
 	color: #eee;
 }
-.projects-page a.well .desc {
+#projects-page a.well .desc {
 	color: #eee;
 }
 
