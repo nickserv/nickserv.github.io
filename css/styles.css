@@ -41,10 +41,8 @@ body {
 	background-color: #333;
 	color: #ddd;
 	padding: 20px;
-	margin-bottom: 70px;
-}
-.content p {
-	font-size: 14px; 
+	font-size: 14px;
+	margin-bottom: 55px;
 }
 a {
 	color: #0bf;
@@ -78,13 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 footer {
 	color: #bbb;
-	margin-top: 20px;
 	text-align: center;
 	font-size: 12px;
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
-	height: 50px;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
