@@ -87,6 +87,9 @@ footer {
 .links li {
 	font-size: 18px;
 }
+.email {
+	display: none;
+}
 
 /* projects */
 .projects-page a.well {
@@ -121,30 +124,21 @@ footer {
 /* landscape phones and down */
 @media (max-width: 480px) {
 	body {
-		background-color: red;
+		padding: 0;
 	}
 }
 
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
 	body {
-		background-color: orange;
+		padding: 0;
 	}
 }
 
 /* portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 980px) {
-	body {
-		background-color: yellow;
-	}
 }
 
 /* large desktop */
 @media (min-width: 1200px) {
-	body {
-	}
-}
-
-.email {
-	display: none;
 }
