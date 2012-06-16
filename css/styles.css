@@ -5,6 +5,7 @@ html {
 body {
 	background-color: #666;
 	height: 100%;
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .main-column {
 	background-color: #444;
