@@ -7,7 +7,7 @@ body {
 	height: 100%;
 	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.main-column {
+#main-column {
 	background-color: #444;
 	min-height: 100%;
 	position: relative;
@@ -34,48 +34,18 @@ body {
 .nav-pills a:hover {
 	color: #000;
 }
+.brand {
+	font-weight: bold !important;
+	color: #66f !important;
+}
 
 /* page content */
-.content {
+#content {
 	background-color: #333;
 	color: #ddd;
 	padding: 20px;
 	font-size: 14px;
 	margin-bottom: 50px;
-}
-a {
-	color: #0bf;
-}
-a:hover {
-	color: #0ff;
-}
-h1, h2, h3, h4, h5, h6 {
-	color: #fff;
-}
-
-/* misc */
-table, .table tbody tr:hover td, .table tbody tr:hover th {
-	background-color: inherit;
-}
-#links {
-	font-size: 16px;
-	font-weight: bold;
-}
-.tooltip-link {
-	color: inherit;
-	border-bottom: 1px dotted #ddd;
-}
-.tooltip-link:hover {
-	color: inherit;
-	border-bottom: 1px solid #ddd;
-	text-decoration: none;
-}
-.brand {
-	font-weight: bold !important;
-	color: #66f !important;
-}
-.hero-unit {
-	background-color: #888;
 }
 footer {
 	color: #bbb;
@@ -87,36 +57,67 @@ footer {
 	margin-bottom: 15px;
 	padding-bottom: 0;
 }
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+}
+a {
+	color: #0bf;
+}
+a:hover {
+	color: #0ff;
+}
 .email {
 	display: none;
 }
 
-/* projects */
-#projects-page a.well {
+/* home page */
+#links {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* skills page */
+table, .table tbody tr:hover td, .table tbody tr:hover th {
+	background-color: inherit;
+}
+table a {
+	color: inherit;
+	border-bottom: 1px dotted #ddd;
+}
+table a:hover {
+	color: inherit;
+	border-bottom: 1px solid #ddd;
+	text-decoration: none;
+}
+
+/* projects page */
+a.well {
+	color: #eee;
 	background-color: #666;
-	display: block;
 	text-decoration: none;
 	margin: 5px;
 	padding: 10px;
 }
-#projects-page a.well:hover {
-	background-color: #888;
-}
-#projects-page a.well h2 {
+a.well h2 {
 	color: #0bf;
 }
-#projects-page a.well:hover h2 {
-	color: #0ff;
-}
-#projects-page a.well .version {
+a.well .version {
 	color: #bbb;
 	float: right;
 }
-#projects-page a.well:hover .version {
+a.well:hover {
+	background-color: #888;
+}
+a.well:hover h2 {
+	color: #0ff;
+}
+a.well:hover .version {
 	color: #eee;
 }
-#projects-page a.well .desc {
-	color: #eee;
+
+/* 404 page */
+.hero-unit {
+	background-color: #888;
 }
 
 /* responsive stuff */
