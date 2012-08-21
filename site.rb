@@ -12,3 +12,7 @@ end
 get '/skills.html' do
 	erb :'skills.html'
 end
+
+not_found do
+	erb :'404.html'
+end
