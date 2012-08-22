@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class MySite < Sinatra::Base
 
-	get '/index' do
+	get '/' do
 		@page_title = 'Home'
 		@page_id = 'index'
 		erb :'index'
