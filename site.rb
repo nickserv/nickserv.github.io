@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'sinatra'
 
 Tilt.register Tilt::ERBTemplate, 'html.erb'
