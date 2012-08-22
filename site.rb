@@ -2,6 +2,8 @@ require 'sinatra/base'
 
 class MySite < Sinatra::Base
 
+	set :port, 8080
+
 	get '/' do
 		@page_title = 'Home'
 		@page_id = 'index'
