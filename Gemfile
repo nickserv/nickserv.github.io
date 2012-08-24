@@ -1,4 +1,5 @@
 source :rubygems
+ruby '1.9.3'
 
 # Add dependencies required to use your gem here.
 gem 'sinatra', '~> 1.3'
