@@ -1,3 +1,3 @@
-require File.join(File.dirname(__FILE__), 'site')
+require './site'
 
 run MySite
