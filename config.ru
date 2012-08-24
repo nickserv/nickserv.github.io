@@ -1,3 +1,3 @@
 require './site'
 
-run Sinatra::Application
+run MySite
