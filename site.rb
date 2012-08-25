@@ -1,6 +1,6 @@
 require 'sinatra'
 
-class MyApp < Sinatra::Base
+class MySite < Sinatra::Base
 
 	get '/' do
 		@page_title = 'Home'
@@ -29,4 +29,4 @@ class MyApp < Sinatra::Base
 end
 
 # Only run it when called as `ruby your_app_file.rb`
-MyApp.run! if $0 == __FILE__
+MySite.run! if $0 == __FILE__
