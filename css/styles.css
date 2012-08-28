@@ -33,6 +33,9 @@ footer {
 	margin-bottom: 15px;
 	padding-bottom: 0;
 }
+h1 {
+	border-bottom: 1px solid #999;
+}
 .email {
 	display: none;
 }
