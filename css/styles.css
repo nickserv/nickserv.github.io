@@ -58,15 +58,20 @@ table a:hover {
 a.well {
 	color: #999;
 	text-decoration: none;
+	/*padding: 19px;*/
+	padding: 10px 19px;
 }
 a.well h2 {
 	color: #33b5e5;
+	margin: 0px;
 }
 a.well .version {
 	float: right;
 }
-a.well:hover, a.well:hover h2 {
+a.well:hover {
 	color: #eee;
+	/*background-color: #131517*/
+	background-color: #283033
 }
 
 /* responsive stuff */
