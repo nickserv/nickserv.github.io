@@ -23,9 +23,9 @@
 <div class="container" id="main-column">
 
 	<!-- navbar -->
-	<header class="navbar navbar-inverse"><div class="navbar-inner"><div class="container">
+	<nav class="navbar navbar-inverse"><div class="navbar-inner"><div class="container">
 		<a class="brand" href="/">Nicolas McCurdy</a>
-		<nav class="nav">
+		<ul class="nav">
 			<li<%= active_if 'index' %>><a href="/">
 				<i class="icon-home icon-white"></i> Home
 			</a></li>
@@ -35,8 +35,8 @@
 			<li<%= active_if 'projects' %>><a href="/projects">
 				<i class="icon-th icon-white"></i> Projects
 			</a></li>
-		</nav>
-	</div></div></header>
+		</ul>
+	</div></div></nav>
 
 	<!-- page content -->
 	<div id="content">
@@ -51,7 +51,7 @@
 </div>
 
 <!-- scripts -->
-<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 <!-- google analytics -->
