@@ -77,26 +77,9 @@ a.well .version {
 	}
 }
 
-/* responsive stuff */
-
-/* landscape phones and down */
-@media (max-width: 480px) {
-	body {
-		padding: 0;
-	}
-}
-
-/* landscape phone to portrait tablet */
+/* responsive display tweaks for mobile devices */
 @media (max-width: 768px) {
 	body {
 		padding: 0;
 	}
-}
-
-/* portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 980px) {
-}
-
-/* large desktop */
-@media (min-width: 1200px) {
 }
