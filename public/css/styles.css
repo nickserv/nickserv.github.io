@@ -4,9 +4,6 @@
 	max-width: 800px !important;
 	margin: 0px auto;
 }
-.navbar {
-	box-shadow: 0px 0px 3px 3px #999;
-}
 #content {
 	padding: 0px 10px;
 	font-size: 14px;
@@ -20,6 +17,14 @@ footer {
 	bottom: 0px;
 	margin-bottom: 15px;
 	padding-bottom: 0;
+}
+
+/* navbar */
+.navbar {
+	box-shadow: 0px 0px 3px 3px #999;
+}
+.brand:hover {
+	background-color: inherit !important;
 }
 
 /* page content */
