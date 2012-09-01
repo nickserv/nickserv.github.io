@@ -46,6 +46,9 @@ th {
 }
 
 /* skills page */
+table, table th, table td {
+	border-color: #999 !important;
+}
 table a {
 	border-bottom: 1px dotted #999;
 	color: inherit;
@@ -73,6 +76,9 @@ a.well h2 {
 }
 a.well .version {
 	float: right;
+}
+#sidebar a {
+	border-color: #999 !important;
 }
 @media (min-width: 768px) {
 	#sidebar {
