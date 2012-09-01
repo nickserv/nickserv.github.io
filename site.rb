@@ -2,6 +2,8 @@ require 'sinatra'
 
 class MySite < Sinatra::Base
 
+	use Rack::GoogleAnalytics, :tracker => 'UA-22970573-1'
+
 	get '/' do
 		@page_title = 'Home'
 		@page_id = 'index'
