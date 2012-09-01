@@ -1,16 +1,12 @@
-/* page */
+/* major page sections */
 #main-column {
 	position: relative;
 	max-width: 800px !important;
 	margin: 0px auto;
 }
-
-/* navbar */
 .navbar {
 	box-shadow: 0px 0px 3px 3px #999;
 }
-
-/* page content */
 #content {
 	padding: 0px 10px;
 	font-size: 14px;
@@ -25,6 +21,8 @@ footer {
 	margin-bottom: 15px;
 	padding-bottom: 0;
 }
+
+/* page content */
 h1 {
 	border-bottom: 1px solid #999;
 	margin-top: 0px;
@@ -44,11 +42,10 @@ th {
 
 /* skills page */
 table a {
-	color: inherit;
 	border-bottom: 1px dotted #999;
+	color: inherit;
 }
 table a:hover {
-	color: inherit;
 	border-bottom: 1px solid #999;
 	text-decoration: none;
 }
@@ -60,17 +57,17 @@ a.well {
 	/*padding: 19px;*/
 	padding: 10px 19px;
 }
+a.well:hover {
+	color: #eee;
+	/*background-color: #131517*/
+	background-color: #283033
+}
 a.well h2 {
 	color: #33b5e5;
 	margin: 0px;
 }
 a.well .version {
 	float: right;
-}
-a.well:hover {
-	color: #eee;
-	/*background-color: #131517*/
-	background-color: #283033
 }
 @media (min-width: 768px) {
 	#sidebar {
