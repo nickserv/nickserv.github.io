@@ -2,6 +2,8 @@ require 'sinatra'
 
 class MySite < Sinatra::Base
 
+	# Pages
+
 	get '/' do
 		@page_title = 'Home'
 		@page_id = 'index'
@@ -24,6 +26,16 @@ class MySite < Sinatra::Base
 		@page_title = '404 Not Found'
 		@page_id = '404'
 		erb :'404'
+	end
+
+	# Redirects
+
+	get '/index.html' do
+		redirect '/', 301
+	end
+
+	get '/apps.html' do
+		redirect '/projects', 301
 	end
 
 end
