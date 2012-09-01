@@ -6,6 +6,8 @@ GEM
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
+    rack_clicky (1.0.5)
+      rack
     sinatra (1.3.3)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -21,5 +23,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.0.0)
+  rack_clicky (~> 1.0)
   sinatra (~> 1.3)
   thin (~> 1.4)
