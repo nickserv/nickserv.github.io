@@ -1,6 +1,7 @@
 {
 	"name": "Nicolas McCurdy's Website",
 	"dependencies": {
-		"jquery": ""
+		"jquery": "",
+		"bootstrap.css": ""
 	}
 }
