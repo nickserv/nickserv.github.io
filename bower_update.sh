@@ -1,13 +1,17 @@
+#!/bin/bash
 # Updates Bower packages and reinstalls latest versions of Bootswatch themes
 
-pushd public
+function bootswatch {
+	pushd components/bootstrap.css/css > /dev/null
+	for theme in $*; do
+		echo "Downloading $theme theme"
+		curl http://bootswatch.com/$theme/bootstrap.css -so bootstrap-$theme.css
+		curl http://bootswatch.com/$theme/bootstrap.min.css -so bootstrap-$theme.min.css
+	done
+	popd > /dev/null
+}
+
+pushd public > /dev/null
 bower update
-pushd components/bootstrap.css/css
-curl http://bootswatch.com/cyborg/bootstrap.css -o bootstrap-cyborg.css
-curl http://bootswatch.com/cyborg/bootstrap.min.css -o bootstrap-cyborg.min.css
-curl http://bootswatch.com/slate/bootstrap.css -o bootstrap-slate.css
-curl http://bootswatch.com/slate/bootstrap.min.css -o bootstrap-slate.min.css
-curl http://bootswatch.com/cosmo/bootstrap.css -o bootstrap-cosmo.css
-curl http://bootswatch.com/cosmo/bootstrap.min.css -o bootstrap-cosmo.min.css
-popd
-popd
+bootswatch cyborg slate cosmo
+popd > /dev/null
