@@ -7,19 +7,19 @@ class MySite < Sinatra::Base
 	get '/' do
 		@page_title = 'Home'
 		@page_id = 'index'
-		erb :'index'
+		erb :index
 	end
 
 	get '/projects' do
 		@page_title = 'Projects'
 		@page_id = 'projects'
-		erb :'projects'
+		erb :projects
 	end
 
 	get '/skills' do
 		@page_title = 'Skills'
 		@page_id = 'skills'
-		erb :'skills'
+		erb :skills
 	end
 
 	not_found do
