@@ -1,6 +1,6 @@
 require 'sinatra'
 
-class MySite < Sinatra::Base
+class Site < Sinatra::Base
 
 	# Pages
 
@@ -41,4 +41,4 @@ class MySite < Sinatra::Base
 end
 
 # Only run it when called as `ruby your_app_file.rb`
-MySite.run! if $0 == __FILE__
+Site.run! if $0 == __FILE__

@@ -7,4 +7,4 @@ use Rack::Deflater
 use Rack::Clicky, '66635410'
 
 # Run site
-run MySite
+run Site
