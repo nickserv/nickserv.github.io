@@ -1,9 +1,13 @@
 require 'sinatra'
 require 'sinatra/assetpack'
+require 'sinatra/support'
+
+Encoding.default_external = 'utf-8'
 
 class Site < Sinatra::Base
 	set :root, File.dirname(__FILE__)
 	register Sinatra::AssetPack
+	register Sinatra::CompassSupport
 
 	assets do
 		# The second parameter defines where the compressed version will be served.
