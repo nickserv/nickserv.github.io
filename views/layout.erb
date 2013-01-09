@@ -11,7 +11,7 @@
 	<!-- css -->
 	<link rel="stylesheet" href="/components/bootstrap.css/css/bootstrap-cyborg.min.css">
 	<link rel="stylesheet" href="/components/bootstrap.css/css/bootstrap-responsive.min.css">
-	<link rel="stylesheet" href="/css/styles.css">
+	<%= css :app %>
 	<!-- icons -->
 	<link rel="icon" href="/img/favicon.png">
 </head>
@@ -52,7 +52,7 @@
 <!-- scripts -->
 <script src="/components/jquery/jquery.min.js"></script>
 <script src="/components/bootstrap.css/js/bootstrap.min.js"></script>
-<script src="/js/scripts.js"></script>
+<%= js :app %>
 <% if @page_id == 'skills'%>
 <script>$("a").tooltip();</script>
 <% end %>

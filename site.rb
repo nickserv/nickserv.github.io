@@ -1,6 +1,23 @@
 require 'sinatra'
+require 'sinatra/assetpack'
 
 class Site < Sinatra::Base
+	set :root, File.dirname(__FILE__)
+	register Sinatra::AssetPack
+
+	assets do
+		# The second parameter defines where the compressed version will be served.
+		# (Note: that parameter is optional, AssetPack will figure it out.)
+		js :app, '/js/app.js', [
+			'/js/*.js',
+			'/js/**/*.js'
+		]
+
+		css :app, '/css/app.css', [
+			'/css/*.css',
+			'/css/**/*.css'
+		]
+	end
 
 	# Pages
 
