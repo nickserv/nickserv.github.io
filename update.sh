@@ -11,7 +11,13 @@ function bootswatch {
 	popd > /dev/null
 }
 
+echo "Updating gem dependencies..."
+bundle update
+
 pushd public > /dev/null
+echo "Updating Bower packages..."
 bower update
+
+echo "Updating Bootswatch themes..."
 bootswatch cyborg slate cosmo
 popd > /dev/null
