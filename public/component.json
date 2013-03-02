@@ -1,8 +1,8 @@
 {
-	"name": "Nicolas McCurdy's Website",
-	"dependencies": {
-		"jquery": "",
-		"bootstrap.css": "",
-		"bootswatch": ""
-	}
+  "name": "Nicolas McCurdy's Website",
+  "dependencies": {
+    "jquery": "",
+    "bootstrap.css": "",
+    "bootswatch": ""
+  }
 }

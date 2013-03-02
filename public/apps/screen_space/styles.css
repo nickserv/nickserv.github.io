@@ -1,39 +1,39 @@
 body
 {
-	background-color: #DDDDDD;
-	color: #000000;
-	font-family: "Arial Black",Gadget,sans-serif;
-	font-size: 14px;
+  background-color: #DDDDDD;
+  color: #000000;
+  font-family: "Arial Black",Gadget,sans-serif;
+  font-size: 14px;
 }
 table
 {
-	font-size: 32px;
-	margin-left: auto;
-	margin-right: auto;}
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;}
 th
 {
-	text-align: right;
-	padding-right: 30px;
+  text-align: right;
+  padding-right: 30px;
 }
 .lost
 {
-	color: #666666;
-	font-size: 20px;
+  color: #666666;
+  font-size: 20px;
 }
 .lost img
 {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 div
 {
-	width: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: justify;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
 }
 #note
 {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .width {text-align: right;}

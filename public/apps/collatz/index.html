@@ -10,55 +10,55 @@ var steps
 
 function collatz()
 {
-	watched_n = document.collatz.number.value
-	n = document.collatz.number.value
-	document.collatz.log.value = ""
-	steps = 0
-	if(n < 1)
-	{
-		if(n)
-			{document.collatz.log.value = "Error:\nInput cannot be 0,\nas it is less than 1."}
-	}
-	else
-	{
-		while(n > 1)
-		{
-			if(n%2 == 0)
-			{
-				add()
-				n = n / 2
-			}
-			else
-			{
-				add()
-				n = 3 * n + 1
-			}
-		}
-		addFinal()
-	}
+  watched_n = document.collatz.number.value
+  n = document.collatz.number.value
+  document.collatz.log.value = ""
+  steps = 0
+  if(n < 1)
+  {
+    if(n)
+      {document.collatz.log.value = "Error:\nInput cannot be 0,\nas it is less than 1."}
+  }
+  else
+  {
+    while(n > 1)
+    {
+      if(n%2 == 0)
+      {
+        add()
+        n = n / 2
+      }
+      else
+      {
+        add()
+        n = 3 * n + 1
+      }
+    }
+    addFinal()
+  }
 }
 
 function startup()
 {
-	document.collatz.number.focus()
-	document.collatz.log.value = ""
+  document.collatz.number.focus()
+  document.collatz.log.value = ""
 }
 
 function watchInput()
 {
-	if(watched_n != document.collatz.number.value)
-	{collatz();}
+  if(watched_n != document.collatz.number.value)
+  {collatz();}
 }
 
 function add()
 {
-	document.collatz.log.value = document.collatz.log.value + n + "\n"
-	steps++
+  document.collatz.log.value = document.collatz.log.value + n + "\n"
+  steps++
 }
 function addFinal()
 {
-	document.collatz.log.value = document.collatz.log.value + n
-	document.collatz.log.value = "Steps: " + steps + "\n" + document.collatz.log.value
+  document.collatz.log.value = document.collatz.log.value + n
+  document.collatz.log.value = "Steps: " + steps + "\n" + document.collatz.log.value
 }
 function checkIt(evt)
 {
@@ -78,14 +78,14 @@ function checkIt(evt)
 
 <body onload="startup(); setInterval('watchInput()',10)" link="black" vlink="black" alink="blue"><div align="center"><form name="collatz" autocomplete="off">
 <table border="3" style="height: 98%; -webkit-border-radius: 5px; -moz-border-radius: 5px;">
-	<tr><td align="center" style="font-size:20;font-weight:bold;font-family:Arial;" height="30">
-		<a href="http://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank">Collatz Conjecture</a>
-	</td></tr>
-	<tr><td align="center" height="30">
-		<input type="text" name="number" size="23" onkeypress="return checkIt(event)">
-	</td></tr>
-	<tr><td align="center">
-		<textarea name="log" cols="20" readonly="readonly" wrap="off" style="height:100%;"></textarea>
-	</td></tr>
+  <tr><td align="center" style="font-size:20;font-weight:bold;font-family:Arial;" height="30">
+    <a href="http://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank">Collatz Conjecture</a>
+  </td></tr>
+  <tr><td align="center" height="30">
+    <input type="text" name="number" size="23" onkeypress="return checkIt(event)">
+  </td></tr>
+  <tr><td align="center">
+    <textarea name="log" cols="20" readonly="readonly" wrap="off" style="height:100%;"></textarea>
+  </td></tr>
 </table>
 </form></div></body>

@@ -6,56 +6,56 @@
 
 <script type="text/javascript">
 function getUrlVars()
-	{var map = {};var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {map[key] = value;});return map;}
+  {var map = {};var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {map[key] = value;});return map;}
 var setup = true
 if(decodeURIComponent(getUrlVars()["urls"])!="undefined")
-	{setup = false}
+  {setup = false}
 if(setup==false) //loads link
 {
-	//extracts urls
-	urls = decodeURIComponent(getUrlVars()["urls"])
-	urls = urls.substring(1, urls.length-1)
-	urls = urls.split("][")
-	//load all but first page
-	for (i=1;i<urls.length;i++)
-		{var windows = window.open(urls[i])}
-	//popup blocker test
-	//var testWindow = window.open()
-	if(windows)
-		{var popups = true}
-	else
-		{var popups = false}
-	//load first page
-	if(popups==true) {window.location = urls[0]}
+  //extracts urls
+  urls = decodeURIComponent(getUrlVars()["urls"])
+  urls = urls.substring(1, urls.length-1)
+  urls = urls.split("][")
+  //load all but first page
+  for (i=1;i<urls.length;i++)
+    {var windows = window.open(urls[i])}
+  //popup blocker test
+  //var testWindow = window.open()
+  if(windows)
+    {var popups = true}
+  else
+    {var popups = false}
+  //load first page
+  if(popups==true) {window.location = urls[0]}
 }
 if(setup==true) //adds scripting abilities to link creation page if a link is not already defined
 {
-	var url_list
-	var link
-	var title
-	var watched_title
-	var watched_urls
-	var base_url = "http://thenickperson.com/apps/mtb/index.html"
-	
-	function selectAll(field)
-		{field.focus(); field.select();}
-	
-	function createLink()
-	{
-		url_list = document.getElementById("urls").value.split("\n")
-		link = base_url+"?urls=["+url_list.join("][")+"]"
-		title = document.getElementById("title").value
-		if(title=="") {title="Untitled Bookmark"}
-		document.getElementById("link").innerHTML = '<a href="'+link+'">'+title+'</a></div>'
-	}
-	
-	function watchInput() //input watcher
-	{
-		if(watched_title != document.getElementById("title").value)
-			{createLink(); watched_title = document.getElementById("title").value;}
-		if(watched_urls != document.getElementById("urls").value)
-			{createLink(); watched_urls = document.getElementById("urls").value;}
-	}
+  var url_list
+  var link
+  var title
+  var watched_title
+  var watched_urls
+  var base_url = "http://thenickperson.com/apps/mtb/index.html"
+  
+  function selectAll(field)
+    {field.focus(); field.select();}
+  
+  function createLink()
+  {
+    url_list = document.getElementById("urls").value.split("\n")
+    link = base_url+"?urls=["+url_list.join("][")+"]"
+    title = document.getElementById("title").value
+    if(title=="") {title="Untitled Bookmark"}
+    document.getElementById("link").innerHTML = '<a href="'+link+'">'+title+'</a></div>'
+  }
+  
+  function watchInput() //input watcher
+  {
+    if(watched_title != document.getElementById("title").value)
+      {createLink(); watched_title = document.getElementById("title").value;}
+    if(watched_urls != document.getElementById("urls").value)
+      {createLink(); watched_urls = document.getElementById("urls").value;}
+  }
 }
 </script>
 
@@ -69,23 +69,23 @@ body {font-family:Arial;}
 <body onLoad="document.getElementById('title').focus(); setInterval('watchInput()',10);" bgcolor="black">
 <div align="center">
 <table><tr><td class="graybox" id="setupbox" align="center">
-	<font style="font-size:30px;font-weight:bold;">Multi-Tab Bookmarks 1.2</font><hr>
-	Enter what you want your bookmark to be called:<br>
-	<input type="text" size="50" id="title"><hr>
-	Type the URLs (web addresses) that you want to be opened, one link per line:<br>
-	<textarea rows="10" cols="70" id="urls" wrap="off"></textarea><br>
-	Note that tabs will be loaded in order going down the list, and your last<br>URL will be the one displayed when your tabs are done loading.<hr>
-	Drag this link to your bookmarks bar or right click it to bookmark or copy it.
-	<div id="link"><a href="index.html">Untitled Bookmark</a></div><hr>
-	<a href="changelog.txt" target="_blank" style="color:black">Changelog</a><br><br>
+  <font style="font-size:30px;font-weight:bold;">Multi-Tab Bookmarks 1.2</font><hr>
+  Enter what you want your bookmark to be called:<br>
+  <input type="text" size="50" id="title"><hr>
+  Type the URLs (web addresses) that you want to be opened, one link per line:<br>
+  <textarea rows="10" cols="70" id="urls" wrap="off"></textarea><br>
+  Note that tabs will be loaded in order going down the list, and your last<br>URL will be the one displayed when your tabs are done loading.<hr>
+  Drag this link to your bookmarks bar or right click it to bookmark or copy it.
+  <div id="link"><a href="index.html">Untitled Bookmark</a></div><hr>
+  <a href="changelog.txt" target="_blank" style="color:black">Changelog</a><br><br>
 </td></tr></table>
 </div>
 
 <script type="text/javascript">
 if(setup==false)
 {
-	//print error page
-	document.getElementById("setupbox").innerHTML = "A popup blocker is preventing your bookmarks from opening.<br><br>Please either turn it off or allow this site in your popup blocker."
+  //print error page
+  document.getElementById("setupbox").innerHTML = "A popup blocker is preventing your bookmarks from opening.<br><br>Please either turn it off or allow this site in your popup blocker."
 }
 </script>
 </body>

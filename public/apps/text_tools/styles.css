@@ -10,65 +10,65 @@ a {text-decoration: none;}
 
 body
 {
-	background: lightgray url("backgrounds/page.png") center;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	font-family: Arial;
-	font-size: 12px;
+  background: lightgray url("backgrounds/page.png") center;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  font-family: Arial;
+  font-size: 12px;
 }
 .round
 {
-	background: gray url("backgrounds/effects.png") repeat-x center;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: darkblue;
+  background: gray url("backgrounds/effects.png") repeat-x center;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkblue;
 }
 .effects
 {
-	background-color: transparent;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	font-size: 14px;
-	font-weight: bold;
-	border-style: solid;
-	border-width: 2px;
-	border-color: gray;
-	border-top: none;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
+  background-color: transparent;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  font-size: 14px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 .titlebar
 {
-	background: black url("backgrounds/title.png") repeat-x center;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	color: white;
-	font-size: 18px;
+  background: black url("backgrounds/title.png") repeat-x center;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  color: white;
+  font-size: 18px;
 }
 textarea, input[type=text]
 {
-	font-family: Arial;
-	font-size: 12px;
+  font-family: Arial;
+  font-size: 12px;
 }
 .noresize
 {
-	resize: none;
-	font-size: 14px;
+  resize: none;
+  font-size: 14px;
 }
 .info
 {
-	color: darkblue;
+  color: darkblue;
 }
 .question
 {
-	font-weight: bold;
+  font-weight: bold;
 }
