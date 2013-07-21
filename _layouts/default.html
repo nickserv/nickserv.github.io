@@ -1,46 +1,81 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<%
+  def active_if page
+    @page_id==page ? ' class="active"' : ""
+  end
+%><!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+  <!-- basic info -->
+  <title>Nicolas McCurdy - <%= @page_title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/components/bootswatch/cyborg/bootstrap.min.css">
+  <link rel="stylesheet" href="/components/bootstrap.css/css/bootstrap-responsive.min.css">
+  <%= css :app %>
+  <!-- icons -->
+  <link rel="icon" href="/img/favicon.png">
+</head>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+<body data-spy="scroll" data-target="#main-column">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+<!-- main column -->
+<div class="container-fluid" id="main-column">
 
-    </head>
-    <body>
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse"><div class="navbar-inner"><div class="container-fluid">
+    <a class="brand" href="/">Nicolas McCurdy</a>
+    <ul class="nav">
+      <li<%= active_if 'index' %>><a href="/">
+        <i class="icon-home icon-white"></i> Home
+      </a></li>
+      <li<%= active_if 'skills' %>><a href="/skills">
+        <i class="icon-folder-open icon-white"></i> Skills
+      </a></li>
+      <li<%= active_if 'projects' %>><a href="/projects">
+        <i class="icon-th icon-white"></i> Projects
+      </a></li>
+    </ul>
+  </div></div></nav>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+  <!-- page content -->
+  <div id="content">
 
-                {{ content }}
+<%= yield %>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+  </div>
 
-    </body>
+  <!-- footer -->
+  <footer>&copy; 2013 Nicolas McCurdy</footer>
+
+</div>
+
+<!-- scripts -->
+<script src="/components/jquery/jquery.min.js"></script>
+<script src="/components/bootstrap.css/js/bootstrap.min.js"></script>
+<%= js :app %>
+<% if @page_id == 'skills'%>
+<script>$("a").tooltip();</script>
+<% end %>
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<script type="text/javascript">
+  var GoSquared = {};
+  GoSquared.acct = "GSN-937728-R";
+  (function(w){
+    function gs(){
+      w._gstc_lt = +new Date;
+      var d = document, g = d.createElement("script");
+      g.type = "text/javascript";
+      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(g, s);
+    }
+    w.addEventListener ?
+      w.addEventListener("load", gs, false) :
+      w.attachEvent("onload", gs);
+  })(window);
+</script>
+
+</body>
 </html>
