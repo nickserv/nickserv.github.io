@@ -1,18 +1,14 @@
-<%
-  def active_if page
-    @page_id==page ? ' class="active"' : ""
-  end
-%><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8">
   <!-- basic info -->
-  <title>Nicolas McCurdy - <%= @page_title %></title>
+  <title>Nicolas McCurdy - {{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/components/bootswatch/cyborg/bootstrap.min.css">
   <link rel="stylesheet" href="/components/bootstrap.css/css/bootstrap-responsive.min.css">
-  <%= css :app %>
+  <link rel="stylesheet" href="/css/main.css">
   <!-- icons -->
   <link rel="icon" href="/img/favicon.png">
 </head>
@@ -26,13 +22,13 @@
   <nav class="navbar navbar-inverse"><div class="navbar-inner"><div class="container-fluid">
     <a class="brand" href="/">Nicolas McCurdy</a>
     <ul class="nav">
-      <li<%= active_if 'index' %>><a href="/">
+      <li{% if page.title == 'Home' %} class="active"{% endif %}><a href="/">
         <i class="icon-home icon-white"></i> Home
       </a></li>
-      <li<%= active_if 'skills' %>><a href="/skills">
+      <li{% if page.title == 'Skills' %} class="active"{% endif %}><a href="/skills">
         <i class="icon-folder-open icon-white"></i> Skills
       </a></li>
-      <li<%= active_if 'projects' %>><a href="/projects">
+      <li{% if page.title == 'Projects' %} class="active"{% endif %}><a href="/projects">
         <i class="icon-th icon-white"></i> Projects
       </a></li>
     </ul>
@@ -41,7 +37,7 @@
   <!-- page content -->
   <div id="content">
 
-<%= yield %>
+{{ content }}
 
   </div>
 
@@ -53,10 +49,10 @@
 <!-- scripts -->
 <script src="/components/jquery/jquery.min.js"></script>
 <script src="/components/bootstrap.css/js/bootstrap.min.js"></script>
-<%= js :app %>
-<% if @page_id == 'skills'%>
+<script src="/js/main.js"></script>
+{% if page.title == 'Skills' %}
 <script>$("a").tooltip();</script>
-<% end %>
+{% endif %}
 <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <script type="text/javascript">
