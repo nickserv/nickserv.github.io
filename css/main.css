@@ -1,16 +1,19 @@
 /* major page sections */
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 #main-column {
   position: relative;
   max-width: 800px !important;
-  margin: 0px auto; }
+  margin: 0px auto;
+}
 
 #content {
   padding: 0px 10px;
   font-size: 14px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 footer {
   text-align: center;
@@ -19,74 +22,99 @@ footer {
   position: absolute;
   bottom: 0px;
   margin-bottom: 15px;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 /* navbar */
 .navbar-inner {
-  border: 1px solid #222222; }
+  border: 1px solid #222222;
+}
 
 .brand:hover {
-  background-color: inherit !important; }
+  background-color: inherit !important;
+}
 
 /* page content */
 h1, h2 {
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 th {
-  color: #cccccc; }
+  color: #cccccc;
+}
 
 .email {
-  display: none; }
+  display: none;
+}
 
 /* home page */
 #links {
   font-size: 16px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* skills page */
 table, table th, table td {
   border-color: #999999 !important;
-  border-radius: 0px !important; }
+  border-radius: 0px !important;
+}
 
 table a {
   border-bottom: 1px dotted #999999;
-  color: inherit; }
-  table a:hover {
-    border-bottom: 1px solid #999999;
-    text-decoration: none; }
+  color: inherit;
+}
+
+table a:hover {
+  border-bottom: 1px solid #999999;
+  text-decoration: none;
+}
 
 /* projects page */
 a.well {
   color: #999999;
   text-decoration: none;
   /*padding: 19px; */
-  padding: 10px 19px; }
-  a.well:hover {
-    color: #eeeeee;
-    /*background-color: #131517 */
-    background-color: #283033; }
-  a.well h2 {
-    color: #33b5e5;
-    margin: 0px; }
-  a.well .version {
-    float: right; }
+  padding: 10px 19px;
+}
+
+a.well:hover {
+  color: #eeeeee;
+  /*background-color: #131517 */
+  background-color: #283033;
+}
+
+a.well h2 {
+  color: #33b5e5;
+  margin: 0px;
+}
+
+a.well .version {
+  float: right;
+}
 
 #sidebar a {
   background-color: #131517;
   border-color: #999999 !important;
-  border-radius: 0px; }
+  border-radius: 0px;
+}
+
 @media (min-width: 768px) {
   #sidebar {
     position: fixed;
     top: 70px;
-    width: 115px; } }
+    width: 115px;
+  }
+}
 
 /* 404 page */
 .hero-unit .btn {
   margin-right: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 /* responsive display tweaks for mobile devices */
 @media (max-width: 768px) {
   body {
-    padding: 0; } }
+    padding: 0;
+  }
+}
