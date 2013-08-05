@@ -27,7 +27,7 @@ footer {
 
 /* navbar */
 .navbar-inner {
-  border: 1px solid #222222;
+  border: 1px solid #222;
 }
 
 .brand:hover {
@@ -40,7 +40,7 @@ h1, h2 {
 }
 
 th {
-  color: #cccccc;
+  color: #ccc;
 }
 
 .email {
@@ -55,30 +55,30 @@ th {
 
 /* skills page */
 table, table th, table td {
-  border-color: #999999 !important;
+  border-color: #999 !important;
   border-radius: 0px !important;
 }
 
 table a {
-  border-bottom: 1px dotted #999999;
+  border-bottom: 1px dotted #999;
   color: inherit;
 }
 
 table a:hover {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #999;
   text-decoration: none;
 }
 
 /* projects page */
 a.well {
-  color: #999999;
+  color: #999;
   text-decoration: none;
   /*padding: 19px; */
   padding: 10px 19px;
 }
 
 a.well:hover {
-  color: #eeeeee;
+  color: #eee;
   /*background-color: #131517 */
   background-color: #283033;
 }
@@ -94,7 +94,7 @@ a.well .version {
 
 #sidebar a {
   background-color: #131517;
-  border-color: #999999 !important;
+  border-color: #999 !important;
   border-radius: 0px;
 }
 
