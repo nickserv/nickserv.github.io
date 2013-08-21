@@ -1,8 +1,0 @@
-{
-  "name": "bootswatch",
-  "version": "2.3.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/thomaspark/bootswatch"
-  }
-}

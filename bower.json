@@ -1,8 +1,0 @@
-{
-  "name": "thenickperson.com",
-  "dependencies": {
-    "bootstrap.css": "~2.3.0",
-    "bootswatch": "~2.3.0",
-    "jquery": "~1.9.1"
-  }
-}
