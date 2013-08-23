@@ -30,7 +30,7 @@ footer {
   border: 1px solid #222;
 }
 
-.brand:hover {
+.navbar-brand:hover {
   background-color: inherit;
 }
 
