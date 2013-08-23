@@ -101,7 +101,7 @@ a.well .version {
 }
 
 /* 404 page */
-.hero-unit .btn {
+.jumbotron .btn {
   margin-right: 10px;
   margin-bottom: 10px;
 }
