@@ -65,26 +65,33 @@ table a:hover {
 }
 
 /* projects page */
-a.well {
+.well {
+  padding: 0;
+}
+
+.well a {
   color: #999;
   text-decoration: none;
   /*padding: 19px; */
   padding: 10px 19px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-a.well:hover {
+.well:hover {
   color: #eee;
   /*background-color: #131517 */
   background-color: #283033;
 }
 
-a.well .project-title {
+.well .project-title {
   color: #33b5e5;
   font-size: 31.5px;
   line-height: 31.5px;
 }
 
-a.well .version {
+.well .version {
   float: right;
 }
 
