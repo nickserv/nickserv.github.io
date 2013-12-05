@@ -6,11 +6,11 @@ body {
 #main-column {
   position: relative;
   max-width: 800px !important;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 #content {
-  padding: 0px 10px;
+  padding: 0 10px;
   font-size: 14px;
   margin-bottom: 50px;
 }
@@ -20,7 +20,7 @@ footer {
   font-size: 12px;
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   margin-bottom: 15px;
   padding-bottom: 0;
 }
@@ -36,7 +36,7 @@ footer {
 
 /* page content */
 h1, h2 {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 th {
@@ -56,7 +56,7 @@ th {
 /* skills page */
 table, table th, table td {
   border-color: #999 !important;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 
 table a {
@@ -85,7 +85,7 @@ a.well:hover {
 
 a.well h2 {
   color: #33b5e5;
-  margin: 0px;
+  margin: 0;
 }
 
 a.well .version {
@@ -95,7 +95,7 @@ a.well .version {
 #sidebar a {
   background-color: #131517;
   border-color: #999 !important;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 @media (min-width: 768px) {
