@@ -48,7 +48,7 @@ th {
 }
 
 /* home page */
-#links {
+.links {
   font-size: 16px;
   font-weight: bold;
 }
@@ -92,14 +92,12 @@ a.well .version {
   float: right;
 }
 
-#sidebar a {
+.sidebar a {
   background-color: #131517;
-  border-color: #999 !important;
-  border-radius: 0;
 }
 
 @media (min-width: 768px) {
-  #sidebar {
+  .sidebar {
     position: fixed;
     top: 70px;
     width: 115px;
