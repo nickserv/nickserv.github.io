@@ -1,7 +1,3 @@
-$(document).ready(function() {
-  $(".tooltip-link").tooltip( {placement: "right"} );
-});
-
 if($(".email").length){
   // variables, which will be replaced
   var at = / AT /;
