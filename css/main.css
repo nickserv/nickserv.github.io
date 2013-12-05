@@ -83,9 +83,10 @@ a.well:hover {
   background-color: #283033;
 }
 
-a.well h2 {
+a.well .project-title {
   color: #33b5e5;
-  margin: 0;
+  font-size: 31.5px;
+  line-height: 31.5px;
 }
 
 a.well .version {
