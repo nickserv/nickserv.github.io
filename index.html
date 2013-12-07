@@ -33,36 +33,21 @@ permalink: /
   <aside class="span2">
     <h1>Links</h1>
     <ul class="links">
-      <li>
-        <a href="http://careers.stackoverflow.com/thenickperson" target="_blank">
-          CV
-        </a>
-      </li>
-      <li class="email">
-        <a data-email="thenickperson AT gmail DOT com" href="#">
-          Email
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/thenickperson" target="_blank">
-          Facebook
-        </a>
-      </li>
-      <li>
-        <a href="https://google.com/+NicolasMcCurdy" target="_blank">
-          Google+
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/thenickperson" target="_blank">
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/thenickperson/" target="_blank">
-          GitHub
-        </a>
-      </li>
+      {% for link in site.data.links %}
+        {% if link.name == 'Email' %}
+          <li class="email">
+            <a data-email="thenickperson AT gmail DOT com" href="{{link.url}}">
+              {{link.name}}
+            </a>
+          </li>
+        {% else %}
+          <li>
+            <a href="{{link.url}}" target="_blank">
+              {{link.name}}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </aside>
 
