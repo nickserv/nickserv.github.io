@@ -1,92 +1,78 @@
 command_line_apps:
 
-  -
+  - name: Tracking
     url: https://github.com/thenickperson/tracking
-    name: Tracking
-    label: GitHub
     description: A simple and configurable command line time tracker.
-
-  -
-    url: https://github.com/thenickperson/magician
-    name: Magician
     label: GitHub
+
+  - name: Magician
+    url: https://github.com/thenickperson/magician
     description: A suite of handy methods for doing calculations in irb.
+    label: GitHub
 
 browser_extensions:
 
-  -
+  - name: HashMask
     url: https://github.com/wyantb/HashMask/
-    name: HashMask
-    label: GitHub
     description: A Chrome extension that enhances password fields (a collaboration with Brian Wyant and Daniel Wallach).
+    label: GitHub
 
-  -
+  - name: Powerfox
     url: http://userstyles.org/styles/59527/powerfox-ui-improvements-for-firefox-power-users
-    name: Powerfox
     description: A simple collection of tweaks for Firefox that make it a little awesomer for power users, or just those who would like a little more out of their browser UI.
 
 config_files:
 
-  -
+  - name: My Castle (Dotfiles)
     url: https://github.com/thenickperson/castle
-    name: My Castle (Dotfiles)
-    label: GitHub
     description: My personal configuration files, themes, and scripts for Linux/Unix software.
-
-  -
-    url: https://github.com/thenickperson/sane-defaults
-    name: Sane Defaults
     label: GitHub
+
+  - name: Sane Defaults
+    url: https://github.com/thenickperson/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
+    label: GitHub
 
 web_apps:
 
-  -
+  - name: Text Tools
     url: /apps/text_tools/index.html
-    version: 1.6
-    name: Text Tools
     description: A handy text editor for batch manipulations of text.
+    version: 1.6
 
-  -
+  - name: Multi-Tab Bookmarks
     url: /apps/mtb/index.html
-    version: 1.2
-    name: Multi-Tab Bookmarks
     description: Save bookmarks that open sets of links in multiple tabs or windows.
+    version: 1.2
 
-  -
+  - name: Quick Note
     url: /apps/quick_note/index.html
-    version: 1.0
-    name: Quick Note
     description: A minimal app to save reminders and other short text.
+    version: 1.0
 
-  -
+  - name: Screen Space
     url: /apps/screen_space/index.html
-    version: 1.0
-    name: Screen Space
     description: See detailed information about pixel usage in your browser and OS, all in one place.
-
-  -
-    url: /apps/collatz/index.html
     version: 1.0
-    name: Collatz Conjecture
+
+  - name: Collatz Conjecture
+    url: /apps/collatz/index.html
     description: Calculute sets of integers using the Collatz Conjecture.
+    version: 1.0
 
 miscellaneous:
 
-  -
+  - name: Simple Web Templates
     url: https://github.com/thenickperson/simple-web-templates
-    name: Simple Web Templates
-    label: GitHub
     description: A small collection of simple templates and useful tools for awesome modern web development.
+    label: GitHub
 
-  -
+  - name: Project Euler Solutions
     url: https://github.com/thenickperson/project-euler
-    name: Project Euler Solutions
-    label: GitHub
     description: My solutions to Project Euler problems.
-
-  -
-    url: https://github.com/thenickperson
-    name: More Stuff
     label: GitHub
+
+  - name: More Stuff
+    url: https://github.com/thenickperson
     description: Check out all my GitHub repositories, including a bunch not listed here.
+    label: GitHub
