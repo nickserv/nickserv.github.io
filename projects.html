@@ -22,62 +22,23 @@ permalink: projects/
 
   <div class="span10">
 
-    <h2 id="command-line-apps">Command Line Apps and Libraries</h2>
+    {% for category in site.data.projects %}
 
-    {% for project in site.data.projects.command_line_apps %}
-      <a class="well" href="{{project.url}}" target="_blank">
-        <p class="project-title">{{project.name}}</p>
-        {% if project.label %}
-          <span class="label">&nbsp;{{project.label}}&nbsp;</span>
-        {% endif %}
-        {{project.description}}
-      </a>
-    {% endfor %}
+      <h2 id="{{category.id}}">{{category.name}}</h2>
 
-    <h2 id="browser-extensions">Browser Extensions</h2>
+      {% for project in category.projects %}
+        <a class="well" href="{{project.url}}" target="_blank">
+          {% if project.version %}
+            <span class="version">{{project.version}}</span>
+          {% endif %}
+          <p class="project-title">{{project.name}}</p>
+          {% if project.label %}
+            <span class="label">&nbsp;{{project.label}}&nbsp;</span>
+          {% endif %}
+          {{project.description}}
+        </a>
+      {% endfor %}
 
-    {% for project in site.data.projects.browser_extensions %}
-      <a class="well" href="{{project.url}}" target="_blank">
-        <p class="project-title">{{project.name}}</p>
-        {% if project.label %}
-          <span class="label">&nbsp;{{project.label}}&nbsp;</span>
-        {% endif %}
-        {{project.description}}
-      </a>
-    {% endfor %}
-
-    <h2 id="config-files">Config Files</h2>
-
-    {% for project in site.data.projects.config_files %}
-      <a class="well" href="{{project.url}}" target="_blank">
-        <p class="project-title">{{project.name}}</p>
-        {% if project.label %}
-          <span class="label">&nbsp;{{project.label}}&nbsp;</span>
-        {% endif %}
-        {{project.description}}
-      </a>
-    {% endfor %}
-
-    <h2 id="web-apps">Web Apps</h2>
-
-    {% for project in site.data.projects.web_apps %}
-      <a class="well" href="{{project.url}}" target="_blank">
-        <span class="version">{{project.version}}</span>
-        <p class="project-title">{{project.name}}</p>
-        {{project.description}}
-      </a>
-    {% endfor %}
-
-    <h2 id="miscellaneous">Miscellaneous</h2>
-
-    {% for project in site.data.projects.miscellaneous %}
-      <a class="well" href="{{project.url}}" target="_blank">
-        <p class="project-title">{{project.name}}</p>
-        {% if project.label %}
-          <span class="label">&nbsp;{{project.label}}&nbsp;</span>
-        {% endif %}
-        {{project.description}}
-      </a>
     {% endfor %}
 
   </div>
