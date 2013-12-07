@@ -66,6 +66,7 @@ table a:hover {
 
 /* projects page */
 a.well {
+  display: block;
   color: #999;
   text-decoration: none;
   /*padding: 19px; */
