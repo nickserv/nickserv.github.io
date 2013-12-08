@@ -8,25 +8,8 @@ permalink: /
 
   <!-- about me -->
   <section class="span10">
-    <h1>About Me</h1>
-    <p>
-      Hi, I'm Nick. I am a 20 year old software engineering student at the <a
-      href="http://www.rit.edu/">Rochester Institute of
-      Technology</a> and a member of the <a href="http://sse.se.rit.edu/">
-      Society of Software Engineers</a>. I currently live on
-      campus. My home town is Weehawken, New Jersey.
-    </p>
-    <p>
-      I love working with computers, and am passionate about making great
-      software. Lately, I enjoy tinkering with
-      <a href="http://www.ruby-lang.org/en/">Ruby</a>,
-      <a href="http://rubyonrails.org/">Ruby on Rails</a>,
-      <a href="http://common-lisp.net/">Common Lisp</a>,
-      front-end web development,
-      <a href="https://www.archlinux.org/">Arch Linux</a>,
-      and writing open source software on
-      <a href="https://github.com/">GitHub</a>.
-    </p>
+    {% capture about_me %}{% include about_me.md %}{% endcapture %}
+    {{ about_me | markdownify }}
   </section>
 
   <!-- links -->
