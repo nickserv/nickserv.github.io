@@ -18,39 +18,41 @@
 
 <body data-spy="scroll" data-target=".main-column">
 
-<!-- main column -->
-<div class="container-fluid main-column">
+  <!-- main column -->
+  <div class="container-fluid main-column">
 
-  <!-- navbar -->
-  <nav class="navbar navbar-inverse"><div class="navbar-inner"><div class="container-fluid">
-    <a class="brand" href="/">Nicolas McCurdy</a>
-    <ul class="nav">
-      {% include navbar_link.html name="Home" url="/" icon="home" %}
-      {% include navbar_link.html name="Skills" url="/skills" icon="folder-open" %}
-      {% include navbar_link.html name="Projects" url="/projects" icon="th" %}
-    </ul>
-  </div></div></nav>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="/">Nicolas McCurdy</a>
+          <ul class="nav">
+            {% include navbar_link.html name="Home" url="/" icon="home" %}
+            {% include navbar_link.html name="Skills" url="/skills" icon="folder-open" %}
+            {% include navbar_link.html name="Projects" url="/projects" icon="th" %}
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <!-- page content -->
-  <div class="content">
+    <!-- page content -->
+    <div class="content">
+      {{ content }}
+    </div>
 
-{{ content }}
+    <!-- footer -->
+    <footer>&copy; 2013 Nicolas McCurdy</footer>
 
   </div>
 
-  <!-- footer -->
-  <footer>&copy; 2013 Nicolas McCurdy</footer>
-
-</div>
-
-<!-- scripts -->
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-{% if page.title == 'Skills' %}
-<script>$("a").tooltip();</script>
-{% endif %}
-<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!-- scripts -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+  {% if page.title == 'Skills' %}
+    <script>$("a").tooltip();</script>
+  {% endif %}
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </body>
 </html>
