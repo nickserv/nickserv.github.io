@@ -16,7 +16,7 @@
   {% include analytics.html %}
 </head>
 
-<body data-spy="scroll" data-target=".main-column">
+<body{% if page.title == "Projects" %} data-spy="scroll" data-target=".main-column"{% endif %}>
 
   <!-- main column -->
   <div class="container-fluid main-column">
