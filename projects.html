@@ -31,10 +31,12 @@ permalink: projects/
           {% if project.version %}
             <span class="badge badge-info pull-right">{{project.version}}</span>
           {% endif %}
-          <p class="project-title">{{project.name}}</p>
-          {% if project.label %}
-            <span class="label">&nbsp;{{project.label}}&nbsp;</span>
-          {% endif %}
+          <p class="project-title">
+            {{project.name}}
+            {% if project.label %}
+              <span class="label label-info pull-right">&nbsp;{{project.label}}&nbsp;</span>
+            {% endif %}
+          </p>
           {{project.description}}
         </a>
       {% endfor %}
