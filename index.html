@@ -33,24 +33,17 @@ permalink: /
   <aside class="col-sm-2">
     <h1>Links</h1>
     <div class="list-group">
-      <a href="http://careers.stackoverflow.com/thenickperson" class="list-group-item" target="_blank">
-        CV
-      </a>
-      <a href="#" class="list-group-item email" data-email="thenickperson AT gmail DOT com">
-        Email
-      </a>
-      <a href="https://www.facebook.com/thenickperson" class="list-group-item" target="_blank">
-        Facebook
-      </a>
-      <a href="https://google.com/+NicolasMcCurdy" class="list-group-item" target="_blank">
-        Google+
-      </a>
-      <a href="https://twitter.com/thenickperson" class="list-group-item" target="_blank">
-        Twitter
-      </a>
-      <a href="https://github.com/thenickperson/" class="list-group-item" target="_blank">
-        GitHub
-      </a>
+      {% for link in site.data.links %}
+        {% if link.name == 'Email' %}
+          <a href="{{link.url}}" class="list-group-item email" data-email="thenickperson AT gmail DOT com">
+            {{link.name}}
+          </a>
+        {% else %}
+          <a href="{{link.url}}" class="list-group-item" target="_blank">
+            {{link.name}}
+          </a>
+        {% endif %}
+      {% endfor %}
     </div>
   </aside>
 

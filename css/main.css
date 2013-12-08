@@ -29,7 +29,7 @@ footer {
   padding: 0;
 }
 
-.well a {
+a.well {
   color: #999;
   text-decoration: none;
   padding: 19px; 

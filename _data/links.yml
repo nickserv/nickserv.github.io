@@ -1,0 +1,17 @@
+- name: CV
+  url: http://careers.stackoverflow.com/thenickperson
+
+- name: Email
+  url: '#'
+
+- name: Facebook
+  url: https://www.facebook.com/thenickperson
+
+- name: Google+
+  url: https://google.com/+NicolasMcCurdy
+
+- name: Twitter
+  url: https://twitter.com/thenickperson
+
+- name: GitHub
+  url: https://github.com/thenickperson/

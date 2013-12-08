@@ -1,0 +1,76 @@
+- name: Command Line Apps and Libraries
+  id: command-line-apps
+  projects:
+  - name: Tracking
+    url: https://github.com/thenickperson/tracking
+    description: A simple and configurable command line time tracker.
+    label: GitHub
+  - name: Magician
+    url: https://github.com/thenickperson/magician
+    description: A suite of handy methods for doing calculations in irb.
+    label: GitHub
+
+- name: Browser Extensions
+  id: browser-extensions
+  projects:
+  - name: HashMask
+    url: https://github.com/wyantb/HashMask/
+    description: A Chrome extension that enhances password fields (a collaboration with Brian Wyant and Daniel Wallach).
+    label: GitHub
+  - name: Powerfox
+    url: http://userstyles.org/styles/59527/powerfox-ui-improvements-for-firefox-power-users
+    description: A simple collection of tweaks for Firefox that make it a little awesomer for power users, or just those who would like a little more out of their browser UI.
+
+- name: Config Files
+  id: config-files
+  projects:
+  - name: My Castle (Dotfiles)
+    url: https://github.com/thenickperson/castle
+    description: My personal configuration files, themes, and scripts for Linux/Unix software.
+    label: GitHub
+  - name: Sane Defaults
+    url: https://github.com/thenickperson/sane-defaults
+    description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
+    label: GitHub
+
+- name: Web Apps
+  id: web-apps
+  projects:
+  - name: Text Tools
+    url: /apps/text_tools/index.html
+    description: A handy text editor for batch manipulations of text.
+    version: 1.6
+  - name: Multi-Tab Bookmarks
+    url: /apps/mtb/index.html
+    description: Save bookmarks that open sets of links in multiple tabs or windows.
+    version: 1.2
+  - name: Quick Note
+    url: /apps/quick_note/index.html
+    description: A minimal app to save reminders and other short text.
+    version: 1.0
+
+  - name: Screen Space
+    url: /apps/screen_space/index.html
+    description: See detailed information about pixel usage in your browser and OS, all in one place.
+    version: 1.0
+
+  - name: Collatz Conjecture
+    url: /apps/collatz/index.html
+    description: Calculute sets of integers using the Collatz Conjecture.
+    version: 1.0
+
+- name: Miscellaneous
+  id: miscellaneous
+  projects:
+  - name: Simple Web Templates
+    url: https://github.com/thenickperson/simple-web-templates
+    description: A small collection of simple templates and useful tools for awesome modern web development.
+    label: GitHub
+  - name: Project Euler Solutions
+    url: https://github.com/thenickperson/project-euler
+    description: My solutions to Project Euler problems.
+    label: GitHub
+  - name: More Stuff
+    url: https://github.com/thenickperson
+    description: Check out all my GitHub repositories, including a bunch not listed here.
+    label: GitHub
