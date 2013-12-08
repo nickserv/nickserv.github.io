@@ -16,47 +16,42 @@
 
 <body data-spy="scroll" data-target=".main-column">
 
-<!-- main column -->
-<div class="container main-column">
+  <!-- main column -->
+  <div class="container main-column">
 
-  <!-- navbar -->
-  <nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Nicolas McCurdy</a>
-      <ul class="nav navbar-nav">
-        <li{% if page.title == 'Home' %} class="active"{% endif %}><a href="/">
-          <span class="glyphicon glyphicon-home"></span> Home
-        </a></li>
-        <li{% if page.title == 'Skills' %} class="active"{% endif %}><a href="/skills">
-          <span class="glyphicon glyphicon-folder-open"></span> Skills
-        </a></li>
-        <li{% if page.title == 'Projects' %} class="active"{% endif %}><a href="/projects">
-          <span class="glyphicon glyphicon-th"></span> Projects
-        </a></li>
-      </ul>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Nicolas McCurdy</a>
+        <ul class="nav navbar-nav">
+          <li{% if page.title == 'Home' %} class="active"{% endif %}><a href="/">
+            <span class="glyphicon glyphicon-home"></span> Home
+          </a></li>
+          <li{% if page.title == 'Skills' %} class="active"{% endif %}><a href="/skills">
+            <span class="glyphicon glyphicon-folder-open"></span> Skills
+          </a></li>
+          <li{% if page.title == 'Projects' %} class="active"{% endif %}><a href="/projects">
+            <span class="glyphicon glyphicon-th"></span> Projects
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- page content -->
+    <div class="content">
+      {{ content }}
     </div>
-  </nav>
 
-  <!-- page content -->
-  <div class="content">
-
-{{ content }}
+    <!-- footer -->
+    <footer>&copy; 2013 Nicolas McCurdy</footer>
 
   </div>
 
-  <!-- footer -->
-  <footer>&copy; 2013 Nicolas McCurdy</footer>
-
-</div>
-
-<!-- scripts -->
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-{% if page.title == 'Skills' %}
-<script>$("a").tooltip();</script>
-{% endif %}
-<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!-- scripts -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </body>
 </html>
