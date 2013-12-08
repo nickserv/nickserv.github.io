@@ -29,7 +29,7 @@ permalink: projects/
       {% for project in category.projects %}
         <a class="well" href="{{project.url}}" target="_blank">
           {% if project.version %}
-            <span class="version">{{project.version}}</span>
+            <span class="badge badge-info pull-right">{{project.version}}</span>
           {% endif %}
           <p class="project-title">{{project.name}}</p>
           {% if project.label %}
