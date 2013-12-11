@@ -24,9 +24,9 @@
 - name: Config Files
   id: config-files
   projects:
-  - name: My Castle (Dotfiles)
+  - name: Castle
     url: https://github.com/thenickperson/castle
-    description: My personal configuration files, themes, and scripts for Linux/Unix software.
+    description: My personal config files, themes, and scripts, which are compatible with homesick.
     label: GitHub
   - name: Sane Defaults
     url: https://github.com/thenickperson/sane-defaults
@@ -62,13 +62,13 @@
 - name: Miscellaneous
   id: miscellaneous
   projects:
-  - name: Simple Web Templates
-    url: https://github.com/thenickperson/simple-web-templates
-    description: A small collection of simple templates and useful tools for awesome modern web development.
+  - name: Templates
+    url: https://github.com/thenickperson/templates
+    description: A small collection of simple templates for popular languages, frameworks, and tools.
     label: GitHub
   - name: Project Euler Solutions
     url: https://github.com/thenickperson/project-euler
-    description: My solutions to Project Euler problems.
+    description: My solutions to Project Euler problems in Ruby.
     label: GitHub
   - name: More Stuff
     url: https://github.com/thenickperson
