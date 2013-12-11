@@ -13,68 +13,72 @@
   <link rel="icon" href="/img/favicon.png">
 </head>
 
-<body data-spy="scroll" data-target=".main-column">
+<body>
 
-<!-- main column -->
-<div class="container main-column">
+  <!-- main column -->
+  <div class="container main-column">
 
-  <!-- navbar -->
-  <nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Nicolas McCurdy</a>
-      <ul class="nav navbar-nav">
-        <li><a href="/">
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Nicolas McCurdy</a>
+        <ul class="nav navbar-nav">
+          <li><a href="/">
+            <span class="glyphicon glyphicon-home"></span> Home
+          </a></li>
+          <li><a href="/skills">
+            <span class="glyphicon glyphicon-folder-open"></span> Skills
+          </a></li>
+          <li><a href="/projects">
+            <span class="glyphicon glyphicon-th"></span> Projects
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- page content -->
+    <div class="content">
+
+      <!-- error message -->
+      <section class="jumbotron">
+
+        <!-- title-->
+        <h1>404 - Page not found</h1>
+
+        <!-- description -->
+        <p>
+          The page you were trying to visit could not be found.<br>
+          You may be going to a page that doesn't exist, mistyping the URL of the
+          page, or visiting a broken link.
+        </p>
+
+        <!-- buttons -->
+        <a class="btn btn-lg btn-default" href="/">
           <span class="glyphicon glyphicon-home"></span> Home
-        </a></li>
-        <li><a href="/skills">
-          <span class="glyphicon glyphicon-folder-open"></span> Skills
-        </a></li>
-        <li><a href="/projects">
-          <span class="glyphicon glyphicon-th"></span> Projects
-        </a></li>
-      </ul>
+        </a>
+        <a class="btn btn-lg btn-danger" href="javascript:history.go(-1)">
+          <span class="glyphicon glyphicon-arrow-left"></span> Back
+        </a>
+        <span class="email">
+          <a class="btn btn-lg btn-primary" data-email="thenickperson AT gmail DOT com" href="#">
+            <span class="glyphicon glyphicon-envelope"></span> Report
+          </a>
+        </span>
+
+      </section>
+
     </div>
-  </nav>
 
-<!-- error message -->
-<section class="content" class="jumbotron">
+    <!-- footer -->
+    <footer>&copy; 2013 Nicolas McCurdy</footer>
 
-  <!-- title-->
-  <h1>404 - Page not found</h1>
+  </div>
 
-  <!-- description -->
-  <p>
-    The page you were trying to visit could not be found.<br>
-    You may be going to a page that doesn't exist, mistyping the URL of the
-    page, or visiting a broken link.
-  </p>
-
-  <!-- buttons -->
-  <a class="btn btn-lg btn-default" href="/">
-    <span class="glyphicon glyphicon-home"></span> Home
-  </a>
-  <a class="btn btn-lg btn-danger" href="javascript:history.go(-1)">
-    <span class="glyphicon glyphicon-arrow-left"></span> Back
-  </a>
-  <span class="email">
-    <a class="btn btn-lg btn-primary" data-email="thenickperson AT gmail DOT com" href="#">
-      <span class="glyphicon glyphicon-envelope"></span> Report
-    </a>
-  </span>
-
-</section>
-
-  <!-- footer -->
-  <footer>&copy; 2013 Nicolas McCurdy</footer>
-
-</div>
-
-<!-- scripts -->
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-
-<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!-- scripts -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </body>
 </html>

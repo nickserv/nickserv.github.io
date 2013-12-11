@@ -24,18 +24,30 @@
 - name: Config Files
   id: config-files
   projects:
-  - name: My Castle (Dotfiles)
+  - name: Castle
     url: https://github.com/thenickperson/castle
-    description: My personal configuration files, themes, and scripts for Linux/Unix software.
+    description: My personal config files, themes, and scripts, which are compatible with homesick.
     label: GitHub
   - name: Sane Defaults
     url: https://github.com/thenickperson/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
     label: GitHub
+  - name: dwm
+    url: https://github.com/thenickperson/dwm
+    description: My personal fork of dwm (with custom settings).
+    label: GitHub
 
 - name: Web Apps
   id: web-apps
   projects:
+  - name: Alexandria
+    url: https://github.com/rit-sse/alexandria
+    description: The library management system for the Society of Software Engineers (a collaboration with the Alexandria project team).
+    label: GitHub
+  - name: Buzzword Generator
+    url: https://github.com/thenickperson/buzzword-generator
+    description: Produces amusing buzzword phrases.
+    label: GitHub
   - name: Text Tools
     url: /apps/text_tools/index.html
     description: A handy text editor for batch manipulations of text.
@@ -62,13 +74,13 @@
 - name: Miscellaneous
   id: miscellaneous
   projects:
-  - name: Simple Web Templates
-    url: https://github.com/thenickperson/simple-web-templates
-    description: A small collection of simple templates and useful tools for awesome modern web development.
+  - name: Templates
+    url: https://github.com/thenickperson/templates
+    description: A small collection of simple templates for popular languages, frameworks, and tools.
     label: GitHub
   - name: Project Euler Solutions
     url: https://github.com/thenickperson/project-euler
-    description: My solutions to Project Euler problems.
+    description: My solutions to Project Euler problems in Ruby.
     label: GitHub
   - name: More Stuff
     url: https://github.com/thenickperson
