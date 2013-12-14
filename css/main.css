@@ -4,45 +4,17 @@ body {
 }
 
 .main-column {
-  position: relative;
   max-width: 800px;
   margin: 0 auto;
-}
-
-.content {
-  padding: 0 10px;
-  font-size: 14px;
-  margin-bottom: 50px;
 }
 
 footer {
   text-align: center;
   font-size: 12px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
   margin-bottom: 15px;
-  padding-bottom: 0;
-}
-
-/* navbar */
-.navbar-inner {
-  border: 1px solid #222;
-}
-
-.brand:hover {
-  background-color: inherit;
 }
 
 /* page content */
-h1, h2 {
-  margin-top: 0;
-}
-
-th {
-  color: #ccc;
-}
-
 .email {
   display: none;
 }
@@ -51,17 +23,6 @@ th {
 .links {
   font-size: 16px;
   font-weight: bold;
-}
-
-/* skills page */
-table a {
-  border-bottom: 1px dotted #999;
-  color: inherit;
-}
-
-table a:hover {
-  border-bottom: 1px solid #999;
-  text-decoration: none;
 }
 
 /* projects page */
@@ -92,20 +53,6 @@ a.well .project-title {
 @media (min-width: 768px) {
   .sidebar {
     position: fixed;
-    top: 70px;
     width: 115px;
-  }
-}
-
-/* 404 page */
-.hero-unit .btn {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-/* responsive display tweaks for mobile devices */
-@media (max-width: 768px) {
-  body {
-    padding: 0;
   }
 }
