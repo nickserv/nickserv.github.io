@@ -22,8 +22,19 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-inverse" role="navigation">
+      <!-- navbar header, always displayed -->
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="/">Nicolas McCurdy</a>
+      </div>
+
+      <!-- navbar collapse, toggled on mobile devices -->
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
         <ul class="nav navbar-nav">
           <li{% if page.title == 'Home' %} class="active"{% endif %}><a href="/">
             <span class="glyphicon glyphicon-home"></span> Home
