@@ -21,25 +21,29 @@ permalink: projects/
 
     {% for category in site.data.projects %}
 
-      <h2 id="{{category.id}}">{{category.name}}</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading" id="{{category.id}}">
+          <h3>{{category.name}}</h3>
+        </div>
 
-      <div class="list-group">
-        {% for project in category.projects %}
-          <a href="{{project.url}}" class="list-group-item" target="_blank">
+        <div class="list-group">
+          {% for project in category.projects %}
+            <a href="{{project.url}}" class="list-group-item" target="_blank">
 
-            {% if project.version %}
-              <span class="badge badge-info pull-right">{{project.version}}</span>
-            {% endif %}
-            {% if project.label %}
-              <span class="label label-info pull-right">{{project.label}}</span>
-            {% endif %}
+              {% if project.version %}
+                <span class="badge badge-info pull-right">{{project.version}}</span>
+              {% endif %}
+              {% if project.label %}
+                <span class="label label-info pull-right">{{project.label}}</span>
+              {% endif %}
 
-            <h3 class="list-group-item-heading">{{project.name}}</h3>
+              <h3 class="list-group-item-heading">{{project.name}}</h3>
 
-            <p class="list-group-item-text">{{project.description}}</p>
+              <p class="list-group-item-text">{{project.description}}</p>
 
-          </a>
-        {% endfor %}
+            </a>
+          {% endfor %}
+        </div>
       </div>
 
     {% endfor %}

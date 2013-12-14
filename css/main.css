@@ -20,6 +20,10 @@ footer {
 }
 
 /* projects page */
+.panel-heading h3 {
+  margin: 0;
+}
+
 .sidebar a {
   background-color: #131517;
 }
