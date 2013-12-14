@@ -1,0 +1,27 @@
+- name: Programming Languages
+  skills:
+  - Ruby
+  - Java
+  - Python
+  - Lua
+  - C (learning)
+
+- name: Web Languages
+  skills:
+  - HTML 5
+  - HTML 4
+  - CSS
+  - JavaScript
+
+- name: Miscellaneous
+  skills:
+  - Rails (learning)
+  - jQuery
+  - Twitter Bootstrap
+  - Bash
+
+- name: Version Control Systems
+  skills:
+  - Git
+  - Subversion
+  - Mercurial
