@@ -1,6 +1,12 @@
 "use strict";
 
 $(document).ready(function () {
+
+  // Smooth scroll
+  // See https://github.com/kswedberg/jquery-smooth-scroll
+  $("a").smoothScroll();
+
+  // Email link decoding
   if ($(".email").length) {
     // variables, which will be replaced
     var at = / AT /,
@@ -13,4 +19,5 @@ $(document).ready(function () {
     });
     $(".email").css("display", "inherit");
   }
+
 });
