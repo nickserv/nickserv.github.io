@@ -20,23 +20,6 @@ footer {
 }
 
 /* projects page */
-a.well {
-  color: #999;
-  text-decoration: none;
-  padding: 19px; 
-  display: block;
-}
-
-.well:hover {
-  background-color: #283033;
-}
-
-.well .project-title {
-  color: #33b5e5;
-  font-size: 31.5px;
-  line-height: 31.5px;
-}
-
 .sidebar a {
   background-color: #131517;
 }
