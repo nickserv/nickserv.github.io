@@ -1,9 +1,8 @@
 # [Nicolas McCurdy's Website](http://thenickperson.github.io/)
 
-## Analytics
-- [Google Analytics](https://www.google.com/analytics)
-- [Facebook Insights](https://www.facebook.com/insights)
+## Tools
+- [Google's index of thenickperson.com](http://www.google.com/search?q=site%3Athenickperson.com)
 
-## Other Tools
+## Private Tools
+- [Google Analytics](https://www.google.com/analytics)
 - [Webmaster Tools](https://www.google.com/webmasters/tools)
-- [Indexed on Google](http://www.google.com/search?q=site%3Athenickperson.com)
