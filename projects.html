@@ -23,20 +23,24 @@ permalink: projects/
 
       <h2 id="{{category.id}}">{{category.name}}</h2>
 
-      {% for project in category.projects %}
-        <a class="well" href="{{project.url}}" target="_blank">
-          {% if project.version %}
-            <span class="badge badge-info pull-right">{{project.version}}</span>
-          {% endif %}
-          {% if project.label %}
-            <span class="label label-info pull-right">{{project.label}}</span>
-          {% endif %}
-          <p class="project-title">
-            {{project.name}}
-          </p>
-          {{project.description}}
-        </a>
-      {% endfor %}
+      <div class="list-group">
+        {% for project in category.projects %}
+          <a href="{{project.url}}" class="list-group-item" target="_blank">
+
+            {% if project.version %}
+              <span class="badge badge-info pull-right">{{project.version}}</span>
+            {% endif %}
+            {% if project.label %}
+              <span class="label label-info pull-right">{{project.label}}</span>
+            {% endif %}
+
+            <h4 class="list-group-item-heading">{{project.name}}</h4>
+
+            <p class="list-group-item-text">{{project.description}}</p>
+
+          </a>
+        {% endfor %}
+      </div>
 
     {% endfor %}
 
