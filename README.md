@@ -1,4 +1,4 @@
-# [Nicolas McCurdy's Website](http://thenickperson.github.io/)
+# [Nicolas McCurdy's Website](http://thenickperson.com/)
 
 ## Tools
 - [Google's index of thenickperson.com](http://www.google.com/search?q=site%3Athenickperson.com)
