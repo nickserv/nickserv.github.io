@@ -56,16 +56,10 @@
     url: /apps/mtb/index.html
     description: Save bookmarks that open sets of links in multiple tabs or windows.
     version: 1.2
-  - name: Quick Note
-    url: /apps/quick_note/index.html
-    description: A minimal app to save reminders and other short text.
-    version: 1.0
-
   - name: Screen Space
     url: /apps/screen_space/index.html
     description: See detailed information about pixel usage in your browser and OS, all in one place.
     version: 1.0
-
   - name: Collatz Conjecture
     url: /apps/collatz/index.html
     description: Calculute sets of integers using the Collatz Conjecture.
