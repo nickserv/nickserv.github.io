@@ -32,10 +32,6 @@
     url: https://github.com/thenickperson/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
     label: GitHub
-  - name: dwm
-    url: https://github.com/thenickperson/dwm
-    description: My personal fork of dwm (with custom settings).
-    label: GitHub
 
 - name: Web Apps
   id: web-apps
