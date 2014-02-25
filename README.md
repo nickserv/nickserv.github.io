@@ -5,14 +5,14 @@
 
 
 ## Web apps extracted from this repository
-- [copyboard](https://github.com/thenickperson/copyboard)
-- [grid](https://github.com/thenickperson/grid)
-- [layout](https://github.com/thenickperson/layout)
-- [lim](https://github.com/thenickperson/lim)
-- [link_tools](https://github.com/thenickperson/link_tools)
-- [randomize](https://github.com/thenickperson/randomize)
-- [time_tools](https://github.com/thenickperson/time_tools)
-- [web_console](https://github.com/thenickperson/web_console)
+- [copyboard](https://github.com/nicolasmccurdy/copyboard)
+- [grid](https://github.com/nicolasmccurdy/grid)
+- [layout](https://github.com/nicolasmccurdy/layout)
+- [lim](https://github.com/nicolasmccurdy/lim)
+- [link_tools](https://github.com/nicolasmccurdy/link_tools)
+- [randomize](https://github.com/nicolasmccurdy/randomize)
+- [time_tools](https://github.com/nicolasmccurdy/time_tools)
+- [web_console](https://github.com/nicolasmccurdy/web_console)
 
 ## Tools
 - [Google's index of nicolasmccurdy.github.io](http://www.google.com/search?q=site%3Anicolasmccurdy.github.io)

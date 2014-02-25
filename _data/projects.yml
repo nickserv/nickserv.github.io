@@ -2,11 +2,11 @@
   id: command-line-apps
   projects:
   - name: Tracking
-    url: https://github.com/thenickperson/tracking
+    url: https://github.com/nicolasmccurdy/tracking
     description: A simple and configurable command line time tracker.
     label: GitHub
   - name: Magician
-    url: https://github.com/thenickperson/magician
+    url: https://github.com/nicolasmccurdy/magician
     description: A suite of handy methods for doing calculations in irb.
     label: GitHub
 
@@ -25,11 +25,11 @@
   id: config-files
   projects:
   - name: Castle
-    url: https://github.com/thenickperson/castle
+    url: https://github.com/nicolasmccurdy/castle
     description: My personal config files, themes, and scripts, which are compatible with homesick.
     label: GitHub
   - name: Sane Defaults
-    url: https://github.com/thenickperson/sane-defaults
+    url: https://github.com/nicolasmccurdy/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
     label: GitHub
 
@@ -41,7 +41,7 @@
     description: The library management system for the Society of Software Engineers (a collaboration with the Alexandria project team).
     label: GitHub
   - name: Buzzword Generator
-    url: https://github.com/thenickperson/buzzword-generator
+    url: https://github.com/nicolasmccurdy/buzzword-generator
     description: Produces amusing buzzword phrases.
     label: GitHub
   - name: Text Tools
@@ -61,14 +61,14 @@
   id: miscellaneous
   projects:
   - name: Templates
-    url: https://github.com/thenickperson/templates
+    url: https://github.com/nicolasmccurdy/templates
     description: A small collection of simple templates for popular languages, frameworks, and tools.
     label: GitHub
   - name: Project Euler Solutions
-    url: https://github.com/thenickperson/project-euler
+    url: https://github.com/nicolasmccurdy/project-euler
     description: My solutions to Project Euler problems in Ruby.
     label: GitHub
   - name: More Stuff
-    url: https://github.com/thenickperson
+    url: https://github.com/nicolasmccurdy
     description: Check out all my GitHub repositories, including a bunch not listed here.
     label: GitHub
