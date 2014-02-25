@@ -1,4 +1,4 @@
-# [Nicolas McCurdy's Website](http://thenickperson.com/)
+# [Nicolas McCurdy's Website](http://nicolasmccurdy.github.io/)
 
 ## License
 [![Creative Commons License](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -15,7 +15,7 @@
 - [web_console](https://github.com/thenickperson/web_console)
 
 ## Tools
-- [Google's index of thenickperson.com](http://www.google.com/search?q=site%3Athenickperson.com)
+- [Google's index of nicolasmccurdy.github.io](http://www.google.com/search?q=site%3Anicolasmccurdy.github.io)
 
 ## Private Tools
 - [Google Analytics](https://www.google.com/analytics)
