@@ -9,6 +9,10 @@
     url: https://github.com/nicolasmccurdy/magician
     description: A suite of handy methods for doing calculations in irb.
     label: GitHub
+  - name: Run
+    url: https://github.com/nicolasmccurdy/run
+    description: A simple command line tool for running individual files of source code.
+    label: GitHub
 
 - name: Browser Extensions
   id: browser-extensions
@@ -43,6 +47,10 @@
   - name: Buzzword Generator
     url: https://github.com/nicolasmccurdy/buzzword-generator
     description: Produces amusing buzzword phrases.
+    label: GitHub
+  - name: strftime Editor
+    url: https://github.com/nicolasmccurdy/strftime-editor
+    description: A simple strftime string editor.
     label: GitHub
   - name: Text Tools
     url: /apps/text_tools/index.html
