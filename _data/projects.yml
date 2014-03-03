@@ -28,8 +28,8 @@
 - name: Config Files
   id: config-files
   projects:
-  - name: Castle
-    url: https://github.com/nicolasmccurdy/castle
+  - name: Dotfiles
+    url: https://github.com/nicolasmccurdy/dotfiles
     description: My personal config files, themes, and scripts, which are compatible with homesick.
     label: GitHub
   - name: Sane Defaults
