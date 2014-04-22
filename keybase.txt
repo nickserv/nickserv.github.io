@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/nicolasmccurdy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nicolasmccurdy.github.io
+  * I am nicolasmccurdy (https://keybase.io/nicolasmccurdy) on keybase.
+  * I have a public key with fingerprint E257 ADBB 366E A67B 9D07  3C8F 148D 4E16 7815 22E4
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e257adbb366ea67b9d073c8f148d4e16781522e4",
+            "host": "keybase.io",
+            "key_id": "148d4e16781522e4",
+            "uid": "c8c3c85074029a6064bc16a4e1725b00",
+            "username": "nicolasmccurdy"
+        },
+        "service": {
+            "hostname": "nicolasmccurdy.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1398196617,
+    "expire_in": 157680000,
+    "prev": "5a206f9715980c8239932188ba09b6ba9e61f04c277473c1d5d3d79f627370e0",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.11
+Comment: https://keybase.io/crypto
+
+yMHsAnicbZFNSBR/GMd3dU13Q60F+W910EasrEXn/Y2UDmLZxaTshYJlXn67junM
+OjO7ZbqGQURhB60wW8pDIXUwV7CIoDQLMQySCi0PpqUrlUS+HP5ULP7G6uZchnm+
+n+f7fOd5XqQn21x2Ym8jn82CcfvIM0fIdvDwy4sNiKjJ9QjfgJwEqy+/ogaAHtQV
+1UR4BOAUI8iiSNA0EGhG5GSUISTWj5GsTAKMZliMwnFAIl6kSjOsDmgjCgYoUDRY
+gx8+RYbVNfjQqiCxEvSjUIZEcU6gUZoUJYwWIMvglIiiFmgAXRVqAaRVRdJqBKNW
+kkI6TB3xIlALKxLUGlYDrMkVBBSzKiT+iRTUNVODKqSqTDNo8JaLWR+02k4B0ffX
+0CcqqgxXATvCQDcUTUV4DJKSqVgTMIJjMY6mMcaLgNNBRQc+xSIohmZR+FhzQBha
+UgKO0n6OwSiORSUWJziOwDGWFQWUE2lR4ACN+VFSwhmGhJvFZEomZIbz0zhDMCiw
+/t8AdaqG8ASMKQSgpaEEVMEM6QCJDA6ccNjsLtu6lCTrmDaXc8O/E3f6UxP5xNKH
+eHNThs93df9DuXd431AqX17a0f741rAxFet91VWW5PAMVv63aaqjq/9eeH1ejMnK
+DX26fqeu7/tCxhtixvkrmls6Pua5EO1OOaN9+1k977zb9n9zy+4ed2bwyJ4nfHFk
+MTaZVnEtbaS/KfG8aX7ikntp4uuDfmlX/P3AbE330+i0PvSu6PbnL1Ot0pbF1soD
+54t2VGy9H3Rj3sLiueQUczARP/ojEx09NhP9va1++pHTaCypfj2LaDvn3JsdH7Oj
+fSDellVWeKO4xmPvdF5JvC2aOHSz3RPBxPSSnoWWjWTOJGWM9uWfjc2VFyznnGu+
+XJI3tj3z+OKyawXPMBeV
+=XlgU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nicolasmccurdy
+
+==================================================================
