@@ -17,15 +17,9 @@ permalink: /
     <h1>Links</h1>
     <div class="list-group">
       {% for link in site.data.links %}
-        {% if link.name == 'Email' %}
-          <a href="{{link.url}}" class="list-group-item email" data-email="thenickperson AT gmail DOT com">
-            {{link.name}}
-          </a>
-        {% else %}
-          <a href="{{link.url}}" class="list-group-item" target="_blank">
-            {{link.name}}
-          </a>
-        {% endif %}
+        <a href="{{link.url}}" class="list-group-item" target="_blank">
+          {{link.name}}
+        </a>
       {% endfor %}
     </div>
   </aside>
