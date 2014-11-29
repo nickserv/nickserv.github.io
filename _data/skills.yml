@@ -1,27 +1,45 @@
 - name: Programming Languages
   skills:
   - Ruby
+  - JavaScript
   - Java
   - Python
   - Lua
-  - C (learning)
+  - Haskell
+  - Common Lisp
+  - Prolog
+  - Go
 
-- name: Web Languages
+- name: Other Languages
   skills:
-  - HTML 5
-  - HTML 4
+  - HTML
   - CSS
-  - JavaScript
+  - Bash/Zsh
+  - Alloy
 
-- name: Miscellaneous
+- name: Frameworks & Libraries
   skills:
-  - Rails (learning)
+  - Rails
+  - Sinatra
+  - Jekyll
+  - Node.js
+  - Express
+  - Bootstrap
   - jQuery
-  - Twitter Bootstrap
-  - Bash
+  - AngularJS
+  - Socket.IO
+  - RSpec
+  - Jasmine
 
-- name: Version Control Systems
+- name: Version Control
   skills:
   - Git
   - Subversion
   - Mercurial
+
+- name: Miscellaneous
+  skills:
+  - Unix/Linux
+  - MongoDB (learning)
+  - Photoshop CS5
+  - Functional Programming

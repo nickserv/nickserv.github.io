@@ -4,57 +4,63 @@ https://keybase.io/nicolasmccurdy
 
 I hereby claim:
 
-  * I am an admin of https://nicolasmccurdy.github.io
+  * I am an admin of http://nicolasmccurdy.com
   * I am nicolasmccurdy (https://keybase.io/nicolasmccurdy) on keybase.
-  * I have a public key with fingerprint E257 ADBB 366E A67B 9D07  3C8F 148D 4E16 7815 22E4
+  * I have a public key with fingerprint 4C8B DC57 022C 81CA 4902  16B7 ED40 0933 975D 96AB
 
 To claim this, I am signing this object:
 
 {
     "body": {
         "key": {
-            "fingerprint": "e257adbb366ea67b9d073c8f148d4e16781522e4",
+            "fingerprint": "4c8bdc57022c81ca490216b7ed400933975d96ab",
             "host": "keybase.io",
-            "key_id": "148d4e16781522e4",
+            "key_id": "ed400933975d96ab",
             "uid": "c8c3c85074029a6064bc16a4e1725b00",
             "username": "nicolasmccurdy"
         },
+        "revoke": {
+            "sig_ids": [
+                "a3fb151d1e37bff85ea896100e53be0f6beee1ca13552fa8b9cc7d2333c855420f"
+            ]
+        },
         "service": {
-            "hostname": "nicolasmccurdy.github.io",
-            "protocol": "https:"
+            "hostname": "nicolasmccurdy.com",
+            "protocol": "http:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1398196617,
+    "ctime": 1410321089,
     "expire_in": 157680000,
-    "prev": "5a206f9715980c8239932188ba09b6ba9e61f04c277473c1d5d3d79f627370e0",
-    "seqno": 3,
+    "prev": "6d9ffcbadf8f28ba36cd0b3a17e85964634e52bd69815c28c812da04774af962",
+    "seqno": 19,
     "tag": "signature"
 }
 
 with the aforementioned key, yielding the PGP signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v0.1.11
+Version: Keybase OpenPGP v1.0.2
 Comment: https://keybase.io/crypto
 
-yMHsAnicbZFNSBR/GMd3dU13Q60F+W910EasrEXn/Y2UDmLZxaTshYJlXn67junM
-OjO7ZbqGQURhB60wW8pDIXUwV7CIoDQLMQySCi0PpqUrlUS+HP5ULP7G6uZchnm+
-n+f7fOd5XqQn21x2Ym8jn82CcfvIM0fIdvDwy4sNiKjJ9QjfgJwEqy+/ogaAHtQV
-1UR4BOAUI8iiSNA0EGhG5GSUISTWj5GsTAKMZliMwnFAIl6kSjOsDmgjCgYoUDRY
-gx8+RYbVNfjQqiCxEvSjUIZEcU6gUZoUJYwWIMvglIiiFmgAXRVqAaRVRdJqBKNW
-kkI6TB3xIlALKxLUGlYDrMkVBBSzKiT+iRTUNVODKqSqTDNo8JaLWR+02k4B0ffX
-0CcqqgxXATvCQDcUTUV4DJKSqVgTMIJjMY6mMcaLgNNBRQc+xSIohmZR+FhzQBha
-UgKO0n6OwSiORSUWJziOwDGWFQWUE2lR4ACN+VFSwhmGhJvFZEomZIbz0zhDMCiw
-/t8AdaqG8ASMKQSgpaEEVMEM6QCJDA6ccNjsLtu6lCTrmDaXc8O/E3f6UxP5xNKH
-eHNThs93df9DuXd431AqX17a0f741rAxFet91VWW5PAMVv63aaqjq/9eeH1ejMnK
-DX26fqeu7/tCxhtixvkrmls6Pua5EO1OOaN9+1k977zb9n9zy+4ed2bwyJ4nfHFk
-MTaZVnEtbaS/KfG8aX7ikntp4uuDfmlX/P3AbE330+i0PvSu6PbnL1Ot0pbF1soD
-54t2VGy9H3Rj3sLiueQUczARP/ojEx09NhP9va1++pHTaCypfj2LaDvn3JsdH7Oj
-fSDellVWeKO4xmPvdF5JvC2aOHSz3RPBxPSSnoWWjWTOJGWM9uWfjc2VFyznnGu+
-XJI3tj3z+OKyawXPMBeV
-=XlgU
+yMIpAnicbVJbSFRBGF7bzFoKJRWsHqIxlMrWOfdzNvShfCnMMuxiltvMnDnrUfec
+7eyupmE9dKNIA7vQ5cVQQskoSoKQSEXKyrQog6ILWhTdHrqBFVRzpN6cl2H+//u/
+7/v/+ftneT2+hKnGuca8Tc+/Jdzt3Rz3lCTf6d0JsK3XgcBOUEUnLsO0QtSJOKYV
+AwEgEhXrRFIgzxOVI0jUIM/JWKG6CKEmCJoi6ZqMMMgBFXbUrWA0GEWp37RZjD2C
+ps6ik+DjEwmiEoGoElREyGtIhrKICScjkXIKL2EIXWCUOhYKU4a2TGJXo2iYkLjD
+XDfkAIfW2FXUNR41Q0wrCgJlAAkG5iRO56igYMNQJYpUTeYgpJKAKTRkTCll3XCC
+JPEGUrFGiKLzguBakUQeGmAr42a6NSaZIHebm9SDn9hh5jHi2DGbxVm+IhaLBFxr
+sbqIi6+lOPiPKYhNS2fzZQU11ImatgUCHEOSmOlScyIHBZ6DqpYD6I6I6dCg6SIk
+RVYhO64MrWGUsq4ZBsFIN1SDVzESZKJDLCBOoaqkyaIsiFTisS5rKicRXmVfx+sI
+iooiIkOTeeD2tt2yGTeTiqEQ42Tjs1As7lDQ0NezZaonweeZljjFXRGPb0bK/8WZ
+05v0p/B2+9sHz96jNqsj+PvVvNQhPHOkwFNc8rr6UG3ueJdxOFSYmr997/QFa+vT
+7qeMfB63+0YbM940Na/w7uq7mXv22MnySwViYlx69qXpVs/3r9lDRd7Wscz65tWo
+8nLal2WJi2cPDnTe/VlxvrXcfPrh2tCZSyc2tKQM9OxeSktXhff51FGhPrc0s71o
+3c/T4OP8Tzdbr2cNL1yUrhx4eDTkLyp7seTHwfyOpuTmtiy458iVw2vG+zK9HekL
+RwZXZncm7R9r6r6A4htT29v7r2x7efzx9/XTYMp43a9hhbYAEEi7mvFUO5Qefneq
+K6+081HlvfyLc2V9ufJkoFu9UZz2y/8XlHQy6w==
+=vuaQ
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or

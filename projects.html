@@ -30,10 +30,6 @@ permalink: projects/
           {% for project in category.projects %}
             <a href="{{project.url}}" class="list-group-item" target="_blank">
 
-              {% if project.label %}
-                <span class="label label-info pull-right">{{project.label}}</span>
-              {% endif %}
-
               <h3 class="list-group-item-heading">{{project.name}}</h3>
 
               <p class="list-group-item-text">{{project.description}}</p>
