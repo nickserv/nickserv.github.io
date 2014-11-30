@@ -5,24 +5,16 @@ permalink: skills/
 ---
 
 <!-- skills -->
-<section>
-  <h1>Skills</h1>
-  <p>
-    I have at least a basic understanding of the following languages and
-    technologies:
-  </p>
-  <div class="row">
-    {% for category in site.data.skills %}
-      <div class="col-sm-3">
-        <div class="panel panel-default">
-          <div class="panel-heading">{{category.name}}</div>
-          <ul class="list-group">
-            {% for skill in category.skills %}
-              <li class="list-group-item">{{skill}}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+<p>
+  I have at least a basic understanding of the following languages and 
+  technologies:
+</p>
+
+{% for category in site.data.skills %}
+  <h2>{{category.name}}</h2>
+  <ul>
+    {% for skill in category.skills %}
+      <li>{{skill}}</li>
     {% endfor %}
-  </div>
-</section>
+  </ul>
+{% endfor %}

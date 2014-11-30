@@ -1,28 +1,21 @@
 ---
 layout: default
-title: Home
+title: About
 permalink: /
 ---
 
-<div class="row">
+{% capture about_me %}{% include about_me.md %}{% endcapture %}
+{{ about_me | markdownify }}
 
-  <!-- about me -->
-  <section class="col-sm-9">
-    {% capture about_me %}{% include about_me.md %}{% endcapture %}
-    {{ about_me | markdownify }}
-  </section>
+<hr>
 
-  <!-- links -->
-  <aside class="col-sm-3">
-    <h1>Links</h1>
-    <div class="list-group">
-      {% for link in site.data.links %}
-        <a href="{{link.url}}" class="list-group-item" target="_blank">
-          <span class="fa fa-fw fa-{{link.icon}}"></span>
-          {{link.name}}
-        </a>
-      {% endfor %}
-    </div>
-  </aside>
-
-</div>
+<ul class="list-inline">
+  {% for link in site.data.links %}
+    <li>
+      <a href="{{link.url}}" target="_blank">
+        <span class="fa fa-fw fa-{{link.icon}}"></span>
+        {{link.name}}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

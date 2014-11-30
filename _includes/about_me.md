@@ -1,5 +1,3 @@
-# About Me
-
 Hi, I'm Nick. I am a 20 year old software engineering student at the [Rochester
 Institute of Technology](http://www.rit.edu/) and a member of the [Society of
 Software Engineers](http://sse.se.rit.edu/). I currently live on campus. My home

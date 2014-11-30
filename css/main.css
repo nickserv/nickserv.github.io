@@ -1,10 +1,48 @@
-/* major page sections */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  color: #444;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000;
+}
+
+nav {
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav ul {
+  display: flex;
+  border: 1px solid #bbb;
+  border-top: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+}
+nav li {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  vertical-align: middle;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+nav li a {
+  color: #0074d9;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+nav .active a {
+  background-color: #bbb;
 }
 
 .main-column {
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -14,14 +52,31 @@ footer {
   margin-bottom: 15px;
 }
 
-/* projects page */
-.panel-heading h3 {
-  margin: 0;
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    width: 115px;
-  }
+hr {
+  border: solid #bbb 1px;
+}
+
+/* Helpers, some borrowed from Bootstrap */
+
+/* Inline list items */
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* Indented only removes list-style */
+.list-indented {
+  list-style: none;
 }
