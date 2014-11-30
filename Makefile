@@ -3,8 +3,8 @@ lint: jslint csslint
 
 # Run jslint on all JavaScript code
 jslint:
-	jslint js/main.js --terse --browser --indent=2 --predef $$
+	jslint assets/script.js --terse --browser --indent=2 --predef $$
 
 # Run csslint on all CSS code
 csslint:
-	csslint css/main.css --quiet
+	csslint assets/style.css --quiet
