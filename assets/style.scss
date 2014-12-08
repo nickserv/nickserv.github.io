@@ -13,6 +13,8 @@ $body-font: "Source Serif Pro", serif;
 $heading-font: "Source Sans Pro", sans-serif;
 
 body {
+  max-width: 750px;
+  margin: 0 auto;
   font-family: $body-font;
   font-size: 20px;
   color: $text-color;
@@ -63,11 +65,6 @@ nav {
   .active a {
     background-color: $border-color;
   }
-}
-
-.main-column {
-  max-width: 750px;
-  margin: 0 auto;
 }
 
 footer {

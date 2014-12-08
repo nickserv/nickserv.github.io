@@ -15,38 +15,27 @@
   {% include analytics.html %}
 </head>
 
-<body{% if page.title == "Projects" %} data-spy="scroll" data-target=".main-column"{% endif %}>
+<body>
+  <h1>Nicolas McCurdy</h1>
 
-  <!-- main column -->
-  <div class="container main-column">
-    <h1>Nicolas McCurdy</h1>
+  <nav>
+    <ul class="nav navbar-nav">
+      {% include navbar_link.html name="About" url="/" %}
+      {% include navbar_link.html name="Projects" url="/projects/" %}
+      {% include navbar_link.html name="Skills" url="/skills/" %}
+    </ul>
+  </nav>
 
-    <!-- navbar -->
-    <nav>
-      <ul class="nav navbar-nav">
-        {% include navbar_link.html name="About" url="/" %}
-        {% include navbar_link.html name="Projects" url="/projects/" %}
-        {% include navbar_link.html name="Skills" url="/skills/" %}
-      </ul>
-    </nav>
+  {{ content }}
 
-    <!-- page content -->
-    <div class="content">
-      {{ content }}
-    </div>
+  <hr>
 
-    <hr>
+  <footer>
+    &copy; 2013 Nicolas McCurdy<br>
 
-    <!-- footer -->
-    <footer>
-      &copy; 2013 Nicolas McCurdy<br>
-
-      <a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
-        Report an Issue
-      </a>
-    </footer>
-
-  </div>
-
+    <a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
+      Report an Issue
+    </a>
+  </footer>
 </body>
 </html>
