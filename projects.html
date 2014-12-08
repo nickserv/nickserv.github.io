@@ -7,13 +7,13 @@ permalink: projects/
 <!-- category links -->
 <ul>
   {% for category in site.data.projects %}
-    <li><a href="#{{ category.id }}">{{ category.name }}</a></li>
+    <li><a href="#{{ category.name | slugify }}">{{ category.name }}</a></li>
   {% endfor %}
 </ul>
 
 {% for category in site.data.projects %}
 
-  <h2 id="{{ category.id }}">{{ category.name }}</h2>
+  <h2 id="{{ category.name | slugify }}">{{ category.name }}</h2>
 
   <ul class="list-indented">
     {% for project in category.projects %}

@@ -1,5 +1,4 @@
 - name: Command Line Apps and Libraries
-  id: command-line-apps
   projects:
   - name: Repos
     url: https://github.com/nicolasmccurdy/repos
@@ -15,7 +14,6 @@
     description: A simple command line tool for running individual files of source code.
 
 - name: Web Apps
-  id: web-apps
   projects:
   - name: Language Colors
     url: http://language-colors.herokuapp.com
@@ -43,7 +41,6 @@
     description: Calculute sets of integers using the Collatz Conjecture.
 
 - name: Websites
-  id: websites
   projects:
   - name: Ms. Ana Aguirre
     url: http://msaguirre.zxq.net
@@ -51,7 +48,6 @@
     url: http://danamccurdy.com
 
 - name: Browser Extensions
-  id: browser-extensions
   projects:
   - name: HashMask
     url: https://github.com/wyantb/HashMask/
@@ -61,7 +57,6 @@
     description: A simple collection of tweaks for Firefox that make it a little awesomer for power users, or just those who would like a little more out of their browser UI.
 
 - name: Miscellaneous
-  id: miscellaneous
   projects:
   - name: Dotfiles
     url: https://github.com/nicolasmccurdy/dotfiles
