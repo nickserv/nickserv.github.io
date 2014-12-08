@@ -1,1 +1,5 @@
 baseurl: /new-site
+defaults:
+  -
+    values:
+      layout: default
