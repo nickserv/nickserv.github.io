@@ -1,53 +1,68 @@
 ---
 ---
 
+// colors
+$background-color: #eee;
+$black: #000;
+$blue: #0074d9;
+$border-color: #bbb;
+$text-color: #444;
+
+// fonts
+$body-font: "Source Sans Pro", sans-serif;
+$heading-font: "Source Serif Pro", serif;
+
 body {
-  font-family: "Source Serif Pro", serif;
+  font-family: $body-font;
   font-size: 20px;
-  color: #444;
+  color: $text-color;
   padding: 10px;
-  background-color: #eee;
+  background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #000;
+  font-family: $heading-font;
+  color: $black;
 }
 
 nav {
-  font-family: "Source Sans Pro", sans-serif;
-}
-nav ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid #bbb;
-  border-top: 2px solid #bbb;
-  border-bottom: 2px solid #bbb;
-  list-style: none;
-  padding: 0;
-  font-weight: bold;
-}
-nav li {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
-  height: 100%;
-  vertical-align: middle;
-  border-left: 1px solid #bbb;
-  border-right: 1px solid #bbb;
-}
-nav li a {
-  color: #0074d9;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-nav .active a {
-  background-color: #bbb;
+  font-family: $heading-font;
+
+  ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid $border-color;
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    vertical-align: middle;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+  }
+
+  .active a {
+    background-color: $border-color;
+  }
 }
 
 .main-column {
@@ -62,30 +77,32 @@ footer {
 }
 
 a {
-  color: #0074d9;
+  color: $blue;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 hr {
-  border: solid #bbb 1px;
+  border: solid $border-color 1px;
 }
 
-/* Helpers, some borrowed from Bootstrap */
+// Helpers, some borrowed from Bootstrap
 
-/* Inline list items */
+// Inline list items
 .list-inline {
   padding-left: 0;
   margin-left: -5px;
-}
-.list-inline > li {
-  display: inline-block;
-  padding: 0 5px;
+
+  > li {
+    display: inline-block;
+    padding: 0 5px;
+  }
 }
 
-/* Indented only removes list-style */
+// Indented only removes list-style
 .list-indented {
   list-style: none;
 }
