@@ -11,10 +11,10 @@ permalink: skills/
 </p>
 
 {% for category in site.data.skills %}
-  <h2>{{category.name}}</h2>
+  <h2>{{ category.name }}</h2>
   <ul>
     {% for skill in category.skills %}
-      <li>{{skill}}</li>
+      <li>{{ skill }}</li>
     {% endfor %}
   </ul>
 {% endfor %}

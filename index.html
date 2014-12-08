@@ -12,9 +12,9 @@ permalink: /
 <ul class="list-inline">
   {% for link in site.data.links %}
     <li>
-      <a href="{{link.url}}" target="_blank">
-        <span class="fa fa-fw fa-{{link.icon}}"></span>
-        {{link.name}}
+      <a href="{{ link.url }}" target="_blank">
+        <span class="fa fa-fw fa-{{ link.icon }}"></span>
+        {{ link.name }}
       </a>
     </li>
   {% endfor %}

@@ -7,23 +7,23 @@ permalink: projects/
 <!-- category links -->
 <ul>
   {% for category in site.data.projects %}
-    <li><a href="#{{category.id}}">{{category.name}}</a></li>
+    <li><a href="#{{ category.id }}">{{ category.name }}</a></li>
   {% endfor %}
 </ul>
 
 {% for category in site.data.projects %}
 
-  <h2 id="{{category.id}}">{{category.name}}</h2>
+  <h2 id="{{ category.id }}">{{ category.name }}</h2>
 
   <ul class="list-indented">
     {% for project in category.projects %}
       <li>
 
         <h3>
-          <a href="{{project.url}}" target="_blank">{{project.name}}</a>
+          <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
         </h3>
 
-        <p>{{project.description}}</p>
+        <p>{{ project.description }}</p>
 
       </li>
     {% endfor %}
