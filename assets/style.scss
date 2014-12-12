@@ -3,9 +3,9 @@
 
 // colors
 $background-color: #eee;
-$black: #000;
-$blue: #0074d9;
 $border-color: #bbb;
+$heading-color: #000;
+$link-color: #0074d9;
 $text-color: #444;
 
 // fonts
@@ -24,7 +24,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
-  color: $black;
+  color: $heading-color;
 }
 
 nav {
@@ -54,12 +54,13 @@ nav {
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
 
-    a {
-      color: $blue;
-      text-decoration: none;
-      display: block;
-      padding: 10px;
-    }
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
   }
 
   .active a {
@@ -74,7 +75,7 @@ footer {
 }
 
 a {
-  color: $blue;
+  color: $link-color;
   text-decoration: none;
 
   &:hover {
