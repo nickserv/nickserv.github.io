@@ -2,10 +2,12 @@
 ---
 
 // Colors
-$background-color: #eee;
-$border-color: #bbb;
+$background-color: #f6f6f6;
 $heading-color: #000;
+$hr-color: #bbb;
 $link-color: #0074d9;
+$nav-color: #888;
+$nav-color-active: #444;
 $text-color: #444;
 
 // Fonts
@@ -39,7 +41,7 @@ a {
 }
 
 hr {
-  border: solid $border-color 1px;
+  border: solid $hr-color 1px;
 }
 
 footer {
@@ -51,15 +53,13 @@ footer {
 // Nav
 nav {
   font-family: $heading-font;
+  background-color: $nav-color;
 
   ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid $border-color;
-    border-top: 2px solid $border-color;
-    border-bottom: 2px solid $border-color;
     list-style: none;
     padding: 0;
     font-weight: bold;
@@ -73,20 +73,21 @@ nav {
     text-align: center;
     height: 100%;
     vertical-align: middle;
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
 
+    &.active, &:hover {
+      background-color: $nav-color-active;
+    }
   }
 
   a {
-    color: $link-color;
+    color: $background-color;
     text-decoration: none;
     display: block;
     padding: 10px;
-  }
 
-  .active a {
-    background-color: $border-color;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
