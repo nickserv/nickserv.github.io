@@ -1,6 +1,5 @@
 ---
 title: About
-permalink: /
 ---
 
 I am a software engineering student at the [Rochester Institute of
@@ -14,7 +13,7 @@ Rails](http://rubyonrails.org/), [Common Lisp](http://common-lisp.net/),
 front-end web development, [Arch Linux](https://www.archlinux.org/), and writing
 open source software on [GitHub](https://github.com/).
 
-<hr>
+---
 
 <ul class="list-inline">
   {% for link in site.data.links %}
