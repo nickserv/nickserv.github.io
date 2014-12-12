@@ -1,16 +1,18 @@
 ---
 ---
 
-// colors
+// Colors
 $background-color: #eee;
 $border-color: #bbb;
 $heading-color: #000;
 $link-color: #0074d9;
 $text-color: #444;
 
-// fonts
+// Fonts
 $body-font: "Source Serif Pro", serif;
 $heading-font: "Source Sans Pro", sans-serif;
+
+// General
 
 body {
   max-width: 750px;
@@ -27,6 +29,26 @@ h1, h2, h3, h4, h5, h6 {
   color: $heading-color;
 }
 
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border: solid $border-color 1px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+// Nav
 nav {
   font-family: $heading-font;
 
@@ -66,25 +88,6 @@ nav {
   .active a {
     background-color: $border-color;
   }
-}
-
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin-bottom: 15px;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-hr {
-  border: solid $border-color 1px;
 }
 
 // Helpers, some borrowed from Bootstrap
