@@ -6,6 +6,7 @@ $background-color: #f6f6f6;
 $heading-color: #000;
 $hr-color: #bbb;
 $link-color: #0074d9;
+$link-color-active: #b10dc9;
 $nav-color: #888;
 $nav-color-active: #444;
 $text-color: #444;
@@ -37,6 +38,10 @@ a {
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:visited {
+    color: $link-color-active;
   }
 }
 
@@ -87,6 +92,10 @@ nav {
 
     &:hover {
       text-decoration: none;
+    }
+
+    &:visited {
+      color: $background-color;
     }
   }
 }
