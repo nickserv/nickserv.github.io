@@ -15,7 +15,7 @@ open source software on [GitHub](https://github.com/).
 
 ---
 
-<ul class="list-inline">
+<ul class="list-horizontal">
   {% for link in site.data.links %}
     <li>
       <a href="{{ link.url }}" target="_blank">

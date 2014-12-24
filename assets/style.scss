@@ -111,14 +111,31 @@ nav {
 
 // Helpers, some borrowed from Bootstrap
 
-// Inline list items
-.list-inline {
+// List of horizontal items with equal widths and centered content
+.list-horizontal {
+  // Remove original list styles
+  list-style: none;
   padding-left: 0;
-  margin-left: -5px;
+  margin: 0;
+
+  // Use flexbox to horizontally center items
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   > li {
-    display: inline-block;
-    padding: 0 5px;
+    margin: 10px;
   }
 }
 
