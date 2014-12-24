@@ -15,6 +15,9 @@ $text-color: #444;
 $body-font: "Source Serif Pro", serif;
 $heading-font: "Source Sans Pro", sans-serif;
 
+// Miscellaneous
+$transition-length: 0.25s;
+
 // General
 
 body {
@@ -75,6 +78,7 @@ nav {
   }
 
   li {
+    transition: background-color $transition-length;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -84,6 +88,7 @@ nav {
     vertical-align: middle;
 
     &.active, &:hover {
+      transition: background-color $transition-length;
       background-color: $nav-color-active;
     }
   }
