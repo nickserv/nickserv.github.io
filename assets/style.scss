@@ -91,6 +91,11 @@ nav {
       transition: background-color $transition-length;
       background-color: $nav-color-active;
     }
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+    }
   }
 
   a {
