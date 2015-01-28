@@ -21,12 +21,12 @@ $transition-length: 0.25s;
 // General
 
 body {
-  max-width: 750px;
+  max-width: 37.5em;
   margin: 0 auto;
   font-family: $body-font;
-  font-size: 20px;
+  font-size: 1.25em;
   color: $text-color;
-  padding: 0 15px;
+  padding: 0 0.75em;
   background-color: $background-color;
 }
 
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin: 20px 0;
+  margin: 0.5em 0;
   text-align: center;
 }
 
@@ -54,13 +54,13 @@ a {
 }
 
 hr {
-  border: solid $hr-color 1px;
+  border: solid $hr-color thin;
 }
 
 footer {
   text-align: center;
   font-size: smaller;
-  margin-bottom: 15px;
+  margin-bottom: 0.75em;
 }
 
 // Nav
@@ -103,7 +103,7 @@ nav {
     color: $background-color;
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 0.5em;
 
     &:hover {
       text-decoration: none;
@@ -141,7 +141,7 @@ nav {
   justify-content: center;
 
   > li {
-    margin: 10px;
+    margin: 1em;
   }
 }
 
