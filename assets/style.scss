@@ -7,8 +7,10 @@ $heading-color: #000;
 $hr-color: #bbb;
 $link-color: #0074d9;
 $link-color-active: #b10dc9;
-$nav-color: #888;
-$nav-color-active: #444;
+$nav-color: #bbb;
+$nav-active-color: $background-color;
+$nav-background-color: #444;
+$nav-active-background-color: #000;
 $text-color: #444;
 
 // Fonts
@@ -65,8 +67,9 @@ footer {
 
 // Nav
 nav {
+  background-color: $nav-background-color;
+  color: $nav-color;
   font-family: $heading-font;
-  background-color: $nav-color;
 
   ul {
     display: -webkit-box;
@@ -89,18 +92,18 @@ nav {
     vertical-align: middle;
 
     &.active, &:hover {
-      transition: background-color $transition-length;
-      background-color: $nav-color-active;
+      transition: color $transition-length;
+      color: $nav-active-color;
     }
 
     &.active {
+      background-color: $nav-active-background-color;
       cursor: default;
       pointer-events: none;
     }
   }
 
   a {
-    color: $background-color;
     text-decoration: none;
     display: block;
     padding: 0.5em;
@@ -110,7 +113,7 @@ nav {
     }
 
     &:visited {
-      color: $background-color;
+      color: inherit;
     }
   }
 }
