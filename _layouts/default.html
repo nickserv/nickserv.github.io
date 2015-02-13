@@ -6,7 +6,7 @@
   <title>Nicolas McCurdy - {{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:700%7CSource+Serif+Pro:400">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700%7CSource+Serif+Pro">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   {% if page.title == "About" %}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -18,26 +18,29 @@
 </head>
 
 <body>
-  <h1>Nicolas McCurdy</h1>
-
   <nav>
-    <ul>
-      {% include nav_link.html name="About" url="/" %}
-      {% include nav_link.html name="Projects" url="/projects/" %}
-      {% include nav_link.html name="Skills" url="/skills/" %}
-    </ul>
+    <div class="container">
+      <span class="nav-brand">Nicolas McCurdy</span>
+      <ul>
+        {% include nav_link.html name="About" url="/" %}
+        {% include nav_link.html name="Projects" url="/projects/" %}
+        {% include nav_link.html name="Skills" url="/skills/" %}
+      </ul>
+    </div>
   </nav>
 
-  {{ content }}
+  <div class="container">
+    {{ content }}
 
-  <hr>
+    <hr>
 
-  <footer>
-    &copy; 2013 Nicolas McCurdy<br>
+    <footer>
+      &copy; 2013 Nicolas McCurdy<br>
 
-    <a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
-      Report an Issue
-    </a>
-  </footer>
+      <a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
+        Report an Issue
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
