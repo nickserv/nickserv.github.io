@@ -27,6 +27,7 @@ body {
   font-size: 1.25em;
   color: $text-color;
   background-color: $background-color;
+  line-height: 1.5;
 }
 
 .container {
@@ -38,6 +39,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   color: $heading-color;
+  margin-bottom: 0;
+}
+
+p, ul {
+  margin-top: 0;
 }
 
 a {
@@ -68,6 +74,7 @@ nav {
   background-color: $nav-background-color;
   color: $nav-color;
   font-family: $heading-font;
+  margin-bottom: 1em;
 
   .container {
     -webkit-box-align: center;
@@ -127,7 +134,7 @@ nav {
   a {
     text-decoration: none;
     display: block;
-    padding: 0.5em;
+    padding: 1em;
 
     &:hover {
       text-decoration: none;
