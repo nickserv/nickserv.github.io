@@ -139,7 +139,7 @@ nav {
   }
 }
 
-// Helpers, some borrowed from Bootstrap
+// Helpers
 
 // List of horizontal items with equal widths and centered content
 .list-horizontal {
@@ -167,9 +167,4 @@ nav {
   > li {
     margin: 1em;
   }
-}
-
-// Indented only removes list-style
-.list-indented {
-  list-style: none;
 }
