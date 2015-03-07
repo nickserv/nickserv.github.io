@@ -3,14 +3,14 @@
 
 // Colors
 $background-color: #f6f6f6;
-$heading-color: #000;
+$heading-color: black;
 $hr-color: #bbb;
 $link-color: #0074d9;
 $link-color-active: #b10dc9;
 $nav-color: #bbb;
 $nav-active-color: $background-color;
 $nav-background-color: #444;
-$nav-active-background-color: #000;
+$nav-active-background-color: black;
 $text-color: #444;
 
 // Miscellaneous
@@ -20,15 +20,15 @@ $transition-length: 0.25s;
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.25em;
+  font-size: 20px;
   color: $text-color;
   background-color: $background-color;
-  line-height: 1.5;
+  line-height: 30px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 37.5em;
+  max-width: 600px;
   padding: 0 0.75em;
 }
 
