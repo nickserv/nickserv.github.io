@@ -13,8 +13,6 @@ Rails](http://rubyonrails.org/), [Common Lisp](http://common-lisp.net/),
 front-end web development, [Arch Linux](https://www.archlinux.org/), and writing
 open source software on [GitHub](https://github.com/).
 
----
-
 <ul class="list-horizontal">
   {% for link in site.data.links %}
     <li>

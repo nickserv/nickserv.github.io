@@ -4,7 +4,6 @@
 // Colors
 $background-color: #f6f6f6;
 $heading-color: black;
-$hr-color: #bbb;
 $link-color: #0074d9;
 $link-color-active: #b10dc9;
 $nav-color: #bbb;
@@ -52,10 +51,6 @@ a {
   &:visited {
     color: $link-color-active;
   }
-}
-
-hr {
-  border: solid $hr-color thin;
 }
 
 footer {
