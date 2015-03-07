@@ -189,12 +189,8 @@ nav {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-
-  > li {
-    margin: 1em;
-  }
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
 }

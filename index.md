@@ -12,14 +12,3 @@ Lately, I enjoy tinkering with [Ruby](https://www.ruby-lang.org/en/), [Ruby on
 Rails](http://rubyonrails.org/), [Common Lisp](http://common-lisp.net/),
 front-end web development, [Arch Linux](https://www.archlinux.org/), and writing
 open source software on [GitHub](https://github.com/).
-
-<ul class="list-horizontal">
-  {% for link in site.data.links %}
-    <li>
-      <a href="{{ link.url }}" target="_blank">
-        <span class="fa fa-fw fa-{{ link.icon }}"></span>
-        {{ link.name }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>

@@ -8,9 +8,7 @@
   <!-- css -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-  {% if page.title == "About" %}
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  {% endif %}
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
   <!-- icons -->
   <link rel="icon" href="{{ site.baseurl }}/assets/favicon.png">
@@ -35,6 +33,17 @@
 
   <footer>
     <div class="container">
+      <ul class="list-horizontal">
+        {% for link in site.data.links %}
+          <li>
+            <a href="{{ link.url }}" title="{{ title.name }}" target="_blank">
+              <span class="fa fa-fw fa-{{ link.icon }}"></span>
+              {{ link.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
       &copy; 2015 Nicolas McCurdy
 
       <a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
