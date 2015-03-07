@@ -106,6 +106,7 @@ nav {
     -ms-flex: 1;
     flex: 1;
     text-align: center;
+    -webkit-transition: color $transition-length;
     transition: color $transition-length;
     vertical-align: middle;
 
