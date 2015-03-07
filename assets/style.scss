@@ -77,6 +77,7 @@ footer {
   background-color: $nav-background-color;
   color: $nav-color;
   font-size: smaller;
+  margin-top: 1em;
   padding: 0.5em;
 
   a, a:visited {
@@ -94,7 +95,7 @@ footer {
 nav {
   background-color: $nav-background-color;
   color: $nav-color;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   @media (min-width: 600px) {
     .container {
