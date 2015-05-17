@@ -1,0 +1,46 @@
+@mixin align-items($args...) {
+  -webkit-box-align: $args;
+  -webkit-align-items: $args;
+  -ms-flex-align: $args;
+  align-items: $args;
+}
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex($args...) {
+  -webkit-box-flex: $args;
+  -webkit-flex: $args;
+  -ms-flex: $args;
+  flex: $args;
+}
+
+@mixin flex-direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex-wrap($args...) {
+  -webkit-flex-wrap: $args;
+  -ms-flex-wrap: $args;
+  flex-wrap: $args;
+}
+
+@mixin justify-content($args...) {
+  -webkit-box-pack: $args;
+  -webkit-justify-content: $args;
+  -ms-flex-pack: $args;
+  justify-content: $args;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  transition: $args;
+}
