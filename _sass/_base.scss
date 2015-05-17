@@ -1,16 +1,16 @@
 // Colors
 $background-color: #f6f6f6;
-$heading-color: black;
+$heading-color: #000;
 $link-color: #0074d9;
 $link-color-active: #004a8c;
 $nav-color: #bbb;
 $nav-active-color: $background-color;
 $nav-background-color: #444;
-$nav-active-background-color: black;
+$nav-active-background-color: #000;
 $text-color: #444;
 
 // Miscellaneous
-$transition-length: 0.25s;
+$transition-length: .25s;
 
 // General
 
@@ -33,27 +33,33 @@ body {
   font-size: 20px;
   line-height: 30px;
   min-height: 100vh;
-}
 
-body > .container {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  > .container {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
 }
 
 .container {
   margin: 0 auto;
   max-width: 600px;
-  padding: 0 0.75em;
+  padding: 0 .75em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $heading-color;
   margin-bottom: 0;
 }
 
-p, ul {
+p,
+ul {
   margin-top: 0;
 }
 
@@ -75,9 +81,10 @@ footer {
   color: $nav-color;
   font-size: smaller;
   margin-top: 1em;
-  padding: 0.5em;
+  padding: .5em;
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $nav-color;
   }
 
@@ -116,7 +123,7 @@ nav {
     color: $nav-active-color;
     font-size: 1.5em;
     margin: 0;
-    padding: 1rem 0.75em 1rem 0;
+    padding: 1rem .75em 1rem 0;
   }
 
   ul {
@@ -148,7 +155,8 @@ nav {
 
     vertical-align: middle;
 
-    &.active, &:hover {
+    &.active,
+    &:hover {
       color: $nav-active-color;
     }
 

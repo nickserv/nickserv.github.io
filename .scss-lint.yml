@@ -1,0 +1,7 @@
+exclude: assets/style.scss
+
+linters:
+  PropertySortOrder:
+    enabled: false
+  VendorPrefix:
+    enabled: false
