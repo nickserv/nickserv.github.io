@@ -100,11 +100,15 @@ nav {
     }
   }
 
-  h1 {
-    color: $nav-active-color;
-    font-size: 1.5em;
-    margin: 0;
-    padding: 1rem .75em 1rem 0;
+  .container > a {
+    padding: 0;
+
+    h1 {
+      color: $nav-active-color;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 1rem .75em 1rem 0;
+    }
   }
 
   ul {
