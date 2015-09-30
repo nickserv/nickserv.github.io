@@ -3,96 +3,127 @@
 <head>
   <!-- basic info -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Nicolas McCurdy - 404 Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/cyborg/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/style.css">
   <!-- icons -->
-  <link rel="icon" href="/img/favicon.png">
+  <link rel="icon" href="/assets/favicon.png">
+  <!-- analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-22970573-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </head>
 
 <body>
-
-  <!-- main column -->
-  <div class="container main-column">
-
-    <!-- navbar -->
-    <nav class="navbar navbar-inverse" role="navigation">
-      <!-- navbar header, always displayed -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Nicolas McCurdy</a>
-      </div>
-
-      <!-- navbar collapse, toggled on mobile devices -->
-      <div class="collapse navbar-collapse" id="main-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="/">
-            <span class="glyphicon glyphicon-home"></span> Home
-          </a></li>
-          <li><a href="/skills/">
-            <span class="glyphicon glyphicon-book"></span> Skills
-          </a></li>
-          <li><a href="/projects/">
-            <span class="glyphicon glyphicon-th-list"></span> Projects
-          </a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- page content -->
-    <div class="content">
-
-      <!-- error message -->
-      <section class="jumbotron">
-
-        <!-- title-->
-        <h1>404 - Page not found</h1>
-
-        <!-- description -->
-        <p>
-          The page you were trying to visit could not be found.<br>
-          You may be going to a page that doesn't exist, mistyping the URL of the
-          page, or visiting a broken link.
-        </p>
-
-        <!-- buttons -->
-        <a class="btn btn-lg btn-warning" href="javascript:history.go(-1)">
-          <span class="glyphicon glyphicon-arrow-left"></span> Back
-        </a>
-        <a class="btn btn-lg btn-success" href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
-          <span class="glyphicon glyphicon-bullhorn"></span> Report
-        </a>
-
-      </section>
-
-    </div>
-
-    <!-- footer -->
-    <footer>
-      &copy; 2015 Nicolas McCurdy<br>
-
-      <a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
-        Report an Issue
+  <nav>
+    <div class="container">
+      <a href="/">
+        <h1>Nicolas McCurdy</h1>
       </a>
-    </footer>
+      <ul>
+        <li>
+  <a href="/">
+    About
+  </a>
+</li>
+
+        <li>
+  <a href="/projects/">
+    Projects
+  </a>
+</li>
+
+        <li>
+  <a href="/skills/">
+    Skills
+  </a>
+</li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- title-->
+<h2>404 Not Found</h2>
+
+<!-- description -->
+<p>
+  The page you were trying to visit could not be found.<br />
+  You may be going to a page that doesn't exist, mistyping the URL of the
+  page, or visiting a broken link.
+</p>
+
+<!-- buttons -->
+<a href="javascript:history.go(-1)">
+  <span class="fa fa-fw fa-arrow-left"></span> Back
+</a><br>
+<a href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
+  <span class="fa fa-fw fa-bug"></span>
+  Report an Issue
+</a>
 
   </div>
 
-  <!-- scripts -->
-  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.12/jquery.smooth-scroll.min.js"></script>
-  <script src="/js/main.js"></script>
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <footer>
+    <div class="container">
+      <ul class="list-horizontal">
 
+          <li>
+            <a href="mailto:thenickperson@gmail.com" title="">
+              <span class="fa fa-fw fa-envelope"></span>
+              Email
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/thenickperson" title="">
+              <span class="fa fa-fw fa-facebook-square"></span>
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/nicolasmccurdy" title="">
+              <span class="fa fa-fw fa-twitter-square"></span>
+              Twitter
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/nicolasmccurdy" title="">
+              <span class="fa fa-fw fa-github-square"></span>
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/nicolasmccurdy" title="">
+              <span class="fa fa-fw fa-linkedin"></span>
+              LinkedIn
+            </a>
+          </li>
+
+      </ul>
+
+      <a class="report-link" href="https://github.com/nicolasmccurdy/nicolasmccurdy.github.io/issues/new">
+        <span class="fa fa-fw fa-bug"></span>
+        Report an Issue
+      </a>
+
+      <div>&copy; 2015 Nicolas McCurdy</div>
+    </div>
+  </footer>
 </body>
 </html>
