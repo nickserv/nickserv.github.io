@@ -1,4 +1,5 @@
 # [Nicolas McCurdy's Website](http://nicolasmccurdy.com/)
+[![Build Status](https://travis-ci.org/nicolasmccurdy/nicolasmccurdy.github.io.svg)](https://travis-ci.org/nicolasmccurdy/nicolasmccurdy.github.io)
 
 ## License
 [![Creative Commons License](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
