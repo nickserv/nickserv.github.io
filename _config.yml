@@ -5,8 +5,8 @@ defaults:
       layout: default
 exclude:
   - "*.xcf"
-  - build
   - Gemfile
   - Gemfile.lock
+  - Rakefile
   - README.md
   - vendor
