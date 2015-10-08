@@ -1,10 +1,10 @@
-baseurl:
 defaults:
   -
     values:
       layout: default
 exclude:
   - "*.xcf"
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - Rakefile
