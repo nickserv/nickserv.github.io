@@ -45,8 +45,6 @@
 
 - name: Websites
   projects:
-  - name: Ms. Ana Aguirre
-    url: http://msaguirre.zxq.net
   - name: Dana McCurdy
     url: http://danamccurdy.com
 

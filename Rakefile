@@ -10,7 +10,7 @@ task :doctor do
 end
 
 task proof: :build do
-  HTML::Proofer.new('_site').run
+  HTML::Proofer.new('_site', url_ignore: [%r{^/apps/}]).run
 end
 
 task default: [:build, :doctor, :proof]
