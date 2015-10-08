@@ -10,7 +10,13 @@ task :doctor do
 end
 
 task proof: :build do
-  HTML::Proofer.new('_site', url_ignore: [%r{^/apps/}]).run
+  HTML::Proofer.new(
+    '_site',
+    check_external_hash: true,
+    check_favicon: true,
+    check_html: true,
+    url_ignore: [%r{^/apps/}]
+  ).run
 end
 
 task default: [:build, :doctor, :proof]
