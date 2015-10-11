@@ -1,4 +1,4 @@
-# [Nicolas McCurdy's Website](http://nicolasmccurdy.com/)
+# [Nicolas McCurdy's Website](http://mccurdy.io/)
 [![Build Status](https://travis-ci.org/nicolasmccurdy/nicolasmccurdy.github.io.svg)](https://travis-ci.org/nicolasmccurdy/nicolasmccurdy.github.io)
 
 ## License
@@ -15,7 +15,7 @@
 - [web_console](https://github.com/nicolasmccurdy/web_console)
 
 ## Tools
-- [Google's index of nicolasmccurdy.com](http://www.google.com/search?q=site%3Anicolasmccurdy.com)
+- [Google's index of mccurdy.io](http://www.google.com/search?q=site%3Amccurdy.io)
 
 ## Private Tools
 - [Google Analytics](https://www.google.com/analytics)

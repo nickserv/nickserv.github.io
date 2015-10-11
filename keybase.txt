@@ -4,7 +4,7 @@ https://keybase.io/nicolasmccurdy
 
 I hereby claim:
 
-  * I am an admin of http://nicolasmccurdy.com
+  * I am an admin of http://mccurdy.io
   * I am nicolasmccurdy (https://keybase.io/nicolasmccurdy) on keybase.
   * I have a public key with fingerprint 4C8B DC57 022C 81CA 4902  16B7 ED40 0933 975D 96AB
 
@@ -25,7 +25,7 @@ To claim this, I am signing this object:
             ]
         },
         "service": {
-            "hostname": "nicolasmccurdy.com",
+            "hostname": "mccurdy.io",
             "protocol": "http:"
         },
         "type": "web_service_binding",
