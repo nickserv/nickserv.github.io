@@ -19,7 +19,7 @@
     url: http://rosesearch.herokuapp.com/
     description: An interactive, technical, and openly editable Rosetta Stone for developers (in development).
   - name: Language Colors
-    url: http://language-colors.herokuapp.com
+    url: http://languagecolors.herokuapp.com
     description: A simple web app and service for viewing GitHub's language colors.
   - name: Buzzword Generator
     url: https://github.com/nicolasmccurdy/buzzword-generator
