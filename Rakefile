@@ -1,5 +1,6 @@
 require 'html/proofer'
 require 'jekyll'
+require 'scss_lint/rake_task'
 
 task :build do
   Jekyll::Commands::Build.process({})
@@ -19,4 +20,6 @@ task proof: :build do
   ).run
 end
 
-task default: [:build, :doctor, :proof]
+SCSSLint::RakeTask.new :lint
+
+task default: [:build, :doctor, :proof, :lint]

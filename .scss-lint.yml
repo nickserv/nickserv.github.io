@@ -1,5 +1,6 @@
-exclude: assets/style.scss
-
+exclude:
+  - _site/**
+  - assets/style.scss
 linters:
   VendorPrefix:
     exclude:
