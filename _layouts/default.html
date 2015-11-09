@@ -38,7 +38,7 @@
       <ul class="list-horizontal">
         {% for link in site.data.links %}
           <li>
-            <a href="{{ link.url }}" title="{{ title.name }}">
+            <a href="{{ link.url }}" title="{{ title.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
               <span class="fa fa-fw fa-{{ link.icon }}"></span>
               {{ link.name }}
             </a>
