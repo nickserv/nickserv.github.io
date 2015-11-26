@@ -21,9 +21,11 @@
         <h1>Nicolas McCurdy</h1>
       </a>
       <ul>
-        {% include nav_link.html name="About" url="/" %}
-        {% include nav_link.html name="Projects" url="/projects/" %}
-        {% include nav_link.html name="Skills" url="/skills/" %}
+        {% for nav_page in site.pages %}
+          {% if nav_page.title %}
+            {% include nav_link.html page=nav_page %}
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
   </nav>
