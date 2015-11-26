@@ -17,3 +17,4 @@
 - name: LinkedIn
   url: https://www.linkedin.com/in/nicolasmccurdy
   icon: linkedin
+  proofer_ignore: true

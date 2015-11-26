@@ -1,13 +1,15 @@
-baseurl: /new-site
 defaults:
   -
     values:
       layout: default
 exclude:
   - "*.xcf"
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - Gruntfile.js
   - node_modules
   - package.json
+  - Rakefile
   - README.md
+  - vendor

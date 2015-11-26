@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
   <!-- icons -->
   <link rel="icon" href="{{ site.baseurl }}/assets/favicon.png">
@@ -18,11 +18,15 @@
 <body>
   <nav>
     <div class="container">
-      <h1>Nicolas McCurdy</h1>
+      <a href="{{ site.baseurl }}/">
+        <h1>Nicolas McCurdy</h1>
+      </a>
       <ul>
-        {% include nav_link.html name="About" url="/" %}
-        {% include nav_link.html name="Projects" url="/projects/" %}
-        {% include nav_link.html name="Skills" url="/skills/" %}
+        {% for nav_page in site.pages %}
+          {% if nav_page.title %}
+            {% include nav_link.html page=nav_page %}
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
   </nav>
@@ -36,7 +40,7 @@
       <ul class="list-horizontal">
         {% for link in site.data.links %}
           <li>
-            <a href="{{ link.url }}" title="{{ title.name }}" target="_blank">
+            <a href="{{ link.url }}" title="{{ title.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
               <span class="fa fa-fw fa-{{ link.icon }}"></span>
               {{ link.name }}
             </a>
