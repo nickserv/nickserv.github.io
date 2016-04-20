@@ -1,4 +1,4 @@
-require 'html/proofer'
+require 'html-proofer'
 require 'jekyll'
 
 task :build do
@@ -10,7 +10,7 @@ task :doctor do
 end
 
 task proof: :build do
-  HTML::Proofer.new(
+  HTMLProofer.check_directory(
     '_site',
     check_external_hash: true,
     check_favicon: true,
