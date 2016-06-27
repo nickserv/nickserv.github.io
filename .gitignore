@@ -5,6 +5,7 @@ _site
 
 # Ruby
 Gemfile.lock
+.htmlproofer
 
 # Grunt
 node_modules
