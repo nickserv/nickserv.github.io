@@ -11,7 +11,7 @@ task proof: :build do
     check_favicon: true,
     check_html: true,
     file_ignore: ['_site/skills/index.html'],
-    url_ignore: [%r{^/apps/}]
+    url_swap: { %r{^/apps/(.*)$} => 'http://mccurdy.io/apps/\1' }
   ).run
 end
 
