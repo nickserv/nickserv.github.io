@@ -1,5 +1,5 @@
+require 'github-pages'
 require 'html-proofer'
-require 'jekyll'
 
 task(:build) { Jekyll::Commands::Build.process({}) }
 task(:doctor) { Jekyll::Commands::Doctor.process({}) }
