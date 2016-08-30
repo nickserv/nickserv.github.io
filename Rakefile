@@ -15,6 +15,7 @@ task proof: :build do
     check_external_hash: true,
     check_favicon: true,
     check_html: true,
+    file_ignore: ['_site/skills/index.html'],
     url_ignore: [%r{^/apps/}]
   ).run
 end
