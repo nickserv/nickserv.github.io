@@ -1,5 +1,6 @@
 ---
 title: About
+redirect_from: /skills/
 ---
 
 I am a software engineering student at the [Rochester Institute of
