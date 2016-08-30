@@ -1,13 +1,8 @@
 require 'html-proofer'
 require 'jekyll'
 
-task :build do
-  Jekyll::Commands::Build.process({})
-end
-
-task :doctor do
-  Jekyll::Commands::Doctor.process({})
-end
+task(:build) { Jekyll::Commands::Build.process({}) }
+task(:doctor) { Jekyll::Commands::Doctor.process({}) }
 
 task proof: :build do
   HTMLProofer.check_directory(
