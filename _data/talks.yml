@@ -1,0 +1,27 @@
+- name: Music Genres
+  url: https://speakerdeck.com/nicolasmccurdy/music-genres
+  date: February 11, 2016
+
+- name: Software Testing
+  url: http://mccurdy.io/testing-talk/
+  date: November 3, 2015
+
+- name: Active Contour Research
+  url: https://speakerdeck.com/nicolasmccurdy/active-contour-research
+  date: December 2, 2014
+
+- name: The Psychology of Motivation
+  url: https://speakerdeck.com/nicolasmccurdy/the-psychology-of-motivation
+  date: November 13, 2014
+
+- name: Building Apps with Node.js and Express
+  url: https://speakerdeck.com/nicolasmccurdy/building-apps-with-node-dot-js-and-express
+  date: November 5, 2014
+
+- name: A Quick Intro to Ruby
+  url: https://speakerdeck.com/nicolasmccurdy/a-quick-intro-to-ruby
+  date: September 18, 2014
+
+- name: Pair Programming
+  url: https://speakerdeck.com/nicolasmccurdy/pair-programming
+  date: April 2, 2013
