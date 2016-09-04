@@ -15,12 +15,10 @@ $transition-length: .25s;
 // General
 
 body {
-  display: flex;
-  flex-direction: column;
-
   background-color: $background-color;
   color: $text-color;
-
+  display: flex;
+  flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -100,13 +98,13 @@ nav {
 
   .container > a {
     padding: 0;
+  }
 
-    h1 {
-      color: $nav-active-color;
-      font-size: 1.5em;
-      margin: 0;
-      padding: 1rem .75em 1rem 0;
-    }
+  h1 {
+    color: $nav-active-color;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1rem .75em 1rem 0;
   }
 
   ul {
@@ -120,9 +118,8 @@ nav {
 
   li {
     flex: 1;
-    transition: color $transition-length;
-
     text-align: center;
+    transition: color $transition-length;
     vertical-align: middle;
 
     &.active,
