@@ -1,6 +1,1 @@
-exclude: assets/style.scss
-
-linters:
-  VendorPrefix:
-    exclude:
-      - _sass/_mixins.scss
+exclude: assets/*
