@@ -16,6 +16,8 @@ task proof: :build do
   ).run
 end
 
+# This task must run after all Jekyll tasks, see
+# https://github.com/brigade/scss-lint/issues/750
 SCSSLint::RakeTask.new { |t| t.files = Dir.glob('_sass/*.scss') }
 
-task default: [:build, :doctor, :proof]
+task default: [:build, :doctor, :proof, :scss_lint]
