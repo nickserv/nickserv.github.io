@@ -1,5 +1,6 @@
 require 'github-pages'
 require 'html-proofer'
+require 'scss_lint/rake_task'
 
 task(:build) { Jekyll::Commands::Build.process({}) }
 task(:doctor) { Jekyll::Commands::Doctor.process({}) }
@@ -14,5 +15,7 @@ task proof: :build do
     url_swap: { %r{^/apps/(.*)$} => 'http://mccurdy.io/apps/\1' }
   ).run
 end
+
+SCSSLint::RakeTask.new { |t| t.files = Dir.glob('_sass/*.scss') }
 
 task default: [:build, :doctor, :proof]
