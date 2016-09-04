@@ -12,3 +12,5 @@ exclude:
   - vendor
 gems:
   - jekyll-redirect-from
+sass:
+  style: compressed
