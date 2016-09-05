@@ -24,20 +24,7 @@
 
   <header>
     <div class="container">
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      <nav>
-        <ul>
-          {% for nav_page in site.pages %}
-            {% if nav_page.title and nav_page.title != 'About' and nav_page.title != '404 Not Found' %}
-              <li{% if page.title == nav_page.title %} class="active"{% endif %}>
-                <a href="{{ site.baseurl }}{{ nav_page.url | remove: 'index.html' }}">
-                  {{ nav_page.title }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </nav>
+      <h1>{{ site.title }}</h1>
     </div>
   </header>
 

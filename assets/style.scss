@@ -64,62 +64,20 @@ body {
   > .container {
     flex: 1 0 auto;
   }
-}
 
-header {
-  margin-bottom: 2em;
+  > header {
+    margin-bottom: 2em;
 
-  @media (min-width: 600px) {
-    .container {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  h1 {
-    font-size: 1.5em;
-    margin: 0;
-
-    a,
-    a:visited {
+    h1 {
       color: $white;
+      font-size: 1.5em;
+      margin: 0;
       padding: 1rem 0.75em 1rem 0;
     }
-  }
 
-  nav {
-    flex: 1;
-  }
-
-  ul {
-    display: flex;
-    flex: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    flex: 1;
-    text-align: center;
-    transition: color 0.25s;
-    vertical-align: middle;
-
-    &:hover {
-      color: $white;
+    nav {
+      flex: 1;
     }
-  }
-
-  .active {
-    background-color: $black;
-    cursor: default;
-    pointer-events: none;
-  }
-
-  a {
-    display: block;
-    padding: 1em;
   }
 }
 
@@ -163,7 +121,6 @@ footer {
 }
 
 // Full width links
-.list-links,
 h1,
 h2,
 h3 {
