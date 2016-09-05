@@ -90,7 +90,7 @@ footer {
 // Helpers
 
 // Section with light-on-dark theme
-header,
+body > header,
 footer {
   background-color: $dark-gray;
   color: $light-gray;
