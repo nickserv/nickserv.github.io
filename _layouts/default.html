@@ -3,7 +3,7 @@
 <head>
   <!-- basic info -->
   <meta charset="utf-8">
-  <title>Nicolas McCurdy - {{ page.title }}</title>
+  <title>{{ site.title }} - {{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
@@ -19,7 +19,7 @@
   <nav>
     <div class="container">
       <a href="{{ site.baseurl }}/">
-        <h1>Nicolas McCurdy</h1>
+        <h1>{{ site.title }}</h1>
       </a>
       <ul>
         {% for nav_page in site.pages %}
@@ -53,7 +53,7 @@
         Report an Issue
       </a>
 
-      <div>&copy; 2015 Nicolas McCurdy</div>
+      <div>&copy; 2015 {{ site.title }}</div>
     </div>
   </footer>
 </body>
