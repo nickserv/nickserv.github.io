@@ -1,4 +1,4 @@
-# [Nicolas McCurdy's Website](http://nickmccurdy.com/)
+# [Nick McCurdy's Website](http://nickmccurdy.com/)
 [![Build Status](https://travis-ci.org/nicolasmccurdy/nicolasmccurdy.github.io.svg)](https://travis-ci.org/nicolasmccurdy/nicolasmccurdy.github.io)
 
 ## Web apps extracted from this repository
