@@ -12,7 +12,7 @@ task proof: :build do
     check_favicon: true,
     check_html: true,
     file_ignore: ['_site/skills/index.html'],
-    url_swap: { %r{^/apps/(.*)$} => 'http://mccurdy.io/apps/\1' }
+    url_swap: { %r{^/apps/(.*)$} => 'http://nickmccurdy.com/apps/\1' }
   ).run
 end
 
