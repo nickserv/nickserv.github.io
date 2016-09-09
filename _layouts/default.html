@@ -3,7 +3,6 @@
 <head>
   <!-- basic info -->
   <meta charset="utf-8">
-  <title>{{ site.title }} - {{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- css -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
@@ -12,6 +11,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
   <!-- icons -->
   <link rel="icon" href="{{ site.baseurl }}/assets/favicon.png">
+  {% seo %}
   {% include analytics.html %}
 </head>
 

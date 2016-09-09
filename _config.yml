@@ -1,4 +1,22 @@
+# metadata
 title: Nicolas McCurdy
+description: I am a software engineering student at the Rochester Institute of Technology and a member of the Society of Software Engineers.
+url: http://nickmccurdy.com
+author: nicolasmccurdy
+twitter:
+  username: nicolasmccurdy
+social:
+  links:
+    - https://www.facebook.com/thenickperson
+    - https://twitter.com/nicolasmccurdy
+    - https://plus.google.com/+NicolasMcCurdy
+    - https://www.instagram.com/nicolasmccurdy/
+    - https://www.youtube.com/user/superme3000
+    - https://www.linkedin.com/in/nicolasmccurdy
+    - https://soundcloud.com/nicolasmccurdy
+    - http://nicolasmccurdy.tumblr.com/
+
+# configuration
 defaults:
   -
     values:
@@ -13,6 +31,7 @@ exclude:
   - vendor
 gems:
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
 sass:
   style: compressed
