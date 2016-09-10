@@ -8,5 +8,7 @@ permalink: talks/
     <a href="{{ talk.url }}">{{ talk.name }}</a>
   </h2>
 
-  <p>{{ talk.date }}</p>
+  <p>
+    <time datetime="{{ talk.date }}">{{ talk.date | date: '%B %-d, %Y' }}</time>
+  </p>
 {% endfor %}
