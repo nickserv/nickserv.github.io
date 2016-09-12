@@ -46,11 +46,6 @@
     url: /apps/collatz/index.html
     description: Calculute sets of integers using the Collatz Conjecture.
 
-- name: Websites
-  projects:
-  - name: Dana McCurdy
-    url: http://danamccurdy.com
-
 - name: Browser Extensions
   projects:
   - name: HashMask
@@ -62,6 +57,9 @@
 
 - name: Miscellaneous
   projects:
+  - name: Dana McCurdy
+    url: http://danamccurdy.com
+    description: My father's personal website.
   - name: Dotfiles
     url: https://github.com/nicolasmccurdy/dotfiles
     description: My personal config files, themes, and scripts, which are compatible with homesick.
