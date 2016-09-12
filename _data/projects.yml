@@ -9,9 +9,6 @@
   - name: Buzzword Generator
     url: https://github.com/nicolasmccurdy/buzzword-generator
     description: Produces amusing buzzword phrases.
-  - name: Alexandria
-    url: https://github.com/rit-sse/alexandria
-    description: The library management system for the Society of Software Engineers (a collaboration with the Alexandria project team).
   - name: strftime Editor
     url: https://github.com/nicolasmccurdy/strftime-editor
     description: A simple strftime string editor.
