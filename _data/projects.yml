@@ -46,7 +46,7 @@
     url: /apps/collatz/index.html
     description: Calculute sets of integers using the Collatz Conjecture.
 
-- name: Browser Extensions
+- name: Extensions
   projects:
   - name: HashMask
     url: https://github.com/wyantb/HashMask/
