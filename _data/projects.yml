@@ -6,12 +6,21 @@
   - name: Language Colors
     url: http://languagecolors.herokuapp.com
     description: A simple web app and service for viewing GitHub's language colors.
+  - name: ghlint-web
+    url: https://github.com/nicolasmccurdy/ghlint-web
+    description: A web interface for ghlint (a linter for GitHub projects).
+  - name: Tickets
+    url: https://github.com/nicolasmccurdy/tickets
+    description: A simple web app that lets students in computer labs file help tickets for their teachers to review.
   - name: Buzzword Generator
     url: https://github.com/nicolasmccurdy/buzzword-generator
     description: Produces amusing buzzword phrases.
   - name: strftime Editor
     url: https://github.com/nicolasmccurdy/strftime-editor
     description: A simple strftime string editor.
+  - name: Randomize
+    url: http://mccurdy.io/randomize/
+    description: A simple web app for generating random data.
   - name: Text Tools
     url: /apps/text_tools/index.html
     description: A handy text editor for batch manipulations of text.
@@ -27,6 +36,15 @@
 
 - name: Tools
   projects:
+  - name: karma-edge-launcher
+    url: https://github.com/nicolasmccurdy/karma-edge-launcher
+    description: A Karma plugin. Launcher for Microsoft Edge.
+  - name: Procrastinate
+    url: https://github.com/nicolasmccurdy/procrastinate
+    description: Quickly create pending specs for your favorite test frameworks.
+  - name: ghlint
+    url: https://github.com/nicolasmccurdy/ghlint
+    description: A linter for GitHub projects.
   - name: Repos
     url: https://github.com/nicolasmccurdy/repos
     description: A tool for finding git repositories locally.
@@ -66,6 +84,15 @@
   - name: Sane Defaults
     url: https://github.com/nicolasmccurdy/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
+  - name: dwm
+    url: https://github.com/nicolasmccurdy/dwm
+    description: My personal fork of dwm (with custom settings).
+  - name: Developer Resources
+    url: https://github.com/nicolasmccurdy/developer-resources
+    description: A collection of developer resources for many languages and tools.
+  - name: Witchcraft
+    url: https://github.com/nicolasmccurdy/witchcraft
+    description: A simple application skeleton for Sinatra, inspired by Express.
   - name: Templates
     url: https://github.com/nicolasmccurdy/templates
     description: A small collection of simple templates for popular languages, frameworks, and tools.
