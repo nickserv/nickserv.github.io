@@ -2,7 +2,7 @@
   projects:
   - name: Rose
     url: http://rosesearch.herokuapp.com/
-    description: An interactive, technical, and openly editable Rosetta Stone for developers (in development).
+    description: An interactive, technical, and openly editable Rosetta Stone for developers.
   - name: Language Colors
     url: http://languagecolors.herokuapp.com
     description: A simple web app and service for viewing GitHub's language colors.
@@ -74,7 +74,7 @@
     description: A small collection of simple templates for popular languages, frameworks, and tools.
   - name: Project Euler Solutions
     url: https://github.com/nicolasmccurdy/project-euler
-    description: My solutions to Project Euler problems in Ruby.
+    description: My solutions to Project Euler problems.
   - name: More Stuff
     url: https://github.com/nicolasmccurdy
     description: Check out all my GitHub repositories, including a bunch not listed here.
