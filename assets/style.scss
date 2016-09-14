@@ -66,7 +66,19 @@ body {
   }
 
   > header {
+    background-color: $dark-gray;
+    color: $light-gray;
     margin-bottom: 2em;
+    padding: 1em;
+
+    a,
+    a:visited {
+      color: $light-gray;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
 
     h1 {
       color: $white;
@@ -81,29 +93,7 @@ body {
   }
 }
 
-footer {
-  font-size: smaller;
-  margin-top: 1em;
-  padding: 0.5em;
-}
-
 // Helpers
-
-// Section with light-on-dark theme
-body > header,
-footer {
-  background-color: $dark-gray;
-  color: $light-gray;
-
-  a,
-  a:visited {
-    color: $light-gray;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-}
 
 // List of horizontal items with equal widths and centered content
 .list-horizontal {
