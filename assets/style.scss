@@ -78,8 +78,7 @@ time {
 }
 
 nav {
-  background-color: $nav-background-color;
-  color: $nav-color;
+  @extend %dark-background;
   margin-bottom: 2em;
 
   @media (min-width: 600px) {
@@ -145,8 +144,7 @@ nav {
 }
 
 footer {
-  background-color: $nav-background-color;
-  color: $nav-color;
+  @extend %dark-background;
   font-size: smaller;
   margin-top: 1em;
   padding: .5em;
@@ -158,6 +156,12 @@ footer {
 }
 
 // Helpers
+
+// Section with light-on-dark theme
+%dark-background {
+  background-color: $nav-background-color;
+  color: $nav-color;
+}
 
 // List of horizontal items with equal widths and centered content
 .list-horizontal {
