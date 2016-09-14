@@ -36,13 +36,6 @@ body {
   }
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 .75em;
-  width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -75,20 +68,15 @@ time {
   font-size: 80%;
 }
 
-footer {
-  background-color: $nav-background-color;
-  color: $nav-color;
-  font-size: smaller;
-  margin-top: 1em;
-  padding: .5em;
+// Sections
 
-  a,
-  a:visited {
-    color: $nav-color;
-  }
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 .75em;
+  width: 100%;
 }
 
-// Nav
 nav {
   background-color: $nav-background-color;
   color: $nav-color;
@@ -153,6 +141,19 @@ nav {
     &:visited {
       color: $nav-color;
     }
+  }
+}
+
+footer {
+  background-color: $nav-background-color;
+  color: $nav-color;
+  font-size: smaller;
+  margin-top: 1em;
+  padding: .5em;
+
+  a,
+  a:visited {
+    color: $nav-color;
   }
 }
 
