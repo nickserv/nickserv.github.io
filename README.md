@@ -1,5 +1,5 @@
 # [Nick McCurdy's Website](http://nickmccurdy.com/)
-[![Build Status](https://travis-ci.org/nickmccurdy/nicolasmccurdy.github.io.svg)](https://travis-ci.org/nickmccurdy/nicolasmccurdy.github.io)
+[![Build Status](https://travis-ci.org/nickmccurdy/nickmccurdy.github.io.svg)](https://travis-ci.org/nickmccurdy/nickmccurdy.github.io)
 
 ## Web apps extracted from this repository
 - [copyboard](https://github.com/nickmccurdy/copyboard)
