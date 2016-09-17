@@ -26,6 +26,11 @@
     <div class="container">
       <h1>{{ site.title }}</h1>
       <ul class="list-horizontal">
+        {% for category in site.data.projects %}
+          <li><a href="#{{ category.name | slugify }}">{{ category.name }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul class="list-horizontal">
         {% for link in site.data.links %}
           <li>
             <a href="{{ link.url }}" title="{{ title.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
