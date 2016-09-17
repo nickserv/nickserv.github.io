@@ -14,6 +14,10 @@ $transition-length: .25s;
 
 // General
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $background-color;
   color: $text-color;
