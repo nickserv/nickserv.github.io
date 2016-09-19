@@ -97,7 +97,7 @@ body {
 
 // List of horizontal items with equal widths and centered content
 .list-horizontal {
-  // Remove original list styles
+  align-items: center;
   list-style: none;
   margin: 0;
   padding-left: 0;
