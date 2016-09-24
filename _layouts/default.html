@@ -28,16 +28,20 @@
       <ul class="list-horizontal">
         <li><h1>{{ site.title }}</h1></li>
         <li>
-          {% for link in site.data.links %}
-            <a href="{{ link.url }}" title="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}><span class="fa fa-fw fa-{{ link.icon }}"></span></a>
-          {% endfor %}
+          <nav>
+            {% for link in site.data.links %}
+              <a href="{{ link.url }}" title="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}><span class="fa fa-fw fa-{{ link.icon }}"></span></a>
+            {% endfor %}
+          </nav>
         </li>
       </ul>
-      <ul class="list-horizontal">
-        {% for category in site.data.projects %}
-        <li><a href="#{{ category.name | slugify }}">{{ category.name }}</a></li>
-        {% endfor %}
-      </ul>
+      <nav>
+        <ul class="list-horizontal">
+          {% for category in site.data.projects %}
+            <li><a href="#{{ category.name | slugify }}">{{ category.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
   </header>
 
