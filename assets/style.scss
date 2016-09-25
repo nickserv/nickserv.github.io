@@ -77,72 +77,74 @@ time {
   width: 100%;
 }
 
-header {
-  @extend %dark-background;
-  margin-bottom: 2em;
+body {
+  > header {
+    @extend %dark-background;
+    margin-bottom: 2em;
 
-  @media (min-width: 600px) {
-    .container {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
+    @media (min-width: 600px) {
+      .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
-  }
 
-  .container > a {
-    padding: 0;
-  }
+    .container > a {
+      padding: 0;
+    }
 
-  h1 {
-    color: $nav-active-color;
-    font-size: 1.5em;
-    margin: 0;
-    padding: 1rem .75em 1rem 0;
-  }
-
-  nav {
-    flex: 1;
-  }
-
-  ul {
-    display: flex;
-    flex: 1;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    flex: 1;
-    text-align: center;
-    transition: color $transition-length;
-    vertical-align: middle;
-
-    &.active,
-    &:hover {
+    h1 {
       color: $nav-active-color;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 1rem .75em 1rem 0;
     }
 
-    &.active {
-      background-color: $nav-active-background-color;
-      cursor: default;
-      pointer-events: none;
-    }
-  }
-
-  a {
-    color: $nav-color;
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
+    nav {
+      flex: 1;
     }
 
-    &:visited {
+    ul {
+      display: flex;
+      flex: 1;
+
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      flex: 1;
+      text-align: center;
+      transition: color $transition-length;
+      vertical-align: middle;
+
+      &.active,
+      &:hover {
+        color: $nav-active-color;
+      }
+
+      &.active {
+        background-color: $nav-active-background-color;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+
+    a {
       color: $nav-color;
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:visited {
+        color: $nav-color;
+      }
     }
   }
 }
