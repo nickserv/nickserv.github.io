@@ -21,21 +21,6 @@ $transition-length: .25s;
   box-sizing: border-box;
 }
 
-body {
-  background-color: $background-color;
-  color: $text-color;
-  display: flex;
-  flex-direction: column;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
-  height: 100vh;
-  line-height: 30px;
-
-  > .container {
-    flex: 1 0 auto;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -78,6 +63,19 @@ time {
 }
 
 body {
+  background-color: $background-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  line-height: 30px;
+
+  > .container {
+    flex: 1 0 auto;
+  }
+
   > header {
     @extend %dark-background;
     margin-bottom: 2em;
