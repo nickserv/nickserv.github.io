@@ -19,7 +19,7 @@
     url: https://github.com/nickmccurdy/strftime-editor
     description: A simple strftime string editor.
   - name: Randomize
-    url: http://mccurdy.io/randomize/
+    url: http://nickmccurdy.com/randomize/
     description: A simple web app for generating random data.
   - name: Text Tools
     url: /apps/text_tools/index.html
