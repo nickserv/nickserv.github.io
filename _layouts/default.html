@@ -23,7 +23,7 @@
       </a>
       <ul>
         {% for nav_page in site.pages %}
-          {% if nav_page.title and nav_page.title != 'About' %}
+          {% if nav_page.title and nav_page.title != 'About' and nav_page.title != '404 Not Found' %}
             {% include nav_link.html page=nav_page %}
           {% endif %}
         {% endfor %}
