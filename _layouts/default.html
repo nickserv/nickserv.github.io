@@ -38,7 +38,7 @@
       <nav>
         <ul class="list-horizontal">
           {% for category in site.data.projects %}
-            <li><a href="#{{ category.name | slugify }}">{{ category.name }}</a></li>
+            <li><a href="{{ site.baseurl }}/#{{ category.name | slugify }}">{{ category.name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
