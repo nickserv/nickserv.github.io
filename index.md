@@ -5,13 +5,12 @@ redirect_from:
   - /talks/
 ---
 
-{% capture about %}
 - [Rochester Institute of Technology](http://www.rit.edu/) graduate
 - Software engineer
 - Web developer
 - Open source contributor
-{% endcapture %}
-{{ about | markdownify }}
+
+^
 
 {% for category in site.data.projects %}
   <section>
