@@ -1,3 +1,2 @@
-exclude:
-  - assets/*
-  - vendor/*
+exclude: vendor/*
+preprocess_command: sed '1,2s/---//'
