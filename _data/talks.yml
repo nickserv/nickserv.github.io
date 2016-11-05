@@ -1,5 +1,5 @@
 - name: Music Genres
-  url: https://speakerdeck.com/nicolasmccurdy/music-genres
+  url: https://speakerdeck.com/nickmccurdy/music-genres
   date: 2016-2-11
   description: A quick overview of some modern American music genres.
 
@@ -9,26 +9,26 @@
   description: An overview of why software testing is important, what methods can be used to test software, and how to integrate testing with development practices.
 
 - name: Active Contour Research
-  url: https://speakerdeck.com/nicolasmccurdy/active-contour-research
+  url: https://speakerdeck.com/nickmccurdy/active-contour-research
   date: 2014-12-2
   description: Course research on the active contour technique in computer vision.
 
 - name: The Psychology of Motivation
-  url: https://speakerdeck.com/nicolasmccurdy/the-psychology-of-motivation
+  url: https://speakerdeck.com/nickmccurdy/the-psychology-of-motivation
   date: 2014-11-13
   description: A lightning talk giving a very simple overview of how people are motivated.
 
 - name: Building Apps with Node.js and Express
-  url: https://speakerdeck.com/nicolasmccurdy/building-apps-with-node-dot-js-and-express
+  url: https://speakerdeck.com/nickmccurdy/building-apps-with-node-dot-js-and-express
   date: 2014-11-5
   description: A walkthrough for building simple server-side web apps with the Express framework for Node.js.
 
 - name: A Quick Intro to Ruby
-  url: https://speakerdeck.com/nicolasmccurdy/a-quick-intro-to-ruby
+  url: https://speakerdeck.com/nickmccurdy/a-quick-intro-to-ruby
   date: 2014-9-18
   description: A tour of Ruby's basic syntax for novice programmers.
 
 - name: Pair Programming
-  url: https://speakerdeck.com/nicolasmccurdy/pair-programming
+  url: https://speakerdeck.com/nickmccurdy/pair-programming
   date: 2013-4-2
   description: An explanation of the pair programming technique for software development, including a discussion of the associated benefits and risks in using it over more conventional programming practices.
