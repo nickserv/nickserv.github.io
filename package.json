@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "dependencies": {
+    "stylelint-config-sass-guidelines": "^2.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-sass-guidelines"
+  }
+}
