@@ -1,5 +1,5 @@
 sudo: false
-install: gem install -g
+cache: bundler
 script: script/cibuild
 env:
   global:
