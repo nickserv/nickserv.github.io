@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+export RUBYGEMS_GEMDEPS=-
+
+jekyll build
+jekyll doctor
+htmlproofer _site --check-external-hash --check-favicon --check-html \
+            --file-ignore _site/skills/index.html \
+            --url-swap '^/apps/(.*)$:http\://nickmccurdy.com/apps/\1'
+scss-lint
