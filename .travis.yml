@@ -1,5 +1,8 @@
 sudo: false
-cache: bundler
+cache:
+  bundler: true
+  directories:
+    - node_modules
 before_install: nvm install
 install:
   - bundle
