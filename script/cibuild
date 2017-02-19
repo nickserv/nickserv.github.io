@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -e # halt script on error
-export RUBYGEMS_GEMDEPS=-
 
 jekyll build
 jekyll doctor
