@@ -17,9 +17,6 @@ $transition-length: 0.25s;
 
 // General
 
-* {
-  box-sizing: border-box;
-}
 
 h1,
 h2,
@@ -56,6 +53,7 @@ time {
 // Sections
 
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
   max-width: 600px;
   padding: 0 0.75em;
