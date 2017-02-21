@@ -13,7 +13,7 @@ $nav-active-background-color: #000;
 $text-color: #444;
 
 // Miscellaneous
-$transition-length: .25s;
+$transition-length: 0.25s;
 
 // General
 
@@ -40,11 +40,11 @@ a {
   color: $link-color;
   text-decoration: none;
 
-  &:hover {
+  :hover {
     text-decoration: underline;
   }
 
-  &:visited {
+  :visited {
     color: $link-color-active;
   }
 }
@@ -58,7 +58,7 @@ time {
 .container {
   margin: 0 auto;
   max-width: 600px;
-  padding: 0 .75em;
+  padding: 0 0.75em;
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ body {
   color: $text-color;
   display: flex;
   flex-direction: column;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   height: 100vh;
   line-height: 30px;
@@ -96,7 +96,7 @@ header {
     a,
     a:visited {
       color: $nav-active-color;
-      padding: 1rem .75em 1rem 0;
+      padding: 1rem 0.75em 1rem 0;
     }
   }
 
@@ -119,12 +119,12 @@ header {
     transition: color $transition-length;
     vertical-align: middle;
 
-    &.active,
-    &:hover {
+    .active,
+    :hover {
       color: $nav-active-color;
     }
 
-    &.active {
+    .active {
       background-color: $nav-active-background-color;
       cursor: default;
       pointer-events: none;
@@ -137,11 +137,11 @@ header {
     padding: 1em;
     text-decoration: none;
 
-    &:hover {
+    :hover {
       text-decoration: none;
     }
 
-    &:visited {
+    :visited {
       color: $nav-color;
     }
   }
@@ -151,7 +151,7 @@ footer {
   @extend %dark-background;
   font-size: smaller;
   margin-top: 1em;
-  padding: .5em;
+  padding: 0.5em;
 
   a,
   a:visited {
