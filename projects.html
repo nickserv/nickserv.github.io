@@ -13,17 +13,10 @@ permalink: projects/
 </nav>
 
 {% for category in site.data.projects %}
-  <section>
-    <h2 id="{{ category.name | slugify }}">{{ category.name }}</h2>
+  <h2 id="{{ category.name | slugify }}">{{ category.name }}</h2>
 
-    {% for project in category.projects %}
-      <article>
-        <h3>
-          <a href="{{ project.url }}">{{ project.name }}</a>
-        </h3>
-
-        <p>{{ project.description }}</p>
-      </article>
-    {% endfor %}
-  </section>
+  {% for project in category.projects %}
+    <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+    <p>{{ project.description }}</p>
+  {% endfor %}
 {% endfor %}
