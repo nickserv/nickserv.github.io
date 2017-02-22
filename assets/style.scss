@@ -9,9 +9,6 @@ $dark-gray: #444;
 $light-gray: #bbb;
 $white: #f6f6f6;
 
-// Miscellaneous
-$transition-length: 0.25s;
-
 // General
 
 
@@ -111,7 +108,7 @@ header {
   li {
     flex: 1;
     text-align: center;
-    transition: color $transition-length;
+    transition: color 0.25s;
     vertical-align: middle;
 
     &.active,
