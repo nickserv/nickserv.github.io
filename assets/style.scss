@@ -109,16 +109,16 @@ header {
     transition: color 0.25s;
     vertical-align: middle;
 
-    &.active,
     &:hover {
       color: $white;
     }
+  }
 
-    &.active {
-      background-color: $black;
-      cursor: default;
-      pointer-events: none;
-    }
+  .active {
+    background-color: $black;
+    color: $white;
+    cursor: default;
+    pointer-events: none;
   }
 
   a {
