@@ -2,15 +2,12 @@
 ---
 
 // Colors
-$background-color: #f6f6f6;
-$heading-color: #000;
-$link-color: #0074d9;
-$link-color-active: #004a8c;
-$nav-color: #bbb;
-$nav-active-color: $background-color;
-$nav-background-color: #444;
-$nav-active-background-color: #000;
-$text-color: #444;
+$black: #000;
+$blue: #0074d9;
+$dark-blue: #004a8c;
+$dark-gray: #444;
+$light-gray: #bbb;
+$white: #f6f6f6;
 
 // Miscellaneous
 $transition-length: 0.25s;
@@ -24,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $heading-color;
+  color: $black;
   margin-bottom: 0;
 }
 
@@ -34,7 +31,7 @@ ul {
 }
 
 a {
-  color: $link-color;
+  color: $blue;
   text-decoration: none;
 
   &:hover {
@@ -42,7 +39,7 @@ a {
   }
 
   &:visited {
-    color: $link-color-active;
+    color: $dark-blue;
   }
 }
 
@@ -61,8 +58,8 @@ time {
 }
 
 body {
-  background-color: $background-color;
-  color: $text-color;
+  background-color: $white;
+  color: $dark-gray;
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
@@ -93,7 +90,7 @@ header {
 
     a,
     a:visited {
-      color: $nav-active-color;
+      color: $white;
       padding: 1rem 0.75em 1rem 0;
     }
   }
@@ -119,18 +116,18 @@ header {
 
     &.active,
     &:hover {
-      color: $nav-active-color;
+      color: $white;
     }
 
     &.active {
-      background-color: $nav-active-background-color;
+      background-color: $black;
       cursor: default;
       pointer-events: none;
     }
   }
 
   a {
-    color: $nav-color;
+    color: $light-gray;
     display: block;
     padding: 1em;
     text-decoration: none;
@@ -140,7 +137,7 @@ header {
     }
 
     &:visited {
-      color: $nav-color;
+      color: $light-gray;
     }
   }
 }
@@ -153,7 +150,7 @@ footer {
 
   a,
   a:visited {
-    color: $nav-color;
+    color: $light-gray;
   }
 }
 
@@ -161,8 +158,8 @@ footer {
 
 // Section with light-on-dark theme
 %dark-background {
-  background-color: $nav-background-color;
-  color: $nav-color;
+  background-color: $dark-gray;
+  color: $light-gray;
 }
 
 // List of horizontal items with equal widths and centered content
