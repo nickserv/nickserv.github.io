@@ -26,9 +26,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - script
   - node_modules
   - package.json
+  - test
   - vendor
 gems:
   - jekyll-redirect-from
