@@ -123,18 +123,8 @@ header {
   }
 
   a {
-    color: $light-gray;
     display: block;
     padding: 1em;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    &:visited {
-      color: $light-gray;
-    }
   }
 }
 
@@ -143,11 +133,6 @@ footer {
   font-size: smaller;
   margin-top: 1em;
   padding: 0.5em;
-
-  a,
-  a:visited {
-    color: $light-gray;
-  }
 }
 
 // Helpers
@@ -156,6 +141,15 @@ footer {
 %dark-background {
   background-color: $dark-gray;
   color: $light-gray;
+
+  a,
+  a:visited {
+    color: $light-gray;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 // List of horizontal items with equal widths and centered content
