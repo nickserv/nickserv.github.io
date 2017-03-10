@@ -3,6 +3,10 @@ cache:
   bundler: true
   directories:
     - node_modules
+addons:
+  apt:
+    packages:
+      - oracle-java8-set-default
 before_install: nvm install
 install:
   - bundle
