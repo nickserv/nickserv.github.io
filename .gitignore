@@ -1,6 +1,6 @@
-_site
-.sass-cache
-.jekyll-metadata
-
-Gemfile.lock
 .htmlproofer
+.jekyll-metadata
+.sass-cache
+Gemfile.lock
+_site
+node_modules

@@ -1,4 +1,168 @@
 ---
 ---
 
-@import 'base';
+// Colors
+$black: #000;
+$blue: #0074d9;
+$dark-blue: #004a8c;
+$dark-gray: #444;
+$light-gray: #bbb;
+$white: #f6f6f6;
+
+// General
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  margin-bottom: 0;
+}
+
+p,
+ul {
+  margin-top: 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $dark-blue;
+  }
+}
+
+time {
+  font-size: 80%;
+}
+
+// Sections
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 0.75em;
+  width: 100%;
+}
+
+body {
+  background-color: $white;
+  color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  line-height: 30px;
+  margin: 0;
+
+  > .container {
+    flex: 1 0 auto;
+  }
+}
+
+header {
+  @extend %dark-background;
+  margin-bottom: 2em;
+
+  @media (min-width: 600px) {
+    .container {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+
+    a,
+    a:visited {
+      color: $white;
+      padding: 1rem 0.75em 1rem 0;
+    }
+  }
+
+  nav {
+    flex: 1;
+  }
+
+  ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    flex: 1;
+    text-align: center;
+    transition: color 0.25s;
+    vertical-align: middle;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .active {
+    background-color: $black;
+    color: $white;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  a {
+    display: block;
+    padding: 1em;
+  }
+}
+
+footer {
+  @extend %dark-background;
+  font-size: smaller;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+// Helpers
+
+// Section with light-on-dark theme
+%dark-background {
+  background-color: $dark-gray;
+  color: $light-gray;
+
+  a,
+  a:visited {
+    color: $light-gray;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+// List of horizontal items with equal widths and centered content
+.list-horizontal {
+  // Remove original list styles
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  // Use flexbox to horizontally center items
+  @media (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
