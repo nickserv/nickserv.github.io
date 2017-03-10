@@ -2,46 +2,14 @@
 ---
 
 // Colors
-$background-color: #f6f6f6;
-$heading-color: #000;
-$link-color: #0074d9;
-$link-color-active: #004a8c;
-$nav-color: #bbb;
-$nav-active-color: $background-color;
-$nav-background-color: #444;
-$nav-active-background-color: #000;
-$text-color: #444;
-
-// Miscellaneous
-$transition-length: .25s;
+$black: #000;
+$blue: #0074d9;
+$dark-blue: #004a8c;
+$dark-gray: #444;
+$light-gray: #bbb;
+$white: #f6f6f6;
 
 // General
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: $background-color;
-  color: $text-color;
-  display: flex;
-  flex-direction: column;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
-  height: 100vh;
-  line-height: 30px;
-
-  > .container {
-    flex: 1 0 auto;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 .75em;
-  width: 100%;
-}
 
 h1,
 h2,
@@ -49,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $heading-color;
+  color: $black;
   margin-bottom: 0;
 }
 
@@ -59,7 +27,7 @@ ul {
 }
 
 a {
-  color: $link-color;
+  color: $blue;
   text-decoration: none;
 
   &:hover {
@@ -67,7 +35,7 @@ a {
   }
 
   &:visited {
-    color: $link-color-active;
+    color: $dark-blue;
   }
 }
 
@@ -75,23 +43,34 @@ time {
   font-size: 80%;
 }
 
-footer {
-  background-color: $nav-background-color;
-  color: $nav-color;
-  font-size: smaller;
-  margin-top: 1em;
-  padding: .5em;
+// Sections
 
-  a,
-  a:visited {
-    color: $nav-color;
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 0.75em;
+  width: 100%;
+}
+
+body {
+  background-color: $white;
+  color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  line-height: 30px;
+  margin: 0;
+
+  > .container {
+    flex: 1 0 auto;
   }
 }
 
-// Nav
-nav {
-  background-color: $nav-background-color;
-  color: $nav-color;
+header {
+  @extend %dark-background;
   margin-bottom: 2em;
 
   @media (min-width: 600px) {
@@ -102,21 +81,24 @@ nav {
     }
   }
 
-  .container > a {
-    padding: 0;
-  }
-
   h1 {
-    color: $nav-active-color;
     font-size: 1.5em;
     margin: 0;
-    padding: 1rem .75em 1rem 0;
+
+    a,
+    a:visited {
+      color: $white;
+      padding: 1rem 0.75em 1rem 0;
+    }
+  }
+
+  nav {
+    flex: 1;
   }
 
   ul {
     display: flex;
     flex: 1;
-
     list-style: none;
     margin: 0;
     padding: 0;
@@ -125,23 +107,23 @@ nav {
   li {
     flex: 1;
     text-align: center;
-    transition: color $transition-length;
+    transition: color 0.25s;
     vertical-align: middle;
 
-    &.active,
     &:hover {
-      color: $nav-active-color;
-    }
-
-    &.active {
-      background-color: $nav-active-background-color;
-      cursor: default;
-      pointer-events: none;
+      color: $white;
     }
   }
 
+  .active {
+    background-color: $black;
+    color: $white;
+    cursor: default;
+    pointer-events: none;
+  }
+
   a {
-    color: $nav-color;
+    color: $light-gray;
     display: block;
     padding: 1em;
     text-decoration: none;
@@ -151,12 +133,30 @@ nav {
     }
 
     &:visited {
-      color: $nav-color;
+      color: $light-gray;
     }
   }
 }
 
+footer {
+  @extend %dark-background;
+  font-size: smaller;
+  margin-top: 1em;
+  padding: 0.5em;
+
+  a,
+  a:visited {
+    color: $light-gray;
+  }
+}
+
 // Helpers
+
+// Section with light-on-dark theme
+%dark-background {
+  background-color: $dark-gray;
+  color: $light-gray;
+}
 
 // List of horizontal items with equal widths and centered content
 .list-horizontal {
@@ -166,7 +166,6 @@ nav {
   padding-left: 0;
 
   // Use flexbox to horizontally center items
-
   @media (min-width: 600px) {
     display: flex;
     flex-wrap: wrap;

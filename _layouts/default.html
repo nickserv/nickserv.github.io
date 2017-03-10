@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
   <!-- basic info -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- css -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css@4.2.0">
-  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
   <!-- icons -->
   <link rel="icon" href="{{ site.baseurl }}/assets/favicon.png">
@@ -23,31 +21,29 @@
     ga('create', 'UA-22970573-1', 'auto');
     ga('send', 'pageview');
   </script>
-</head>
 
-<body>
-  <nav>
+  <header>
     <div class="container">
-      <a href="{{ site.baseurl }}/">
-        <h1>{{ site.title }}</h1>
-      </a>
-      <ul>
-        {% for nav_page in site.pages %}
-          {% if nav_page.title and nav_page.title != 'About' and nav_page.title != '404 Not Found' %}
-            <li{% if page.title == nav_page.title %} class="active"{% endif %}>
-              <a href="{{ site.baseurl }}{{ nav_page.url | remove: 'index.html' }}">
-                {{ nav_page.title }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <nav>
+        <ul>
+          {% for nav_page in site.pages %}
+            {% if nav_page.title and nav_page.title != 'About' and nav_page.title != '404 Not Found' %}
+              <li{% if page.title == nav_page.title %} class="active"{% endif %}>
+                <a href="{{ site.baseurl }}{{ nav_page.url | remove: 'index.html' }}">
+                  {{ nav_page.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <div class="container">
+  <main class="container">
     {{ content }}
-  </div>
+  </main>
 
   <footer>
     <div class="container">
@@ -63,5 +59,4 @@
       </ul>
     </div>
   </footer>
-</body>
 </html>
