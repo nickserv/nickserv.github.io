@@ -77,7 +77,7 @@
   projects:
   - name: Dana McCurdy
     url: http://danamccurdy.com
-    description: My father's personal website.
+    description: My father's personal/professional website.
   - name: Dotfiles
     url: https://github.com/nickmccurdy/dotfiles
     description: My personal config files, themes, and scripts, which are compatible with homesick.
