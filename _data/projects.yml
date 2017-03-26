@@ -69,9 +69,6 @@
   - name: HashMask
     url: https://github.com/wyantb/HashMask/
     description: A Chrome extension that enhances password fields (a collaboration with Brian Wyant and Daniel Wallach).
-  - name: Powerfox
-    url: https://userstyles.org/styles/59527/powerfox-ui-improvements-for-firefox-power-users
-    description: A simple collection of tweaks for Firefox that make it a little awesomer for power users, or just those who would like a little more out of their browser UI.
 
 - name: Miscellaneous
   projects:
