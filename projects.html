@@ -5,7 +5,7 @@ permalink: projects/
 
 <!-- category links -->
 <nav>
-  <ul>
+  <ul class="list-links">
     {% for category in site.data.projects %}
       <li><a href="#{{ category.name | slugify }}">{{ category.name }}</a></li>
     {% endfor %}
