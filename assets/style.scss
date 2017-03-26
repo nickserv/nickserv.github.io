@@ -9,6 +9,9 @@ $dark-gray: #444;
 $light-gray: #bbb;
 $white: #f6f6f6;
 
+// Variables
+$ratio: 1.5;
+
 // General
 
 h1,
@@ -16,6 +19,20 @@ h2,
 h3 {
   color: $black;
   margin-bottom: 0;
+  margin-top: 1em / $ratio;
+}
+
+h1 {
+  line-height: 1;
+}
+
+h1,
+h2 {
+  font-size: 1em * $ratio * $ratio;
+}
+
+h3 {
+  font-size: 1em * $ratio;
 }
 
 p,
@@ -37,7 +54,7 @@ a {
 }
 
 time {
-  font-size: 80%;
+  font-size: 1em / $ratio;
 }
 
 // Sections
@@ -46,7 +63,7 @@ time {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 600px;
-  padding: 0 0.75em;
+  padding: 0 1em;
   width: 100%;
 }
 
@@ -56,9 +73,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
   height: 100vh;
-  line-height: 22px;
   margin: 0;
 
   > .container {
@@ -69,7 +84,7 @@ body {
     background-color: $dark-gray;
     color: $light-gray;
     margin-bottom: 2em;
-    padding: 1em;
+    padding: 1em 0;
 
     a,
     a:visited {
@@ -82,9 +97,7 @@ body {
 
     h1 {
       color: $white;
-      font-size: 1.5em;
       margin: 0;
-      padding: 1rem 0.75em 1rem 0;
     }
 
     nav {

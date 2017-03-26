@@ -5,6 +5,7 @@ redirect_from:
   - /talks/
 ---
 
+## About
 - [Rochester Institute of Technology](http://www.rit.edu/) graduate
 - Software engineer
 - Web developer
