@@ -11,6 +11,7 @@ $white: #f6f6f6;
 
 // Variables
 $ratio: 1.5;
+$screen-width: 600px;
 
 // Sections
 
@@ -49,7 +50,7 @@ body {
 // Centered content block with max width
 .container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: $screen-width;
   padding: 0 1em;
 }
 
@@ -60,7 +61,7 @@ body {
   padding-left: 0;
 
   // Use flexbox to horizontally center items
-  @media (min-width: 600px) {
+  @media (min-width: $screen-width) {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
