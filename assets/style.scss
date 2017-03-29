@@ -9,9 +9,24 @@ $dark-gray: #444;
 $light-gray: #bbb;
 $white: #f6f6f6;
 
+// Functions
+@function scale($exponent) {
+  $value: 1em;
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $ratio;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $ratio;
+    }
+  }
+  @return $value;
+}
+
 // Variables
 $ratio: 1.5;
-$screen-width: 600px;
+$screen-width: scale(9);
 
 // Sections
 
@@ -25,10 +40,10 @@ body {
 .nav-header {
   background-color: $dark-gray;
   color: $light-gray;
-  padding: 1em 0;
+  padding: scale(0) 0;
 
   > .container > *:first-child {
-    margin-bottom: 1em / $ratio / $ratio;
+    margin-bottom: scale(-2);
   }
 
   h1 {
@@ -51,7 +66,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: $screen-width;
-  padding: 0 1em;
+  padding: 0 scale(0);
 }
 
 // List of horizontal items with equal widths and centered content
@@ -76,7 +91,7 @@ h2,
 h3 {
   color: $black;
   margin-bottom: 0;
-  margin-top: 1em / $ratio;
+  margin-top: scale(-1);
 
   // Full width links
   a {
@@ -86,11 +101,11 @@ h3 {
 
 h1,
 h2 {
-  font-size: 1em * $ratio * $ratio;
+  font-size: scale(2);
 }
 
 h3 {
-  font-size: 1em * $ratio;
+  font-size: scale(1);
 }
 
 // Content
@@ -114,5 +129,5 @@ a {
 }
 
 time {
-  font-size: 1em / $ratio;
+  font-size: scale(-1);
 }
