@@ -12,7 +12,74 @@ $white: #f6f6f6;
 // Variables
 $ratio: 1.5;
 
-// General
+// Sections
+
+body {
+  background-color: $white;
+  color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100vh;
+  margin: 0;
+
+  > .container {
+    flex: 1 0 auto;
+  }
+
+  // Nav header
+  > header {
+    background-color: $dark-gray;
+    color: $light-gray;
+    margin-bottom: 2em;
+    padding: 1em 0;
+
+    h1 {
+      color: $white;
+      line-height: 1;
+      margin: 0;
+    }
+
+    nav {
+      flex: 1;
+    }
+
+    a,
+    a:visited {
+      color: $light-gray;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Centered content block with max width
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 1em;
+  width: 100%;
+}
+
+// List of horizontal items with equal widths and centered content
+.list-horizontal {
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  // Use flexbox to horizontally center items
+  @media (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// Headings
 
 h1,
 h2,
@@ -20,10 +87,11 @@ h3 {
   color: $black;
   margin-bottom: 0;
   margin-top: 1em / $ratio;
-}
 
-h1 {
-  line-height: 1;
+  // Full width links
+  a {
+    display: block;
+  }
 }
 
 h1,
@@ -34,6 +102,8 @@ h2 {
 h3 {
   font-size: 1em * $ratio;
 }
+
+// Content
 
 p,
 ul {
@@ -55,79 +125,4 @@ a {
 
 time {
   font-size: 1em / $ratio;
-}
-
-// Sections
-
-.container {
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 1em;
-  width: 100%;
-}
-
-body {
-  background-color: $white;
-  color: $dark-gray;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Source Sans Pro', sans-serif;
-  height: 100vh;
-  margin: 0;
-
-  > .container {
-    flex: 1 0 auto;
-  }
-
-  > header {
-    background-color: $dark-gray;
-    color: $light-gray;
-    margin-bottom: 2em;
-    padding: 1em 0;
-
-    a,
-    a:visited {
-      color: $light-gray;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-
-    h1 {
-      color: $white;
-      margin: 0;
-    }
-
-    nav {
-      flex: 1;
-    }
-  }
-}
-
-// Helpers
-
-// List of horizontal items with equal widths and centered content
-.list-horizontal {
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-
-  // Use flexbox to horizontally center items
-  @media (min-width: 600px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-// Full width links
-h1,
-h2,
-h3 {
-  a {
-    display: block;
-  }
 }
