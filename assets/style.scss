@@ -34,6 +34,10 @@ body {
   margin-bottom: 2em;
   padding: 1em 0;
 
+  > .container > *:first-child {
+    margin-bottom: 1em / $ratio / $ratio;
+  }
+
   h1 {
     color: $white;
     line-height: 1;
