@@ -26,32 +26,31 @@ body {
   > .container {
     flex: 1 0 auto;
   }
+}
 
-  // Nav header
-  > header {
-    background-color: $dark-gray;
+.nav-header {
+  background-color: $dark-gray;
+  color: $light-gray;
+  margin-bottom: 2em;
+  padding: 1em 0;
+
+  h1 {
+    color: $white;
+    line-height: 1;
+    margin: 0;
+  }
+
+  nav {
+    flex: 1;
+  }
+
+  a,
+  a:visited {
     color: $light-gray;
-    margin-bottom: 2em;
-    padding: 1em 0;
+  }
 
-    h1 {
-      color: $white;
-      line-height: 1;
-      margin: 0;
-    }
-
-    nav {
-      flex: 1;
-    }
-
-    a,
-    a:visited {
-      color: $light-gray;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
   }
 }
 
