@@ -1,9 +1,34 @@
 ---
-title: About
-redirect_from: /skills/
+redirect_from:
+  - /projects/
+  - /skills/
+  - /talks/
 ---
 
+## About
 - [Rochester Institute of Technology](http://www.rit.edu/) graduate
 - Software engineer
 - Web developer
 - Open source contributor
+
+^
+
+{% for category in site.data.projects %}
+  <section>
+    <h2 id="{{ category.name | slugify }}">{{ category.name }}</h2>
+
+    {% for project in category.projects %}
+      <article>
+        <header>
+          <h3>
+            <a href="{{ project.url }}">{{ project.name }}</a>
+          </h3>
+
+          {% if project.date %}<time datetime="{{ project.date | date: '%Y-%m-%d' }}">{{ project.date | date: '%B %-d, %Y' }}</time>{% endif %}
+        </header>
+
+        {% if project.description %}<p>{{ project.description }}</p>{% endif %}
+      </article>
+    {% endfor %}
+  </section>
+{% endfor %}

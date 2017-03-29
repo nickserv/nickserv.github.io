@@ -9,14 +9,90 @@ $dark-gray: #444;
 $light-gray: #bbb;
 $white: #f6f6f6;
 
-// General
+// Variables
+$ratio: 1.5;
+
+// Sections
+
+body {
+  background-color: $white;
+  color: $dark-gray;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+.nav-header {
+  background-color: $dark-gray;
+  color: $light-gray;
+  padding: 1em 0;
+
+  > .container > *:first-child {
+    margin-bottom: 1em / $ratio / $ratio;
+  }
+
+  h1 {
+    color: $white;
+    line-height: 1;
+    margin: 0;
+  }
+
+  a,
+  a:visited {
+    color: $light-gray;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+// Centered content block with max width
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 1em;
+}
+
+// List of horizontal items with equal widths and centered content
+.list-horizontal {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+
+  // Use flexbox to horizontally center items
+  @media (min-width: 600px) {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// Headings
 
 h1,
 h2,
 h3 {
   color: $black;
   margin-bottom: 0;
+  margin-top: 1em / $ratio;
+
+  // Full width links
+  a {
+    display: block;
+  }
 }
+
+h1,
+h2 {
+  font-size: 1em * $ratio * $ratio;
+}
+
+h3 {
+  font-size: 1em * $ratio;
+}
+
+// Content
 
 p,
 ul {
@@ -37,137 +113,5 @@ a {
 }
 
 time {
-  font-size: 80%;
-}
-
-// Sections
-
-.container {
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 0.75em;
-  width: 100%;
-}
-
-body {
-  background-color: $white;
-  color: $dark-gray;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  height: 100vh;
-  line-height: 30px;
-  margin: 0;
-
-  > .container {
-    flex: 1 0 auto;
-  }
-}
-
-header {
-  margin-bottom: 2em;
-
-  @media (min-width: 600px) {
-    .container {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  h1 {
-    font-size: 1.5em;
-    margin: 0;
-
-    a,
-    a:visited {
-      color: $white;
-      padding: 1rem 0.75em 1rem 0;
-    }
-  }
-
-  nav {
-    flex: 1;
-  }
-
-  ul {
-    display: flex;
-    flex: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    flex: 1;
-    text-align: center;
-    transition: color 0.25s;
-    vertical-align: middle;
-
-    &:hover {
-      color: $white;
-    }
-  }
-
-  .active {
-    background-color: $black;
-    cursor: default;
-    pointer-events: none;
-  }
-
-  a {
-    display: block;
-    padding: 1em;
-  }
-}
-
-footer {
-  font-size: smaller;
-  margin-top: 1em;
-  padding: 0.5em;
-}
-
-// Helpers
-
-// Section with light-on-dark theme
-header,
-footer {
-  background-color: $dark-gray;
-  color: $light-gray;
-
-  a,
-  a:visited {
-    color: $light-gray;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-// List of horizontal items with equal widths and centered content
-.list-horizontal {
-  // Remove original list styles
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-
-  // Use flexbox to horizontally center items
-  @media (min-width: 600px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-// Full width links
-.list-links,
-h1,
-h2,
-h3 {
-  a {
-    display: block;
-  }
+  font-size: 1em / $ratio;
 }

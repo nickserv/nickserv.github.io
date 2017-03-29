@@ -5,6 +5,6 @@ jekyll build
 jekyll doctor
 java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
 htmlproofer _site --check-external-hash --check-favicon --check-html \
-            --file-ignore _site/skills/index.html,/node_modules/ \
+            --file-ignore _site/projects/index.html,_site/skills/index.html,_site/talks/index.html,/node_modules/ \
             --url-swap '^/apps/(.*)$:http\://nickmccurdy.com/apps/\1'
 node_modules/.bin/stylelint assets/style.scss
