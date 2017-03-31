@@ -6,9 +6,6 @@
     "vnu-jar": "^17.2.1"
   },
   "stylelint": {
-    "extends": "stylelint-config-sass-guidelines",
-    "rules": {
-      "max-nesting-depth": 2
-    }
+    "extends": "stylelint-config-sass-guidelines"
   }
 }
