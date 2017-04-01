@@ -77,7 +77,7 @@
     description: My father's personal/professional website.
   - name: Dotfiles
     url: https://github.com/nickmccurdy/dotfiles
-    description: My personal config files, themes, and scripts, which are compatible with homesick.
+    description: My personal config files, themes, and scripts, which are compatible with Stow.
   - name: Sane Defaults
     url: https://github.com/nickmccurdy/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
