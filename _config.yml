@@ -33,6 +33,5 @@ exclude:
 gems:
   - jekyll-redirect-from
   - jekyll-seo-tag
-  - jekyll-sitemap
 sass:
   style: compressed
