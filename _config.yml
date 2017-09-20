@@ -30,5 +30,8 @@ exclude:
   - package.json
   - test
   - vendor
+gems:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
 sass:
   style: compressed
