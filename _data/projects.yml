@@ -37,7 +37,7 @@
 - name: Tools
   projects:
   - name: karma-edge-launcher
-    url: https://github.com/nickmccurdy/karma-edge-launcher
+    url: https://github.com/karma-runner/karma-edge-launcher
     description: A Karma plugin. Launcher for Microsoft Edge.
   - name: Procrastinate
     url: https://github.com/nickmccurdy/procrastinate
