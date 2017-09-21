@@ -30,7 +30,7 @@ exclude:
   - package.json
   - test
   - vendor
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
 sass:
