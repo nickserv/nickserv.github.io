@@ -13,7 +13,7 @@
 - [web_console](https://github.com/nickmccurdy/web_console)
 
 ## Tools
-- [Google's index of nickmccurdy.com](http://www.google.com/search?q=site%3Anickmccurdy.com)
+- [Google's index of nickmccurdy.com](https://www.google.com/search?q=site%3Anickmccurdy.com)
 
 ## Private Tools
 - [Google Analytics](https://www.google.com/analytics)

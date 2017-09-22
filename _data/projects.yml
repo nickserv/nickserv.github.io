@@ -1,10 +1,10 @@
 - name: Web Apps
   projects:
   - name: Rose
-    url: http://rosesearch.herokuapp.com/
+    url: https://rosesearch.herokuapp.com/
     description: An interactive, technical, and openly editable Rosetta Stone for developers.
   - name: Language Colors
-    url: http://languagecolors.herokuapp.com
+    url: https://languagecolors.herokuapp.com
     description: A simple web app and service for viewing GitHub's language colors.
   - name: ghlint-web
     url: https://github.com/nickmccurdy/ghlint-web
