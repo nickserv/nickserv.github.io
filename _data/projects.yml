@@ -46,7 +46,6 @@
     name: Procrastinate
     github: procrastinate
   -
-    name: ghlint
     github: ghlint
   -
     name: Repos
@@ -105,9 +104,8 @@
     description: A quick overview of some modern American music genres.
   -
     name: Software Testing
-    url: /testing-talk/
+    github: testing-talk
     date: 2015-11-3
-    description: An overview of why software testing is important, what methods can be used to test software, and how to integrate testing with development practices.
   -
     name: Active Contour Research
     speakerdeck: active-contour-research
