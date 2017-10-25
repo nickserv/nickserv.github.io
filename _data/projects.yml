@@ -23,19 +23,19 @@
     github: randomize
   -
     name: Text Tools
-    url: /apps/text_tools/index.html
+    url: /apps/text_tools/
     description: A handy text editor for batch manipulations of text.
   -
     name: Multi-Tab Bookmarks
-    url: /apps/mtb/index.html
+    url: /apps/mtb/
     description: Save bookmarks that open sets of links in multiple tabs or windows.
   -
     name: Screen Space
-    url: /apps/screen_space/index.html
+    url: /apps/screen_space/
     description: See detailed information about pixel usage in your browser and OS, all in one place.
   -
     name: Collatz Conjecture
-    url: /apps/collatz/index.html
+    url: /apps/collatz/
     description: Calculute sets of integers using the Collatz Conjecture.
 -
   name: Tools
