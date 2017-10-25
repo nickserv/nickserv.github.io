@@ -41,9 +41,7 @@
   name: Tools
   projects:
   -
-    name: karma-edge-launcher
-    github: karma-runner/karma-edge-launcher
-    description: A Karma plugin. Launcher for Microsoft Edge.
+    github: karma-edge-launcher
   -
     name: Procrastinate
     github: procrastinate
