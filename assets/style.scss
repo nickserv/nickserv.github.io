@@ -25,6 +25,8 @@ $white: #f6f6f6;
 }
 
 // Variables
+$body-font: 'Source Serif Pro', serif;
+$display-font: 'Source Sans Pro', sans-serif;
 $ratio: 1.5;
 $screen-width: scale(9);
 
@@ -33,13 +35,14 @@ $screen-width: scale(9);
 body {
   background-color: $white;
   color: $dark-gray;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $body-font;
   margin: 0;
 }
 
 .nav-header {
   background-color: $dark-gray;
   color: $light-gray;
+  font-family: $display-font;
   padding: scale(0) 0;
 
   > .container > *:first-child {
@@ -90,6 +93,7 @@ h1,
 h2,
 h3 {
   color: $black;
+  font-family: $display-font;
   margin-bottom: 0;
   margin-top: scale(-1);
 
