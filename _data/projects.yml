@@ -1,138 +1,169 @@
-- name: Web Apps
+-
+  name: Web Apps
   projects:
-  - name: Rose
+  -
+    name: Rose
     url: https://rosesearch.herokuapp.com/
     description: An interactive, technical, and openly editable Rosetta Stone for developers.
-  - name: Language Colors
+  -
+    name: Language Colors
     url: https://languagecolors.herokuapp.com
     description: A simple web app and service for viewing GitHub's language colors.
-  - name: ghlint-web
+  -
+    name: ghlint-web
     url: https://github.com/nickmccurdy/ghlint-web
     description: A web interface for ghlint (a linter for GitHub projects).
-  - name: Tickets
+  -
+    name: Tickets
     url: https://github.com/nickmccurdy/tickets
     description: A simple web app that lets students in computer labs file help tickets for their teachers to review.
-  - name: Buzzword Generator
+  -
+    name: Buzzword Generator
     url: https://github.com/nickmccurdy/buzzword-generator
     description: Produces amusing buzzword phrases.
-  - name: strftime Editor
+  -
+    name: strftime Editor
     url: https://github.com/nickmccurdy/strftime-editor
     description: A simple strftime string editor.
-  - name: Randomize
+  -
+    name: Randomize
     url: http://nickmccurdy.com/randomize/
     description: A simple web app for generating random data.
-  - name: Text Tools
+  -
+    name: Text Tools
     url: /apps/text_tools/index.html
     description: A handy text editor for batch manipulations of text.
-  - name: Multi-Tab Bookmarks
+  -
+    name: Multi-Tab Bookmarks
     url: /apps/mtb/index.html
     description: Save bookmarks that open sets of links in multiple tabs or windows.
-  - name: Screen Space
+  -
+    name: Screen Space
     url: /apps/screen_space/index.html
     description: See detailed information about pixel usage in your browser and OS, all in one place.
-  - name: Collatz Conjecture
+  -
+    name: Collatz Conjecture
     url: /apps/collatz/index.html
     description: Calculute sets of integers using the Collatz Conjecture.
-
-- name: Tools
+-
+  name: Tools
   projects:
-  - name: karma-edge-launcher
+  -
+    name: karma-edge-launcher
     url: https://github.com/karma-runner/karma-edge-launcher
     description: A Karma plugin. Launcher for Microsoft Edge.
-  - name: Procrastinate
+  -
+    name: Procrastinate
     url: https://github.com/nickmccurdy/procrastinate
     description: Quickly create pending specs for your favorite test frameworks.
-  - name: ghlint
+  -
+    name: ghlint
     url: https://github.com/nickmccurdy/ghlint
     description: A linter for GitHub projects.
-  - name: Repos
+  -
+    name: Repos
     url: https://github.com/nickmccurdy/repos
     description: A tool for finding git repositories locally.
-  - name: Tracking
+  -
+    name: Tracking
     url: https://github.com/nickmccurdy/tracking
     description: A simple and configurable command line time tracker.
-  - name: Run
+  -
+    name: Run
     url: https://github.com/nickmccurdy/run
     description: A simple command line tool for running individual files of source code.
-
-- name: Libraries
+-
+  name: Libraries
   projects:
-  - name: Final
+  -
+    name: Final
     url: https://github.com/nickmccurdy/final
     description: A set of tools for writing JavaScript code once that runs on the command line, browser, and more.
-  - name: Magician
+  -
+    name: Magician
     url: https://github.com/nickmccurdy/magician
     description: A suite of handy methods for doing calculations in irb.
-
-- name: Extensions
+-
+  name: Extensions
   projects:
-  - name: HashMask
+  -
+    name: HashMask
     url: https://github.com/wyantb/HashMask/
     description: A Chrome extension that enhances password fields (a collaboration with Brian Wyant and Daniel Wallach).
-
-- name: Miscellaneous
+-
+  name: Miscellaneous
   projects:
-  - name: Dana McCurdy
+  -
+    name: Dana McCurdy
     url: http://danamccurdy.com
     description: My father's personal/professional website.
-  - name: Dotfiles
+  -
+    name: Dotfiles
     url: https://github.com/nickmccurdy/dotfiles
     description: My personal config files, themes, and scripts, which are compatible with Stow.
-  - name: Sane Defaults
+  -
+    name: Sane Defaults
     url: https://github.com/nickmccurdy/sane-defaults
     description: Configs that make Linux/Unix programs safer, better, and more intuitive, the way they should be.
-  - name: dwm
+  -
+    name: dwm
     url: https://github.com/nickmccurdy/dwm
     description: My personal fork of dwm (with custom settings).
-  - name: Developer Resources
+  -
+    name: Developer Resources
     url: https://github.com/nickmccurdy/developer-resources
     description: A collection of developer resources for many languages and tools.
-  - name: Witchcraft
+  -
+    name: Witchcraft
     url: https://github.com/nickmccurdy/witchcraft
     description: A simple application skeleton for Sinatra, inspired by Express.
-  - name: Templates
+  -
+    name: Templates
     url: https://github.com/nickmccurdy/templates
     description: A small collection of simple templates for popular languages, frameworks, and tools.
-  - name: Project Euler Solutions
+  -
+    name: Project Euler Solutions
     url: https://github.com/nickmccurdy/project-euler
     description: My solutions to Project Euler problems.
-  - name: More Stuff
+  -
+    name: More Stuff
     url: https://github.com/nickmccurdy
     description: Check out all my GitHub repositories, including a bunch not listed here.
-
-- name: Talks
+-
+  name: Talks
   projects:
-  - name: Music Genres
+  -
+    name: Music Genres
     url: https://speakerdeck.com/nickmccurdy/music-genres
     date: 2016-2-11
     description: A quick overview of some modern American music genres.
-
-  - name: Software Testing
+  -
+    name: Software Testing
     url: http://nickmccurdy.com/testing-talk/
     date: 2015-11-3
     description: An overview of why software testing is important, what methods can be used to test software, and how to integrate testing with development practices.
-
-  - name: Active Contour Research
+  -
+    name: Active Contour Research
     url: https://speakerdeck.com/nickmccurdy/active-contour-research
     date: 2014-12-2
     description: Course research on the active contour technique in computer vision.
-
-  - name: The Psychology of Motivation
+  -
+    name: The Psychology of Motivation
     url: https://speakerdeck.com/nickmccurdy/the-psychology-of-motivation
     date: 2014-11-13
     description: A lightning talk giving a very simple overview of how people are motivated.
-
-  - name: Building Apps with Node.js and Express
+  -
+    name: Building Apps with Node.js and Express
     url: https://speakerdeck.com/nickmccurdy/building-apps-with-node-dot-js-and-express
     date: 2014-11-5
     description: A walkthrough for building simple server-side web apps with the Express framework for Node.js.
-
-  - name: A Quick Intro to Ruby
+  -
+    name: A Quick Intro to Ruby
     url: https://speakerdeck.com/nickmccurdy/a-quick-intro-to-ruby
     date: 2014-9-18
     description: A tour of Ruby's basic syntax for novice programmers.
-
-  - name: Pair Programming
+  -
+    name: Pair Programming
     url: https://speakerdeck.com/nickmccurdy/pair-programming
     date: 2013-4-2
     description: An explanation of the pair programming technique for software development, including a discussion of the associated benefits and risks in using it over more conventional programming practices.
