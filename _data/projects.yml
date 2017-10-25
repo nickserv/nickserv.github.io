@@ -103,10 +103,6 @@
   -
     name: Project Euler Solutions
     github: project-euler
-  -
-    name: More Stuff
-    github: nickmccurdy
-    description: Check out all my GitHub repositories, including a bunch not listed here.
 -
   name: Talks
   projects:
