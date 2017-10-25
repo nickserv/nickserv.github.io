@@ -69,12 +69,6 @@
     github: magician
     description: A suite of handy methods for doing calculations in irb.
 -
-  name: Extensions
-  projects:
-  -
-    github: HashMask
-    description: A Chrome extension that enhances password fields (a collaboration with Brian Wyant and Daniel Wallach).
--
   name: Miscellaneous
   projects:
   -
