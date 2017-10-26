@@ -9,18 +9,15 @@
       {% if project.github %}
         {% assign repository = site.github.public_repositories | where: "name", project.github | first %}
         {% assign url = repository.homepage | default: repository.html_url %}
-        {% assign name = project.name | default: repository.name %}
-        {% assign description = repository.description %}
-      {% else %}
-        {% if project.speakerdeck %}
-          {% assign url = project.speakerdeck | prepend: "https://speakerdeck.com/nickmccurdy/"%}
-        {% else  %}
-          {% assign url = project.url %}
-        {% endif  %}
-        {% assign name = project.name %}
-        {% assign date = project.date %}
-        {% assign description = project.description %}
-      {% endif %}
+      {% elsif project.speakerdeck %}
+        {% assign url = "https://speakerdeck.com/nickmccurdy/" | append: project.speakerdeck %}
+      {% else  %}
+        {% assign url = project.url %}
+      {% endif  %}
+
+      {% assign name = project.name | default: repository.name %}
+      {% assign date = project.date %}
+      {% assign description = project.description | default: repository.description %}
 
       <article>
         <header>
