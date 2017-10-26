@@ -1,6 +1,4 @@
--
-  name: Web Apps
-  projects:
+Web Apps:
   -
     name: Rose
     github: rose
@@ -37,9 +35,7 @@
     name: Collatz Conjecture
     url: /apps/collatz/
     description: Calculute sets of integers using the Collatz Conjecture.
--
-  name: Tools
-  projects:
+Tools:
   -
     github: karma-edge-launcher
   -
@@ -56,9 +52,7 @@
   -
     name: Run
     github: run
--
-  name: Libraries
-  projects:
+Libraries:
   -
     name: Final
     github: final
@@ -67,9 +61,7 @@
     name: Magician
     github: magician
     description: A suite of handy methods for doing calculations in irb.
--
-  name: Miscellaneous
-  projects:
+Miscellaneous:
   -
     name: Dana McCurdy
     url: http://danamccurdy.com
@@ -94,9 +86,7 @@
   -
     name: Project Euler Solutions
     github: project-euler
--
-  name: Talks
-  projects:
+Talks:
   -
     name: Music Genres
     speakerdeck: music-genres

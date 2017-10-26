@@ -1,8 +1,11 @@
-{% for category in site.data.projects %}
-  <section>
-    <h2 id="{{ category.name | slugify }}">{{ category.name }}</h2>
+{% for pair in site.data.projects %}
+  {% assign category = pair[0] %}
+  {% assign projects = pair[1] %}
 
-    {% for project in category.projects %}
+  <section>
+    <h2 id="{{ category | slugify }}">{{ category }}</h2>
+
+    {% for project in projects %}
       {% if project.github %}
         {% assign repository = site.github.public_repositories | where: "name", project.github | first %}
         {% assign url = repository.homepage | default: repository.html_url %}
