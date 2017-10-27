@@ -7,9 +7,8 @@ addons:
   apt:
     packages:
       - oracle-java8-set-default
-before_install: nvm install
-install:
-  - bundle
+before_install:
+  - nvm install
   - npm install
 script: ./test
 env:
