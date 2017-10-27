@@ -11,6 +11,4 @@ redirect_from:
 - Web developer
 - Open source contributor
 
-^
-
 {% include projects.html %}

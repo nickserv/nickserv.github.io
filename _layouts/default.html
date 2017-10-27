@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- basic info -->
+    <!-- Metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
-    <!-- css -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700%7CSource+Serif+Pro">
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/style.css">
-    <!-- icons -->
+
+    <!-- Icons -->
     <link rel="icon" href="/assets/favicon.png">
+
     <!-- SEO -->
     {% seo title=false %}
-    <!-- analytics -->
+
+    <!-- Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -25,18 +29,25 @@
     </script>
   </head>
 
+  <!-- Navigation -->
   <header class="nav-header">
     <div class="container">
       <ul class="list-horizontal">
         <li><h1>{{ site.title }}</h1></li>
+
         <li>
+          <!-- External icon links -->
           <nav>
             {% for link in site.data.links %}
-              <a href="{{ link.url }}" title="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}><span class="fa fa-fw fa-{{ link.icon }}"></span></a>
+              <a href="{{ link.url }}" title="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
+                <span class="fa fa-fw fa-{{ link.icon }}"></span>
+              </a>
             {% endfor %}
           </nav>
         </li>
       </ul>
+
+      <!-- Category links -->
       <nav>
         <ul class="list-horizontal">
           {% for pair in site.data.projects %}
@@ -48,7 +59,6 @@
     </div>
   </header>
 
-  <main class="container">
-    {{ content }}
-  </main>
+  <!-- Content -->
+  <main class="container">{{ content }}</main>
 </html>

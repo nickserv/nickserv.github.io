@@ -1,10 +1,14 @@
+<!-- Categorized project listing -->
+
 {% for pair in site.data.projects %}
   {% assign category = pair[0] %}
   {% assign projects = pair[1] %}
 
   <section>
+    <!-- Category -->
     <h2 id="{{ category | slugify }}">{{ category }}</h2>
 
+    <!-- Get URL from the github, speakerdeck, or url field -->
     {% for project in projects %}
       {% if project.github %}
         {% assign repository = site.github.public_repositories | where: "name", project.github | first %}
@@ -21,13 +25,16 @@
 
       <article>
         <header>
-          <h3>
-            <a href="{{ url }}">{{ name }}</a>
-          </h3>
+          <!-- Name -->
+          <h3><a href="{{ url }}">{{ name }}</a></h3>
 
-          {% if date %}<time datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | date: '%B %-d, %Y' }}</time>{% endif %}
+          <!-- Date -->
+          {% if date %}
+            <time datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | date: '%B %-d, %Y' }}</time>
+          {% endif %}
         </header>
 
+        <!-- Desription -->
         {% if description %}<p>{{ description }}</p>{% endif %}
       </article>
     {% endfor %}

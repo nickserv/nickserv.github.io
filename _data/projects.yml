@@ -1,3 +1,10 @@
+# Map of category names to arrays of their included projects
+
+# Projects have names, URLs, optional dates for talk, and optional
+# descriptions. If the github field includes the name of a GitHub repository,
+# its URL, name, and description are used if not provided here. The speakerdeck
+# field generates just the URL of a talk.
+
 Web Apps:
   -
     name: Rose
@@ -65,7 +72,7 @@ Miscellaneous:
   -
     name: Dana McCurdy
     url: http://danamccurdy.com
-    description: My father's personal/professional website.
+    description: "My father's personal/professional website."
   -
     name: Dotfiles
     github: dotfiles
@@ -115,7 +122,7 @@ Talks:
     name: A Quick Intro to Ruby
     speakerdeck: a-quick-intro-to-ruby
     date: 2014-9-18
-    description: A tour of Ruby's basic syntax for novice programmers.
+    description: "A tour of Ruby's basic syntax for novice programmers."
   -
     name: Pair Programming
     speakerdeck: pair-programming
