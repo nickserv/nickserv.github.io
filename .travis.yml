@@ -5,13 +5,7 @@ cache:
     - Gemfile.lock
     - _site
     - node_modules
-addons:
-  apt:
-    packages:
-      - oracle-java8-set-default
-before_install:
-  - nvm install
-  - npm install
+before_install: npm install
 script: ./test
 env:
   global:
