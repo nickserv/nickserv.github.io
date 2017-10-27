@@ -1,7 +1,6 @@
 cache:
   bundler: true
   directories:
-    - _site
     - node_modules
 before_install: npm install
 script: ./test
