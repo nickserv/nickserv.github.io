@@ -1,6 +1,9 @@
 cache:
   bundler: true
   directories:
+    - .jekyll-metadata
+    - Gemfile.lock
+    - _site
     - node_modules
 addons:
   apt:
