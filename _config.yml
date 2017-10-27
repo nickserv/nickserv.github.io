@@ -30,6 +30,7 @@ exclude:
   - package.json
   - test
   - vendor
+incremental: true
 plugins:
   - jekyll-github-metadata
   - jekyll-redirect-from
