@@ -1,10 +1,19 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
+# Build
 bundle exec jekyll build
-bundle exec jekyll doctor
+
+# Validate HTML
 java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
-bundle exec htmlproofer _site --check-external-hash --check-favicon --check-html \
-       --file-ignore _site/projects/index.html,_site/skills/index.html,_site/talks/index.html,/node_modules/ \
+
+# Check links
+bundle exec htmlproofer _site \
+       --check-external-hash \
+       --check-favicon \
+       --check-html \
+       --file-ignore "_site/(projects|skills|talks)/index.html,/node_modules/" \
        --url-swap '^/apps/(.*)$:http\://nickmccurdy.com/apps/\1'
+
+# Lint styles
 node_modules/.bin/stylelint assets/style.scss
