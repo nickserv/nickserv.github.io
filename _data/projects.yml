@@ -13,11 +13,6 @@ Web Apps:
     name: Language Colors
     github: language-colors
   -
-    github: ghlint-web
-  -
-    name: Tickets
-    github: tickets
-  -
     name: Buzzword Generator
     github: buzzword-generator
   -
@@ -49,13 +44,8 @@ Tools:
     name: Procrastinate
     github: procrastinate
   -
-    github: ghlint
-  -
     name: Repos
     github: repos
-  -
-    name: Tracking
-    github: tracking
   -
     name: Run
     github: run
@@ -64,10 +54,6 @@ Libraries:
     name: Final
     github: final
     description: A set of tools for writing JavaScript code once that runs on the command line, browser, and more.
-  -
-    name: Magician
-    github: magician
-    description: A suite of handy methods for doing calculations in irb.
 Miscellaneous:
   -
     name: Dana McCurdy
@@ -79,8 +65,6 @@ Miscellaneous:
   -
     name: Sane Defaults
     github: sane-defaults
-  -
-    github: dwm
   -
     name: Developer Resources
     github: developer-resources
