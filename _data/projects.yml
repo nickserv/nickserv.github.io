@@ -5,7 +5,7 @@
 # its URL, name, and description are used if not provided here. The speakerdeck
 # field generates just the URL of a talk.
 
-Web Apps:
+Apps:
   -
     name: Password Entropy
     github: password-entropy
@@ -67,7 +67,7 @@ Libraries:
     name: Final
     github: final
     description: A set of tools for writing JavaScript code once that runs on the command line, browser, and more.
-Miscellaneous:
+Repositories:
   -
     name: Meteor on Travis
     github: meteor-on-travis
