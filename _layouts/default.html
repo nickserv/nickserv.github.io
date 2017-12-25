@@ -25,7 +25,6 @@
 
     <!-- JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/v4-shims.js"></script>
   </head>
 
   <!-- Navigation -->
@@ -39,7 +38,7 @@
           <nav>
             {% for link in site.data.links %}
               <a href="{{ link.url }}" title="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
-                <span class="fa fa-fw fa-{{ link.icon }}"></span>
+                <span class="{{ link.icon }} fa-fw"></span>
               </a>
             {% endfor %}
           </nav>
