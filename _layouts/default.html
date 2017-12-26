@@ -21,7 +21,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700%7CSource+Serif+Pro">
-    <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free-webfonts">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css">
     <link rel="stylesheet" href="/assets/style.css">
   </head>
 
@@ -35,8 +37,8 @@
           <!-- External icon links -->
           <nav>
             {% for link in site.data.links %}
-              <a href="{{ link.url }}" title="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
-                <span class="fa fa-fw fa-{{ link.icon }}"></span>
+              <a href="{{ link.url }}" aria-label="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
+                <span class="{{ link.icon }} fa-fw" aria-hidden="true"></span>
               </a>
             {% endfor %}
           </nav>

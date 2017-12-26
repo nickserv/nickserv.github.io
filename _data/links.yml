@@ -1,21 +1,21 @@
 -
   name: Email
   url: mailto:nick@nickmccurdy.com
-  icon: envelope
+  icon: fas fa-envelope
 -
   name: Facebook
   url: https://www.facebook.com/nickemccurdy
-  icon: facebook-official
+  icon: fab fa-facebook
 -
   name: Twitter
   url: https://twitter.com/nickemccurdy
-  icon: twitter
+  icon: fab fa-twitter
 -
   name: GitHub
   url: https://github.com/nickmccurdy
-  icon: github
+  icon: fab fa-github
 -
   name: LinkedIn
   url: https://www.linkedin.com/in/nickemccurdy
-  icon: linkedin
+  icon: fab fa-linkedin
   proofer_ignore: true
