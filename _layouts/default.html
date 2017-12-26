@@ -38,7 +38,7 @@
           <nav>
             {% for link in site.data.links %}
               <a href="{{ link.url }}" aria-label="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
-                <span class="{{ link.icon }} fa-fw" aria-hidden></span>
+                <span class="{{ link.icon }} fa-fw" aria-hidden="true"></span>
               </a>
             {% endfor %}
           </nav>
