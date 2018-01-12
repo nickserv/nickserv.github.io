@@ -72,7 +72,7 @@ Repositories:
     github: meteor-on-travis
   -
     name: Dana McCurdy
-    github: danamccurdy
+    github: danamccurdy.com
     description: "My father's personal/professional website."
   -
     name: Dotfiles
