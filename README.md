@@ -2,6 +2,8 @@
 [![Build Status](https://travis-ci.org/nickmccurdy/nickmccurdy.github.io.svg)](https://travis-ci.org/nickmccurdy/nickmccurdy.github.io)
 [![Dependency Status](https://gemnasium.com/badges/github.com/nickmccurdy/nickmccurdy.github.io.svg)](https://gemnasium.com/github.com/nickmccurdy/nickmccurdy.github.io)
 
+&copy; [Nick McCurdy](http://nickmccurdy.com/)
+
 ## Web apps extracted from this repository
 - [copyboard](https://github.com/nickmccurdy/copyboard)
 - [grid](https://github.com/nickmccurdy/grid)
