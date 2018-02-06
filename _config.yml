@@ -37,3 +37,4 @@ plugins:
   - jekyll-seo-tag
 sass:
   style: compressed
+livereload: true
