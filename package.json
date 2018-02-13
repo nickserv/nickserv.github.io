@@ -1,9 +1,28 @@
 {
   "private": true,
   "dependencies": {
-    "stylelint": "",
-    "stylelint-config-sass-guidelines": "",
-    "vnu-jar": ""
+    "gatsby": "^1.9.194",
+    "gatsby-plugin-react-helmet": "^2.0.5",
+    "gatsby-plugin-react-next": "^1.0.9",
+    "gatsby-plugin-sass": "^1.0.17",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-sass-guidelines": "^4.1.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.3.0",
+    "vnu-jar": "^17.12.28"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "start": "gatsby develop"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   },
   "stylelint": {
     "extends": "stylelint-config-sass-guidelines"
