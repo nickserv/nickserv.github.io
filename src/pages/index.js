@@ -18,12 +18,7 @@ export default ({ data: { allRepository: { edges } } }) => (
             {/* External icon links */}
             <nav>
               {links.map(link => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  aria-label={link.name}
-                  data-proofer-ignore={link.proofer_ignore}
-                >
+                <a key={link.name} href={link.url} aria-label={link.name}>
                   <span className={`${link.icon} fa-fw`} aria-hidden="true" />
                 </a>
               ))}

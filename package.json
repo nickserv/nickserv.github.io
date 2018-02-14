@@ -10,24 +10,16 @@
     "lodash": "^4.17.5"
   },
   "devDependencies": {
-    "prettier": "^1.10.2",
-    "stylelint": "^8.4.0",
-    "stylelint-config-sass-guidelines": "^4.1.0",
-    "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.3.0",
-    "vnu-jar": "^17.11.1"
+    "prettier": "^1.10.2"
   },
   "scripts": {
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "start": "gatsby develop",
-    "test": "./test"
+    "test": "npm run build"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true
-  },
-  "stylelint": {
-    "extends": "stylelint-config-sass-guidelines"
   }
 }

@@ -1,10 +1,5 @@
 language: node_js
 node_js: node
 cache:
-  bundler: true
   directories:
     - node_modules
-before_install: bundle
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
