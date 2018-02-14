@@ -1,5 +1,4 @@
 const crypto = require('crypto')
-const dotenv = require('dotenv')
 const fetch = require('node-fetch')
 const fs = require('fs')
 const { flatMap } = require('lodash')
@@ -7,8 +6,6 @@ const { promisify } = require('util')
 const { safeLoad } = require('js-yaml')
 
 const readFile = promisify(fs.readFile)
-
-dotenv.config()
 
 exports.sourceNodes = async ({ boundActionCreators: { createNode } }) => {
   const projects = await readFile('_data/projects.yml', 'utf8')
@@ -20,12 +17,7 @@ exports.sourceNodes = async ({ boundActionCreators: { createNode } }) => {
   return Promise.all(
     repositories.map(async repository => {
       const response = await fetch(
-        `https://api.github.com/repos/nickmccurdy/${repository}`,
-        {
-          headers: {
-            Authorization: `bearer ${process.env.GITHUB_TOKEN}`
-          }
-        }
+        `https://api.github.com/repos/nickmccurdy/${repository}`
       )
       const repositoryData = await response.json()
 
