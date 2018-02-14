@@ -1,14 +1,11 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import Helmet from 'react-helmet'
 import links from '../../_data/links.yml'
 import projects from '../../_data/projects.yml'
 import '../../assets/style.scss'
 
 export default ({ data: { allRepository: { edges } } }) => (
   <Fragment>
-    <Helmet title="Nick McCurdy" />
-
     {/* Navigation */}
     <header className="nav-header">
       <div className="container">
