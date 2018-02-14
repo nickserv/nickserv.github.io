@@ -18,7 +18,8 @@
   "scripts": {
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "test": "./test"
   },
   "prettier": {
     "semi": false,
