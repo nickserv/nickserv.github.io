@@ -13,10 +13,9 @@
     "prettier": "^1.10.2"
   },
   "scripts": {
-    "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
-    "start": "gatsby develop",
-    "test": "npm run build"
+    "install": "gatsby build",
+    "start": "gatsby develop"
   },
   "prettier": {
     "semi": false,
