@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ev
 # Build
-bundle exec jekyll build
+npm run build
 
 # Validate HTML
 java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
