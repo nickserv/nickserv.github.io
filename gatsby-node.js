@@ -18,7 +18,10 @@ exports.sourceNodes = async ({ boundActionCreators: { createNode } }) => {
     category.filter(project => project.github).map(project => project.github)
   )
 
-  octokit.authenticate({ type: 'token', token: process.env.GITHUB_TOKEN })
+  octokit.authenticate({
+    type: 'token',
+    token: process.env.OCTOKIT_ACCESS_TOKEN
+  })
 
   return Promise.all(
     repos.map(async repo => {
