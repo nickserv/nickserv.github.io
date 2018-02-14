@@ -1,9 +1,11 @@
 {
   "private": true,
   "dependencies": {
-    "stylelint": "",
-    "stylelint-config-sass-guidelines": "",
-    "vnu-jar": ""
+    "stylelint": "^8.4.0",
+    "stylelint-config-sass-guidelines": "^4.1.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.3.0",
+    "vnu-jar": "^17.12.28"
   },
   "stylelint": {
     "extends": "stylelint-config-sass-guidelines"
