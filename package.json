@@ -13,7 +13,7 @@
     "stylelint-config-sass-guidelines": "^4.1.0",
     "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.3.0",
-    "vnu-jar": "^17.12.28"
+    "vnu-jar": "^17.11.1"
   },
   "scripts": {
     "build": "gatsby build",
