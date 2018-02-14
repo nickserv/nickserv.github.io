@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 set -ev
+
 # Build
 npm run build
 
 # Validate HTML
-java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
+java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html public
 
 # Check links
-bundle exec htmlproofer _site \
+bundle exec htmlproofer public \
        --check-external-hash \
        --check-favicon \
        --check-html \
-       --file-ignore "_site/(projects|skills|talks)/index.html,/node_modules/" \
        --url-swap '^/apps/(.*)$:http\://nickmccurdy.com/apps/\1'
 
 # Lint styles

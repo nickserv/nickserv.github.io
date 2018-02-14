@@ -22,7 +22,7 @@ export default ({ data: { allRepository: { edges } } }) => (
                   key={link.name}
                   href={link.url}
                   aria-label={link.name}
-                  data-proofer-ignore={link.prooferIgnore}
+                  data-proofer-ignore={link.proofer_ignore}
                 >
                   <span className={`${link.icon} fa-fw`} aria-hidden="true" />
                 </a>

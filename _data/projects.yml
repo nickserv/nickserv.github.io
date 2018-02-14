@@ -96,16 +96,16 @@ Talks:
   -
     name: Music Genres
     speakerdeck: music-genres
-    date: 2016-2-11
+    date: 2016-02-11
     description: A quick overview of some modern American music genres.
   -
     name: Software Testing
     github: testing-talk
-    date: 2015-11-3
+    date: 2015-11-03
   -
     name: Active Contour Research
     speakerdeck: active-contour-research
-    date: 2014-12-2
+    date: 2014-12-02
     description: Course research on the active contour technique in computer vision.
   -
     name: The Psychology of Motivation
@@ -115,15 +115,15 @@ Talks:
   -
     name: Building Apps with Node.js and Express
     speakerdeck: building-apps-with-node-dot-js-and-express
-    date: 2014-11-5
+    date: 2014-11-05
     description: A walkthrough for building simple server-side web apps with the Express framework for Node.js.
   -
     name: A Quick Intro to Ruby
     speakerdeck: a-quick-intro-to-ruby
-    date: 2014-9-18
+    date: 2014-09-18
     description: "A tour of Ruby's basic syntax for novice programmers."
   -
     name: Pair Programming
     speakerdeck: pair-programming
-    date: 2013-4-2
+    date: 2013-04-02
     description: An explanation of the pair programming technique for software development, including a discussion of the associated benefits and risks in using it over more conventional programming practices.
