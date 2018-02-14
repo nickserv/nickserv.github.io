@@ -2,6 +2,7 @@
   "private": true,
   "dependencies": {
     "@octokit/rest": "^14.0.9",
+    "dotenv": "^5.0.0",
     "gatsby": "^1.9.197",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-react-next": "^1.0.9",
