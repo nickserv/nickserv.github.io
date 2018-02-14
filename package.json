@@ -14,8 +14,10 @@
   },
   "scripts": {
     "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "format-check": " prettier --list-different \"**/*.{js,md,scss}\"",
     "install": "gatsby build",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "test": "npm run format-check && npm install"
   },
   "prettier": {
     "semi": false,
