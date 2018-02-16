@@ -10,6 +10,7 @@
     "lodash": "^4.17.5"
   },
   "devDependencies": {
+    "jest": "^22.3.0",
     "prettier": "^1.10.2"
   },
   "scripts": {
@@ -17,7 +18,11 @@
     "format-check": " prettier --list-different \"**/*.{js,md,scss}\"",
     "install": "gatsby build",
     "start": "gatsby develop",
-    "test": "npm run format-check && npm install"
+    "test": "npm run format-check && jest && npm install"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testRegex": "(\\.|/)test\\.js$"
   },
   "prettier": {
     "semi": false,

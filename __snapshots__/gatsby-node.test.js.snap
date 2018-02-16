@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sourceNodes 1`] = `
+Array [
+  Array [
+    Object {
+      "children": Array [],
+      "custom": true,
+      "id": "bdca72cd7dcb0af5ec550efd7057bf13",
+      "internal": Object {
+        "contentDigest": "1441a7909c087dbbe7ce59881b9df8b9",
+        "type": "Repository",
+      },
+      "parent": null,
+    },
+  ],
+  Array [
+    Object {
+      "children": Array [],
+      "custom": true,
+      "id": "791797da1ca20829a8f7b2aedc3179dd",
+      "internal": Object {
+        "contentDigest": "1441a7909c087dbbe7ce59881b9df8b9",
+        "type": "Repository",
+      },
+      "parent": null,
+    },
+  ],
+]
+`;
