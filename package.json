@@ -22,7 +22,9 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testRegex": "(\\.|/)test\\.js$"
+    "testPathIgnorePatterns": [
+      "/.cache/"
+    ]
   },
   "prettier": {
     "semi": false,
