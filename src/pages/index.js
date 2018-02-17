@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import ReactDOM from 'react-dom'
 import links from '../../_data/links.yml'
 import projects from '../../_data/projects.yml'
 import '../../assets/style.scss'
