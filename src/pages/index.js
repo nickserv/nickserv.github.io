@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import links from '../../_data/links.yml'
 import projects from '../../_data/projects.yml'
 import '../../assets/style.scss'
 
 export default ({ data: { allRepository: { edges } } }) => (
-  <Fragment>
+  <div>
     {/* Navigation */}
     <header className="nav-header">
       <div className="container">
@@ -102,7 +102,7 @@ export default ({ data: { allRepository: { edges } } }) => (
         </section>
       ))}
     </main>
-  </Fragment>
+  </div>
 )
 
 export const query = graphql`
