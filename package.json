@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "jest": "^22.3.0",
-    "prettier": "^1.10.2"
+    "prettier": "^1.10.2",
+    "react-test-renderer": "^15.6.2"
   },
   "scripts": {
     "format": "prettier --write \"**/*.{js,md,scss}\"",
@@ -19,7 +20,16 @@
     "start": "gatsby develop",
     "test": "npm run format-check && jest && npm install"
   },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
   "jest": {
+    "moduleNameMapper": {
+      "\\.scss$": "<rootDir>/__mocks__/empty.js"
+    },
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "/.cache/"

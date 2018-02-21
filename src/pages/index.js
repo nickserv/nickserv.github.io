@@ -105,7 +105,7 @@ export default ({ data: { allRepository: { edges } } }) => (
   </div>
 )
 
-export const query = graphql`
+export const query = `
   query Repositories {
     allRepository {
       edges {
