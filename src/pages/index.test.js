@@ -1,3 +1,5 @@
+global.graphql = () => {}
+
 const Index = require('.').default
 const React = require('react')
 const renderer = require('react-test-renderer')
