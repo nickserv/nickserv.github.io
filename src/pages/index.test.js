@@ -37,5 +37,5 @@ const data = {
 }
 
 test('Index', () => {
-  renderer.create(<Index data={data} />)
+  expect(renderer.create(<Index data={data} />)).toMatchSnapshot()
 })

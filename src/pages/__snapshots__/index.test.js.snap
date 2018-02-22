@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index 1`] = `
+<div>
+  <header
+    className="nav-header"
+  >
+    <div
+      className="container"
+    >
+      <ul
+        className="list-horizontal"
+      >
+        <li>
+          <h1>
+            Nick McCurdy
+          </h1>
+        </li>
+        <li>
+          <nav>
+            <a
+              aria-label="One"
+              href="example.com/one"
+            >
+              <span
+                aria-hidden="true"
+                className="one fa-fw"
+              />
+            </a>
+            <a
+              aria-label="Two"
+              href="example.com/two"
+            >
+              <span
+                aria-hidden="true"
+                className="two fa-fw"
+              />
+            </a>
+          </nav>
+        </li>
+      </ul>
+      <nav>
+        <ul
+          className="list-horizontal"
+        >
+          <li>
+            <a
+              href="/#category one"
+            >
+              Category One
+            </a>
+          </li>
+          <li>
+            <a
+              href="/#category two"
+            >
+              Category Two
+            </a>
+          </li>
+          <li>
+            <a
+              href="/#talks"
+            >
+              Talks
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main
+    className="container"
+  >
+    <h2>
+      About
+    </h2>
+    <ul>
+      <li>
+        <a
+          href="https://www.rit.edu/"
+        >
+          Rochester Institute of Technology
+        </a>
+         
+        graduate
+      </li>
+      <li>
+        Software engineer
+      </li>
+      <li>
+        Web developer
+      </li>
+      <li>
+        Open source contributor
+      </li>
+    </ul>
+    <section>
+      <h2
+        id="category one"
+      >
+        Category One
+      </h2>
+      <article>
+        <header>
+          <h3>
+            <a
+              href="example.com/one"
+            >
+              project-one
+            </a>
+          </h3>
+        </header>
+        <p>
+          Project One
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2
+        id="category two"
+      >
+        Category Two
+      </h2>
+      <article>
+        <header>
+          <h3>
+            <a
+              href="example.com/two"
+            >
+              project-two
+            </a>
+          </h3>
+        </header>
+        <p>
+          Project Two
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2
+        id="talks"
+      >
+        Talks
+      </h2>
+      <article>
+        <header>
+          <h3>
+            <a
+              href={undefined}
+            >
+              Talk
+            </a>
+          </h3>
+        </header>
+      </article>
+    </section>
+  </main>
+</div>
+`;
