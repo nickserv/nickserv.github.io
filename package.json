@@ -29,7 +29,7 @@
   "jest": {
     "collectCoverage": true,
     "moduleNameMapper": {
-      "\\.scss$": "<rootDir>/__mocks__/empty.js"
+      "\\.scss$": "<rootDir>/__mocks__/styleMock.js"
     },
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
