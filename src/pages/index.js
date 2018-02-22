@@ -90,7 +90,10 @@ export default ({ data: { allRepository: { edges } } }) => (
                   {date && (
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(undefined, {
-                        timeZone: 'UTC'
+                        day: 'numeric',
+                        month: 'long',
+                        timeZone: 'UTC',
+                        year: 'numeric'
                       })}
                     </time>
                   )}
