@@ -146,7 +146,7 @@ exports[`Index 1`] = `
         <header>
           <h3>
             <a
-              href={undefined}
+              href="https://speakerdeck.com/nickmccurdy/test"
             >
               Talk
             </a>

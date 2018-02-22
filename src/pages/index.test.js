@@ -10,7 +10,7 @@ jest.mock('../../_data/links.yml', () => [
 jest.mock('../../_data/projects.yml', () => ({
   'Category One': [{ github: 'project-one' }],
   'Category Two': [{ github: 'project-two' }],
-  Talks: [{ name: 'Talk' }]
+  Talks: [{ name: 'Talk', speakerdeck: 'test' }]
 }))
 
 const data = {
