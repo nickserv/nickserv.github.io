@@ -59,6 +59,13 @@ exports[`Index 1`] = `
           </li>
           <li>
             <a
+              href="/#category three"
+            >
+              Category Three
+            </a>
+          </li>
+          <li>
+            <a
               href="/#talks"
             >
               Talks
@@ -125,7 +132,7 @@ exports[`Index 1`] = `
         <header>
           <h3>
             <a
-              href="example.com/two"
+              href="github.com/ghost/two"
             >
               project-two
             </a>
@@ -133,6 +140,27 @@ exports[`Index 1`] = `
         </header>
         <p>
           Project Two
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2
+        id="category three"
+      >
+        Category Three
+      </h2>
+      <article>
+        <header>
+          <h3>
+            <a
+              href="example.com/three"
+            >
+              project-three
+            </a>
+          </h3>
+        </header>
+        <p>
+          Project Three
         </p>
       </article>
     </section>
@@ -151,6 +179,11 @@ exports[`Index 1`] = `
               Talk
             </a>
           </h3>
+          <time
+            dateTime="1970-01-01"
+          >
+            12/31/1969
+          </time>
         </header>
       </article>
     </section>

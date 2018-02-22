@@ -12,7 +12,14 @@ jest.mock('../../_data/links.yml', () => [
 jest.mock('../../_data/projects.yml', () => ({
   'Category One': [{ github: 'project-one' }],
   'Category Two': [{ github: 'project-two' }],
-  Talks: [{ name: 'Talk', speakerdeck: 'test' }]
+  'Category Three': [
+    {
+      description: 'Project Three',
+      name: 'project-three',
+      url: 'example.com/three'
+    }
+  ],
+  Talks: [{ date: '1970-01-01', name: 'Talk', speakerdeck: 'test' }]
 }))
 
 const data = {
@@ -29,7 +36,6 @@ const data = {
       {
         node: {
           description: 'Project Two',
-          homepage: 'example.com/two',
           html_url: 'github.com/ghost/two',
           name: 'project-two'
         }
@@ -38,6 +44,5 @@ const data = {
   }
 }
 
-test('Index', () => {
-  expect(renderer.create(<Index data={data} />)).toMatchSnapshot()
-})
+test('Index', () =>
+  expect(renderer.create(<Index data={data} />)).toMatchSnapshot())
