@@ -31,6 +31,7 @@
     "moduleNameMapper": {
       "\\.scss$": "<rootDir>/__mocks__/styleMock.js"
     },
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "/.cache/"
