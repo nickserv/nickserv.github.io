@@ -10,7 +10,7 @@ jest.mock('../../_data/links.yml', () => [
 jest.mock('../../_data/projects.yml', () => ({
   'Category One': [{ github: 'project-one' }],
   'Category Two': [{ github: 'project-two' }],
-  Talks: [{ name: 'Talk' }]
+  Talks: [{ name: 'Talk', speakerdeck: 'test' }]
 }))
 
 const data = {
@@ -37,5 +37,5 @@ const data = {
 }
 
 test('Index', () => {
-  renderer.create(<Index data={data} />)
+  expect(renderer.create(<Index data={data} />)).toMatchSnapshot()
 })

@@ -27,6 +27,7 @@
     ]
   },
   "jest": {
+    "collectCoverage": true,
     "moduleNameMapper": {
       "\\.scss$": "<rootDir>/__mocks__/empty.js"
     },
