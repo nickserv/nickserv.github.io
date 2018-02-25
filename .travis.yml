@@ -3,5 +3,7 @@ node_js: node
 cache:
   directories:
     - $HOME/.npm
+before_install:
+  - npm install --global npm
 install:
   - npm ci
