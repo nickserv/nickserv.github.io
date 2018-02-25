@@ -3,6 +3,7 @@ node_js: node
 cache:
   directories:
     - $HOME/.npm
+    - node_modules
 before_install:
   - npm update --global
 install:
