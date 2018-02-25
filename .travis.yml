@@ -4,6 +4,6 @@ cache:
   directories:
     - $HOME/.npm
 before_install:
-  - npm install --global npm
+  - npm install npm@latest -g
 install:
   - npm ci
