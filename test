@@ -12,7 +12,7 @@ bundle exec htmlproofer _site \
        --check-favicon \
        --check-html \
        --file-ignore "_site/(projects|skills|talks)/index.html,/node_modules/" \
-       --url-swap '^/apps/(.*)$:http\://nickmccurdy.com/apps/\1'
+       --url-swap '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
 
 # Lint styles
 node_modules/.bin/stylelint assets/style.scss
