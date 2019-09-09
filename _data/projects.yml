@@ -13,6 +13,9 @@ Posts:
     description: Functional programming is a programming paradigm (technique) where functions are used together to return new values, rather than modifying…
 Apps:
   -
+    name: Manuals
+    github: manuals
+  -
     name: Password Entropy
     github: password-entropy
   -
