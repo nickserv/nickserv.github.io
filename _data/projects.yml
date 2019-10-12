@@ -73,6 +73,10 @@ Packages:
     github: cats
 Repositories:
   -
+    name: React Hooks
+    github: reactjs.org
+    description: A fork of the React documentation that uses hooks instead of classes.
+  -
     name: Meteor on Travis
     github: meteor-on-travis
   -
