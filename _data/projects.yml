@@ -13,6 +13,9 @@ Posts:
     description: Functional programming is a programming paradigm (technique) where functions are used together to return new values, rather than modifying…
 Apps:
   -
+    name: Ooblets Calculator
+    github: ooblets-calculator
+  -
     name: Bisect
     github: bisect
   -
