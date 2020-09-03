@@ -28,9 +28,6 @@ Apps:
     name: Rose
     github: rose
   -
-    name: Language Colors
-    github: language-colors
-  -
     name: Buzzword Generator
     github: buzzword-generator
   -
