@@ -1,0 +1,21 @@
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            node-
+      - run: npm install
+      - run: ./test

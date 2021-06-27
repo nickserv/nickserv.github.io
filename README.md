@@ -1,5 +1,4 @@
 # [Nick McCurdy's Website](https://nickmccurdy.com/)
-[![Build Status](https://travis-ci.com/nickmccurdy/nickmccurdy.github.io.svg?branch=master)](https://travis-ci.com/nickmccurdy/nickmccurdy.github.io)
 
 &copy; [Nick McCurdy](https://nickmccurdy.com/)
 
