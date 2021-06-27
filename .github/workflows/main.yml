@@ -19,3 +19,5 @@ jobs:
             node-
       - run: npm install
       - run: ./test
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
