@@ -1,6 +1,5 @@
 # [Nick McCurdy's Website](https://nickmccurdy.com/)
-[![Build Status](https://travis-ci.org/nickmccurdy/nickmccurdy.github.io.svg)](https://travis-ci.org/nickmccurdy/nickmccurdy.github.io)
-[![Dependency Status](https://gemnasium.com/badges/github.com/nickmccurdy/nickmccurdy.github.io.svg)](https://gemnasium.com/github.com/nickmccurdy/nickmccurdy.github.io)
+[![Build Status](https://travis-ci.com/nickmccurdy/nickmccurdy.github.io.svg?branch=master)](https://travis-ci.com/nickmccurdy/nickmccurdy.github.io)
 
 &copy; [Nick McCurdy](https://nickmccurdy.com/)
 
