@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 set -ev
 # Build
-bundle exec jekyll build
+if [ "$CI" != true ]
+then  
+  bundle exec jekyll build
+fi
 
 # Validate HTML
 java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
