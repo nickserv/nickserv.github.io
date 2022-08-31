@@ -3,14 +3,14 @@ set -ev
 # Build
 if [ "$CI" != true ]
 then  
-  bundle exec jekyll build
+  jekyll build
 fi
 
 # Validate HTML
 java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
 
 # Check links
-bundle exec htmlproofer _site \
+htmlproofer _site \
        --check-external-hash \
        --check-favicon \
        --check-html \
