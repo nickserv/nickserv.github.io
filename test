@@ -10,7 +10,6 @@ java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
 bundle exec htmlproofer _site \
        --check-external-hash \
        --check-favicon \
-       --check-html \
        --file-ignore "_site/(projects|skills|talks)/index.html,/node_modules/" \
        --url-swap '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
 
