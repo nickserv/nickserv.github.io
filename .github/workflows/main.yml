@@ -5,8 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/configure-pages@v2
-      - uses: actions/jekyll-build-pages@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
       - uses: actions/setup-node@v2
         with:
           cache: 'npm'
@@ -15,8 +19,6 @@ jobs:
       - run: ./test
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
 
   deploy:
     permissions:
@@ -32,6 +34,11 @@ jobs:
       group: "pages"
       cancel-in-progress: true
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/configure-pages@v2
+      - uses: actions/jekyll-build-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
