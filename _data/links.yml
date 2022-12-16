@@ -1,25 +1,25 @@
 -
   name: Email
   url: mailto:nick@nickmccurdy.com
-  icon: fas fa-envelope
+  icon: fa-solid fa-envelope
 -
   name: Facebook
   url: https://www.facebook.com/nickemccurdy
-  icon: fab fa-facebook
+  icon: fa-brands fa-facebook
 -
   name: Twitter
   url: https://twitter.com/nickemccurdy
-  icon: fab fa-twitter
+  icon: fa-brands fa-twitter
 -
   name: Mastodon
   url: https://toot.cat/@nickm
-  icon: fab fa-mastodon
+  icon: fa-brands fa-mastodon
 -
   name: GitHub
   url: https://github.com/nickmccurdy
-  icon: fab fa-github
+  icon: fa-brands fa-github
 -
   name: LinkedIn
   url: https://www.linkedin.com/in/nickemccurdy
-  icon: fab fa-linkedin
+  icon: fa-brands fa-linkedin
   proofer_ignore: true
