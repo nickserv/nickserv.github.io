@@ -16,5 +16,5 @@
 - [Google's index of nickmccurdy.com](https://www.google.com/search?q=site%3Anickmccurdy.com)
 
 ## Private Tools
-- [Google Analytics](https://www.google.com/analytics)
-- [Webmaster Tools](https://www.google.com/webmasters/tools)
+- [Google Analytics](https://analytics.google.com/analytics/web/#/p316316463/reports/intelligenthome)
+- [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Aclaudiamccurdy.com)
