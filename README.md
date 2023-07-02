@@ -12,9 +12,11 @@
 - [time_tools](https://github.com/nickmccurdy/time_tools)
 - [web_console](https://github.com/nickmccurdy/web_console)
 
-## Tools
+## Resources
 - [Google's index of nickmccurdy.com](https://www.google.com/search?q=site%3Anickmccurdy.com)
 
 ### Private
+- [Google Domains](https://domains.google.com/registrar/nickmccurdy.com)
 - [Google Analytics](https://analytics.google.com/analytics/web/#/p316316463/reports/intelligenthome)
 - [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Aclaudiamccurdy.com)
+- [Figma](https://www.figma.com/file/tPuwIqxOZ3sVggfA0ZK5Mj/Nick-McCurdy)
