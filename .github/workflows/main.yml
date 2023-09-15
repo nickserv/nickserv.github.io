@@ -10,6 +10,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v1
       - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ruby
           bundler-cache: true
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
