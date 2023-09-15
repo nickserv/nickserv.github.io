@@ -25,9 +25,6 @@ Apps:
     name: Password Entropy
     github: password-entropy
   -
-    name: Rose
-    github: rose
-  -
     name: Buzzword Generator
     github: buzzword-generator
   -
