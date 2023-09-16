@@ -1,6 +1,7 @@
 # metadata
 title: Nick McCurdy
 description: Software Engineer
+repository: username/repo-name
 
 # configuration
 defaults:
