@@ -17,8 +17,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           cache: 'npm'
-          cache-dependency-path: package.json
-      - run: npm install
+      - run: npm ci
       - run: ./test
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

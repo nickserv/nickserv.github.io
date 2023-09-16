@@ -1,5 +1,4 @@
 .env
 .jekyll-metadata
-Gemfile.lock
 _site
 node_modules
