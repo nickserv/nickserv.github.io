@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv', '~>3.1'
 gem 'html-proofer', '~>4.4.3'
 gem 'jekyll', '~>3.9'
 gem 'kramdown-parser-gfm', '~>1.1'

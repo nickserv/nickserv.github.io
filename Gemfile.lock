@@ -6,6 +6,7 @@ GEM
     base64 (0.1.1)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
+    dotenv (3.1.4)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -103,6 +104,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  dotenv (~> 3.1)
   html-proofer (~> 4.4.3)
   jekyll (~> 3.9)
   jekyll-github-metadata (~> 2.13)
