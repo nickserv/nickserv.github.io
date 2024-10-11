@@ -10,12 +10,12 @@ jobs:
           ruby-version: ruby
           bundler-cache: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
       - uses: actions/configure-pages@v3
         id: pages
       - run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV: production
       - uses: actions/upload-pages-artifact@v2
       - uses: actions/setup-node@v3
