@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv', '~>3.1'
 gem 'html-proofer', '~>5.0'
-gem 'jekyll', '~>3.9'
+gem 'jekyll', '~>4.4.1'
 gem 'kramdown-parser-gfm', '~>1.1'
 
 group :jekyll_plugins do
