@@ -4,21 +4,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ruby
           bundler-cache: true
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
-      - uses: actions/configure-pages@v3
+      - uses: actions/configure-pages@v5
         id: pages
       - run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV: production
-      - uses: actions/upload-pages-artifact@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/setup-node@v4
         with:
           cache: 'npm'
       - run: npm ci
@@ -40,4 +40,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
