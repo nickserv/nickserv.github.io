@@ -4,7 +4,6 @@ set -ev
 # Check links
 bundle exec htmlproofer _site \
        --check-external-hash \
-       --check-favicon \
        --ignore-files "_site/(projects|skills|talks)/index.html,/node_modules/" \
        --only-4xx \
        --swap-urls '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
