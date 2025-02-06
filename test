@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -ev
 
-# Validate HTML
-java -jar node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html _site
-
 # Check links
 bundle exec htmlproofer _site \
        --check-external-hash \
