@@ -30,9 +30,9 @@ redirect_from:
         {% assign repository = site.github.public_repositories | where: "name", project.github | first %}
         {% assign url = repository.homepage | default: repository.html_url %}
       {% elsif project.speakerdeck %}
-        {% assign url = "https://speakerdeck.com/nickmccurdy/" | append: project.speakerdeck %}
+        {% assign url = "https://speakerdeck.com/nickserv/" | append: project.speakerdeck %}
       {% elsif project.medium %}
-        {% assign url = "https://nickmccurdy.medium.com/" | append: project.medium %}
+        {% assign url = "https://nickserv.medium.com/" | append: project.medium %}
       {% else  %}
         {% assign url = project.url %}
       {% endif  %}

@@ -3,14 +3,14 @@
 &copy; [Nick McCurdy](https://nickmccurdy.com/)
 
 ## Web apps extracted from this repository
-- [copyboard](https://github.com/nickmccurdy/copyboard)
-- [grid](https://github.com/nickmccurdy/grid)
-- [layout](https://github.com/nickmccurdy/layout)
-- [lim](https://github.com/nickmccurdy/lim)
-- [link_tools](https://github.com/nickmccurdy/link_tools)
-- [randomize](https://github.com/nickmccurdy/randomize)
-- [time_tools](https://github.com/nickmccurdy/time_tools)
-- [web_console](https://github.com/nickmccurdy/web_console)
+- [copyboard](https://github.com/nickserv/copyboard)
+- [grid](https://github.com/nickserv/grid)
+- [layout](https://github.com/nickserv/layout)
+- [lim](https://github.com/nickserv/lim)
+- [link_tools](https://github.com/nickserv/link_tools)
+- [randomize](https://github.com/nickserv/randomize)
+- [time_tools](https://github.com/nickserv/time_tools)
+- [web_console](https://github.com/nickserv/web_console)
 
 ## Resources
 - [Google's index of nickmccurdy.com](https://www.google.com/search?q=site%3Anickmccurdy.com)

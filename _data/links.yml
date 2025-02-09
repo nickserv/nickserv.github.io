@@ -4,7 +4,7 @@
   icon: fa-solid fa-envelope
 -
   name: Facebook
-  url: https://www.facebook.com/nickemccurdy
+  url: https://www.facebook.com/NickServ42
   icon: fa-brands fa-facebook
 -
   name: Twitter
@@ -16,7 +16,7 @@
   icon: fa-brands fa-mastodon
 -
   name: GitHub
-  url: https://github.com/nickmccurdy
+  url: https://github.com/nickserv
   icon: fa-brands fa-github
 -
   name: LinkedIn
