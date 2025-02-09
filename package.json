@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "stylelint": "^8.4.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-sass-guidelines": "^4.2.0",
     "stylelint-order": "^0.8.1",
     "stylelint-scss": "^2.5.0"
