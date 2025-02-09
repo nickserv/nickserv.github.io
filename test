@@ -9,4 +9,4 @@ bundle exec htmlproofer _site \
        --swap-urls '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
 
 # Lint styles
-node_modules/.bin/stylelint assets/style.scss
+sed s/---// assets/style.scss | node_modules/.bin/stylelint

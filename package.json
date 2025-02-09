@@ -1,10 +1,8 @@
 {
   "private": true,
   "dependencies": {
-    "stylelint": "^8.4.0",
-    "stylelint-config-sass-guidelines": "^4.2.0",
-    "stylelint-order": "^0.8.1",
-    "stylelint-scss": "^2.5.0"
+    "stylelint": "^16.14.1",
+    "stylelint-config-sass-guidelines": "^12.1.0"
   },
   "stylelint": {
     "extends": "stylelint-config-sass-guidelines"
