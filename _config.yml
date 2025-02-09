@@ -19,7 +19,6 @@ exclude:
   - pnpm-lock.yaml
   - test
   - vendor
-incremental: true
 plugins:
   - jekyll-github-metadata
   - jekyll-redirect-from
