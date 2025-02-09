@@ -1,6 +1,20 @@
 on: [push, pull_request]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'pnpm'
+      - run: pnpm install
+      - name: Check formatting
+        run: pnpm prettier --check .
+      - name: Lint styles
+        run: sed s/---// assets/style.scss | pnpm stylelint
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -27,15 +41,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           path: _site
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
-        with:
-          cache: 'pnpm'
-      - run: pnpm install
-      - name: Check formatting
-        run: pnpm prettier --check .
-      - name: Lint styles
-        run: sed s/---// assets/style.scss | pnpm stylelint
       - name: Check links
         run: bundle exec htmlproofer _site --check-external-hash --ignore-files "_site/(projects|skills|talks)/index.html,/node_modules/" --only-4xx --swap-urls '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
 
@@ -43,7 +48,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    needs: test
+    needs: [lint, test]
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
