@@ -22,6 +22,7 @@ Apps:
     name: Manuals
     github: manuals
   -
+    name: Pair Columbus Progress
     name: progress
   -
     name: Password Entropy
