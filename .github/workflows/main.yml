@@ -32,15 +32,6 @@ jobs:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV: production
       - uses: actions/upload-pages-artifact@v3
-
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          path: _site
       - name: Check links
         run: bundle exec htmlproofer _site --check-external-hash --ignore-files "_site/(projects|skills|talks)/index.html,/node_modules/" --only-4xx --swap-urls '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
 
@@ -48,7 +39,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    needs: [lint, test]
+    needs: [lint, build]
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
