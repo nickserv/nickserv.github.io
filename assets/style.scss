@@ -18,7 +18,7 @@ $white: #f6f6f6;
     }
   } @else if $exponent < 0 {
     @for $i from 1 through -$exponent {
-      $value: $value / $ratio;
+      $value: calc($value / $ratio);
     }
   }
   @return $value;
