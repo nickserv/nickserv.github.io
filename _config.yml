@@ -5,11 +5,10 @@ repository: nickserv/nickserv.github.io
 
 # configuration
 defaults:
-  -
-    values:
+  - values:
       layout: default
 exclude:
-  - "*.xcf"
+  - '*.xcf'
   - CNAME
   - Gemfile
   - Gemfile.lock

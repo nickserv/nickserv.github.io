@@ -3,6 +3,7 @@
 &copy; [Nick McCurdy](https://nickmccurdy.com/)
 
 ## Web apps extracted from this repository
+
 - [copyboard](https://github.com/nickserv/copyboard)
 - [grid](https://github.com/nickserv/grid)
 - [layout](https://github.com/nickserv/layout)
@@ -13,9 +14,11 @@
 - [web_console](https://github.com/nickserv/web_console)
 
 ## Resources
+
 - [Google's index of nickmccurdy.com](https://www.google.com/search?q=site%3Anickmccurdy.com)
 
 ### Private
+
 - [Squarespace Domains](https://account.squarespace.com/domains/managed/nickmccurdy.com)
 - [Google Analytics](https://analytics.google.com/analytics/web/#/p316316463/reports/intelligenthome)
 - [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Anickmccurdy.com)

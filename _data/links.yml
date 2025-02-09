@@ -1,24 +1,18 @@
--
-  name: Email
+- name: Email
   url: mailto:nick@nickmccurdy.com
   icon: fa-solid fa-envelope
--
-  name: Facebook
+- name: Facebook
   url: https://www.facebook.com/NickServ42
   icon: fa-brands fa-facebook
--
-  name: Twitter
+- name: Twitter
   url: https://twitter.com/nickemccurdy
   icon: fa-brands fa-twitter
--
-  name: Mastodon
+- name: Mastodon
   url: https://toot.cat/@nickm
   icon: fa-brands fa-mastodon
--
-  name: GitHub
+- name: GitHub
   url: https://github.com/nickserv
   icon: fa-brands fa-github
--
-  name: LinkedIn
+- name: LinkedIn
   url: https://www.linkedin.com/in/nickemccurdy
   icon: fa-brands fa-linkedin

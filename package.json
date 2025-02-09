@@ -1,8 +1,12 @@
 {
   "private": true,
   "dependencies": {
+    "prettier": "^3.4.2",
     "stylelint": "^16.14.1",
     "stylelint-config-sass-guidelines": "^12.1.0"
+  },
+  "prettier": {
+    "singleQuote": true
   },
   "stylelint": {
     "extends": "stylelint-config-sass-guidelines"

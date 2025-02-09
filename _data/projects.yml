@@ -6,129 +6,94 @@
 # field generates just the URL of a talk.
 
 Posts:
-  -
-    name: Benefits of Functional Programming by Example
+  - name: Benefits of Functional Programming by Example
     medium: benefits-of-functional-programming-by-example-76f1135b0b18
     date: 2018-6-18
     description: Functional programming is a programming paradigm (technique) where functions are used together to return new values, rather than modifying…
 Apps:
-  -
-    name: Ooblets Calculator
+  - name: Ooblets Calculator
     github: ooblets-calculator
-  -
-    name: Bisect
+  - name: Bisect
     github: bisect
-  -
-    name: Manuals
+  - name: Manuals
     github: manuals
-  -
-    name: Password Entropy
+  - name: Password Entropy
     github: password-entropy
-  -
-    name: Buzzword Generator
+  - name: Buzzword Generator
     github: buzzword-generator
-  -
-    name: strftime Editor
+  - name: strftime Editor
     github: strftime-editor
-  -
-    name: Randomize
+  - name: Randomize
     github: randomize
-  -
-    name: Grid
+  - name: Grid
     github: grid
-  -
-    name: Text Tools
+  - name: Text Tools
     url: /apps/text_tools/
     description: A handy text editor for batch manipulations of text.
-  -
-    name: Screen Space
+  - name: Screen Space
     url: /apps/screen_space/
     description: See detailed information about pixel usage in your browser and OS, all in one place.
-  -
-    name: Collatz Conjecture
+  - name: Collatz Conjecture
     url: /apps/collatz/
     description: Calculute sets of integers using the Collatz Conjecture.
 Packages:
-  -
-    github: cdnm
-  -
-    github: add-hooks
-  -
-    name: Final
+  - github: cdnm
+  - github: add-hooks
+  - name: Final
     github: final
     description: A set of tools for writing JavaScript code once that runs on the command line, browser, and more.
-  -
-    github: karma-edge-launcher
-  -
-    name: Procrastinate
+  - github: karma-edge-launcher
+  - name: Procrastinate
     github: procrastinate
-  -
-    name: Repos
+  - name: Repos
     github: repos
-  -
-    name: Run
+  - name: Run
     github: run
-  -
-    name: Cats
+  - name: Cats
     github: cats
 Repositories:
-  -
-    name: Meteor on Travis
+  - name: Meteor on Travis
     github: meteor-on-travis
-  -
-    name: Dana McCurdy
+  - name: Dana McCurdy
     github: danamccurdy.com
     description: "My father's personal/professional website."
-  -
-    name: Dotfiles
+  - name: Dotfiles
     github: dotfiles
-  -
-    name: Sane Defaults
+  - name: Sane Defaults
     github: sane-defaults
-  -
-    name: Developer Resources
+  - name: Developer Resources
     github: developer-resources
-  -
-    name: Witchcraft
+  - name: Witchcraft
     github: witchcraft
-  -
-    name: Templates
+  - name: Templates
     github: templates
-  -
-    name: Project Euler Solutions
+  - name: Project Euler Solutions
     github: project-euler
 Talks:
-  -
-    name: Music Genres
+  - name: Music Genres
     speakerdeck: music-genres
     date: 2016-2-11
     description: A quick overview of some modern American music genres.
-  -
-    name: Software Testing
+  - name: Software Testing
     github: testing-talk
     date: 2015-11-3
-  -
-    name: Active Contour Research
+  - name: Active Contour Research
     speakerdeck: active-contour-research
     date: 2014-12-2
     description: Course research on the active contour technique in computer vision.
-  -
-    name: The Psychology of Motivation
+  - name: The Psychology of Motivation
     speakerdeck: the-psychology-of-motivation
     date: 2014-11-13
     description: A lightning talk giving a very simple overview of how people are motivated.
-  -
-    name: Building Apps with Node.js and Express
+  - name: Building Apps with Node.js and Express
     speakerdeck: building-apps-with-node-dot-js-and-express
     date: 2014-11-5
     description: A walkthrough for building simple server-side web apps with the Express framework for Node.js.
-  -
-    name: A Quick Intro to Ruby
+  - name: A Quick Intro to Ruby
     speakerdeck: a-quick-intro-to-ruby
     date: 2014-9-18
     description: "A tour of Ruby's basic syntax for novice programmers."
-  -
-    name: Pair Programming
+  - name: Pair Programming
     speakerdeck: pair-programming
     date: 2013-4-2
     description: An explanation of the pair programming technique for software development, including a discussion of the associated benefits and risks in using it over more conventional programming practices.

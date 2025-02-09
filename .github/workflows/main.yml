@@ -32,6 +32,7 @@ jobs:
         with:
           cache: 'pnpm'
       - run: pnpm install
+      - run: pnpm prettier --check .
       - run: ./test
 
   deploy:
@@ -45,7 +46,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     concurrency:
-      group: "pages"
+      group: 'pages'
       cancel-in-progress: false
     steps:
       - name: Deploy to GitHub Pages
