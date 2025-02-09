@@ -22,9 +22,6 @@ Apps:
     name: Manuals
     github: manuals
   -
-    name: Pair Columbus Progress
-    name: progress
-  -
     name: Password Entropy
     github: password-entropy
   -
@@ -75,9 +72,6 @@ Packages:
     name: Cats
     github: cats
 Repositories:
-  -
-    name: Pair Columbus Website
-    github: https://github.com/paircolumbus/paircolumbus.github.io/
   -
     name: Meteor on Travis
     github: meteor-on-travis
