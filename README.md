@@ -16,7 +16,7 @@
 - [Google's index of nickmccurdy.com](https://www.google.com/search?q=site%3Anickmccurdy.com)
 
 ### Private
-- [Google Domains](https://domains.google.com/registrar/nickmccurdy.com)
+- [Squarespace Domains](https://account.squarespace.com/domains/managed/nickmccurdy.com)
 - [Google Analytics](https://analytics.google.com/analytics/web/#/p316316463/reports/intelligenthome)
-- [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Aclaudiamccurdy.com)
+- [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Anickmccurdy.com)
 - [Figma](https://www.figma.com/file/tPuwIqxOZ3sVggfA0ZK5Mj/Nick-McCurdy)
