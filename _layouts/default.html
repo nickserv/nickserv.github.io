@@ -37,7 +37,7 @@
           <!-- External icon links -->
           <nav>
             {% for link in site.data.links %}
-              <a rel="me" href="{{ link.url }}" aria-label="{{ link.name }}"{% if link.proofer_ignore %} data-proofer-ignore{% endif %}>
+              <a rel="me" href="{{ link.url }}" aria-label="{{ link.name }}">
                 <span class="{{ link.icon }} fa-fw" aria-hidden="true"></span>
               </a>
             {% endfor %}
