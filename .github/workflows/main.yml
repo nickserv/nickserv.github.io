@@ -32,8 +32,12 @@ jobs:
         with:
           cache: 'pnpm'
       - run: pnpm install
-      - run: pnpm prettier --check .
-      - run: ./test
+      - name: Check formatting
+        run: pnpm prettier --check .
+      - name: Lint styles
+        run: sed s/---// assets/style.scss | pnpm stylelint
+      - name: Check links
+        run: bundle exec htmlproofer _site --check-external-hash --ignore-files "_site/(projects|skills|talks)/index.html,/node_modules/" --only-4xx --swap-urls '^/apps/(.*)$:https\://nickmccurdy.com/apps/\1'
 
   deploy:
     permissions:

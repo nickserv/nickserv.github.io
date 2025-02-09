@@ -16,7 +16,6 @@ exclude:
   - node_modules
   - package.json
   - pnpm-lock.yaml
-  - test
   - vendor
 plugins:
   - jekyll-github-metadata
